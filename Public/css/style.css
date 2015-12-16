@@ -1,0 +1,317 @@
+body {
+    background-color: #f4f4f4;
+}
+.left-content {
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.article-title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #98a1a6;
+}
+
+.article-img {
+    width: 98%;
+}
+
+.article-img img {
+    width: 98%;
+    height: 200px;
+    border-radius: 2px;
+}
+
+.article-content {
+    width: 97%;
+    padding: 10px 0;
+}
+
+.article-desc {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+.article-desc ul {
+    list-style: none;
+}
+
+.article-desc ul li {
+    float: left;
+    display: block;
+    margin: 0 5px;
+}
+
+.right-content {
+    width: 100%;
+    margin: 10px auto;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/************************sidebar************************/
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon.eot?-pe1qby");
+    src: url("../fonts/icomoon.eot?#iefix-pe1qby") format("embedded-opentype"), url("../fonts/icomoon.ttf?-pe1qby") format("truetype"), url("../fonts/icomoon.woff?-pe1qby") format("woff"), url("../fonts/icomoon.svg?-pe1qby#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wechat:before {
+    content: "\e601";
+}
+
+.icon-mobile:before {
+    content: "\e600";
+}
+
+.icon-shift:before {
+    content: "\e602";
+}
+
+.icon-mail:before {
+    content: "\e603";
+}
+
+.toolbar {
+    position: fixed;
+    right: 10px;
+    margin-left: -26px;
+    bottom: 5px;
+}
+
+.toolbar-item {
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin-top: 1px;
+}
+
+.toolbar-item:hover .toolbar-icon {
+    top: -52px;
+}
+
+.toolbar-item:hover .toolbar-text {
+    top: 0;
+}
+
+.toolbar-item:hover .toolbar-layer {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.toolbar-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+}
+
+.toolbar-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    background-color: #d0d6d9;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    transition: top 1s;
+}
+
+.toolbar-text {
+    position: absolute;
+    left: 0;
+    top: 52px;
+    width: 52px;
+    height: 52px;
+    background-color: #98a1a6;
+    padding-top: 12px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+    transition: top 1s;
+}
+
+.toolbar-layer {
+    position: absolute;
+    right: 46px;
+    bottom: -10px;
+    width: 172px;
+    background-image: url("../images/toolbar_img.png");
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform-origin: 95% 95%;
+    transform: scale(0.01);
+    transition: all 1s;
+}
+
+.toolbar-layer-weixin {
+    height: 212px;
+    background-position: 0 0;
+}
+
+.toolbar-layer-app {
+    height: 194px;
+    background-position: 0 -222px;
+}
+
+/*********************endsidebar***********************/
+/*********************clock******************/
+.clock-box {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #e5e5e5;
+    margin: 10px auto;
+    background-color: #199aed;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+.clock {
+    width: 380px;
+    margin: 0 auto;
+    padding: 30px;
+    color: #fff;
+    background-color: #199aed;
+}
+
+#Date {
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+}
+
+.clock ul {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.clock ul li {
+    display: inline;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px #00c6ff;
+}
+
+#point {
+    position: relative;
+    -moz-animation: mymove 1s ease infinite;
+    -webkit-animation: mymove 1s ease infinite;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@-webkit-keyframes mymove {
+    0% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }
+}
+
+@-moz-keyframes mymove {
+    0% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1.0;
+        text-shadow: 0 0 20px #00c6ff;
+    }
+}
+
+/*********************click**********************/
+.click-box {
+    width: 100%;
+    height: 415px;
+    border: 1px solid #e5e5e5;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+
+.click-box-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #199aed;
+    color: #ffffff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.click-box-title span {
+    margin-left: 10px;
+}
+
+.click-box-content ul {
+    padding-left: 10px;
+    width: 100%;
+    list-style: none;
+}
+
+.click-box-content ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.click-box-content ul li span {
+    margin-right: 5px;
+    color: #199aed;
+    font-weight: bold;
+}
+
+.click-box-content a {
+    color: #000000;
+}

@@ -1,0 +1,99 @@
+        <!-- /.aside -->
+        <section id="content" ng-app="articleApp" ng-controller="ArticleCtrl">
+          <section class="vbox">
+            <section class="scrollable padder">
+              <div class="m-b-md">
+              </div>
+              <section class="panel panel-default">
+                <div class="row wrapper">
+                  <div class="col-sm-5 m-b-xs">
+                    <a href="{:U('Admin/Article/create')}"><button class="btn btn-sm btn-success">新建+</button></a>
+                    <select class="input-sm form-control input-s-sm inline v-middle">
+                      <option value="0">删除</option>
+                      <option value="0">编辑</option>
+                    </select>
+                    <button class="btn btn-sm btn-primary">操作</button>                
+                  </div>
+                  <div class="col-sm-3 m-b-xs">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-sm btn-default active">
+                        <input type="radio" name="options"> 日
+                      </label>
+                      <label class="btn btn-sm btn-default">
+                        <input type="radio" name="options"> 星期
+                      </label>
+                      <label class="btn btn-sm btn-default">
+                        <input type="radio" name="options"> 月
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="input-group">
+                      <input type="text" class="input-sm form-control" placeholder="搜索">
+                      <span class="input-group-btn">
+                        <button class="btn btn-sm btn-default" type="button">搜索</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-striped b-t b-light" st-table="articleCollection" st-pipe="getArticles">
+                    <thead>
+                      <tr>
+                        <th style="width:20px;"><label class="checkbox m-n i-checks"><input type="checkbox"><i></i></label></th>
+                        <th class="th-sortable" data-toggle="class">标题</th>
+                        <th>分类</th>
+                        <th>日期</th>
+                        <th>点击</th>
+                        <th style="width:40px;border-right: 0px"></th>
+                        <th style="width:40px;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <p ng-show="loading"></p>
+                      <tr ng-repeat="article in articleCollection">
+                        <td><label class="checkbox m-n i-checks"><input type="checkbox" name="post[]"><i></i></label></td>
+                        <td><a href="">{{article.title}}</a></td>
+                        <td>{{article.cname.cname}}</td>
+                        <td>{{article.create_time}}</td>
+                        <td>{{article.rnum}}</td>
+                        <td>
+                          <a href="#" class="active" data-toggle="class"><i class="btn btn-default btn-success btn-sm">编辑</i></a>
+                        </td>
+                        <td>
+                          <a href="#" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <footer class="panel-footer">
+                  <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+                      <select class="input-sm form-control input-s-sm inline v-middle">
+                        <option value="0">美文</option>
+                        <option value="1">学习</option>
+                        <option value="2">心得</option>
+                      </select>
+                      <button class="btn btn-sm btn-default">筛选</button>                  
+                    </div>
+                    <div class="col-sm-4 text-right pull-right text-center-xs">                
+                      <ul class="pagination pagination-sm m-t-none m-b-none">
+                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </footer>
+              </section>
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>
+<script type="text/javascript" src="__PUBLIC__/admin/article/controller/articleController.js"></script>
+<script type="text/javascript" src="__PUBLIC__/admin/article/app.js"></script>

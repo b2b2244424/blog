@@ -1,0 +1,1 @@
+var articleApp = angular.module('articleApp', ['ArticleCtrl']);

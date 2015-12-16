@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>文章页</title>
+</head>
+<body>
+<!--head start-->
+<nav class="navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"
+                    data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Companion</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="article.html">文章</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="#">关于我</a></li>
+            </ul>
+            <!--<form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" placeholder="搜索">
+                </div>
+                <button type="submit" class="btn btn-sm">搜索</button>
+            </form>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
+                <li><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--bshare-->
+<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
+<script type="text/javascript" charset="utf-8"
+        src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#19D&amp;text=分享到"></script>
+<!--login box-->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="loginLabel">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-sm-2 control-label">Email</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control col-sm-10" id="recipient-name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control col-sm-10">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="checkbox">记住密码</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--register box-->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="loginLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="registerLabel">Register</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-sm-2 control-label">Username</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control col-sm-10">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-sm-2 control-label">Email</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control col-sm-10">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Password</label>
+
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control col-sm-10">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">重置</button>
+                <button type="button" class="btn btn-success">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--head end-->
+<div class="container">
+    <div class="row">
+        <div class="article-main-box">
+            <div class="article-title"><span>文章标题文章标题文章标题文章标题文章标题文章标题</span></div>
+            <div class="article-main-content">
+                <div class="col-md-3 article-image">
+                    <img src="images/Cosmos06.jpg" width="100%" height="100%">
+                </div>
+                <div class="col-md-9 article-excerpt">
+                    为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！
+                </div>
+            </div>
+        </div>
+        <div class="article-main-box">
+            <div class="article-title"><span>文章标题文章标题文章标题文章标题文章标题文章标题</span></div>
+            <div class="article-main-content">
+                <div class="col-md-3 article-image">
+                    <img src="images/Cosmos06.jpg" width="100%" height="100%">
+                </div>
+                <div class="col-md-9 article-excerpt">
+                    为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！
+                </div>
+            </div>
+        </div>
+        <div class="article-main-box">
+            <div class="article-title"><span>文章标题文章标题文章标题文章标题文章标题文章标题</span></div>
+            <div class="article-main-content">
+                <div class="col-md-3 article-image">
+                    <img src="images/Cosmos06.jpg" width="100%" height="100%">
+                </div>
+                <div class="col-md-9 article-excerpt">
+                    为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！
+                </div>
+            </div>
+        </div>
+        <div class="article-main-box">
+            <div class="article-title"><span>文章标题文章标题文章标题文章标题文章标题文章标题</span></div>
+            <div class="article-main-content">
+                <div class="col-md-3 article-image">
+                    <img src="images/Cosmos06.jpg" width="100%" height="100%">
+                </div>
+                <div class="col-md-9 article-excerpt">
+                    为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！
+                </div>
+            </div>
+        </div>
+        <div class="article-main-box">
+            <div class="article-title"><span>文章标题文章标题文章标题文章标题文章标题文章标题</span></div>
+            <div class="article-main-content">
+                <div class="col-md-3 article-image">
+                    <img src="images/Cosmos06.jpg">
+                </div>
+                <div class="col-md-9 article-excerpt">
+                    为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！为深入学习贯彻落实党的十八大和三中、四中全会精神，培育和践行社会主义核心价值观，第二十一届“五·四”文化艺术节微电影比赛以“光影人大”为主题，号召同学们学习和弘扬“五·四”精神，记录校园的美丽瞬间，探求人大人的精神世界，以新媒体为媒介，向更多人展示中国人民大学新形象.本次比赛的优秀作品将有机会作为中国人民大学校园宣传片进行展播。欢迎广大师生员工校友积极报名！
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--sidebar-->
+<div class="toolbar">
+    <a href="javascript:;" class="toolbar-item">
+        <span class="toolbar-btn">
+            <i class="toolbar-icon icon-wechat"></i>
+            <span class="toolbar-text">公众<br>账号</span>
+        </span>
+        <span class="toolbar-layer toolbar-layer-weixin"></span>
+    </a>
+    <a href="mailto:tangchunlinit@163.com" class="toolbar-item">
+        <span class="toolbar-btn">
+            <i class="toolbar-icon icon-mail"></i>
+            <span class="toolbar-text">意见<br>反馈</span>
+        </span>
+    </a>
+    <a id="backTop" href="javascript:;" class="toolbar-item">
+        <span class="toolbar-btn">
+            <i class="toolbar-icon icon-shift"></i>
+            <span class="toolbar-text">返回<br>顶部</span>
+        </span>
+    </a>
+</div>
+<div class="container-fluid modal-footer">
+    Copyright@companion.me 2015
+</div>
+<script src="js/require.js" data-main="js/main"></script>
+<!--JS-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>
