@@ -41,7 +41,7 @@ angular.module('ArticleCtrl', ['$scope', '$timeout', '$http', '$compile','$locat
 			$scope.currentpage = Math.ceil(pagination.start / number) + 1;
 		}
 
-		$http.post("getlist",{
+		$http.post("Article/getlist",{
 			currentpage : $scope.currentpage,
 			perpage : number,
 			fields : fields,
