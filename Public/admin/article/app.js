@@ -32,14 +32,24 @@ app.controller('articleCrtl', function ($scope, $http, $timeout) {
         $scope.reverse = !$scope.reverse;
     };
     $scope.delete = function(aid){
-    	if(confirm('确定删除吗?')){
-    		$http.post('delete',{aid : aid}).success(function(data){
-    			if(data.code == 1){
-    				alert(data.msg);
-    			}else{
-    				alert(data.msg);
-    			}
-      		});
-    	}
+    	swal({
+            title : '确定要删除吗?',
+            text : '确定要删除这篇文章?',
+            type : 'warning',
+            showCancelButton : true,
+            closeOnConfirm : false,
+            confirmButtonText : '确定',
+            confirmButtonColor : '#ec6c62'
+        },function(){
+            $http.post('delete',{aid : aid}).success(function(data){
+                if(data.code == 1){
+                    swal("操作成功!", "已成功删除文章", "success");
+                    $scope.articles.splice($scope.articles.indexOf(aid),1);
+                }else{
+                    swal("OMG", "删除操作失败了!", "error");
+                    $scope.articles.splice($scope.articles.indexOf(aid),1);
+                }
+            });
+        })
     };
 });

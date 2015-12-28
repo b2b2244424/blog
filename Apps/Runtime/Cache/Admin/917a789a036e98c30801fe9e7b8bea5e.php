@@ -485,6 +485,7 @@
               </footer>
           </section>
         </aside>
+<script type="text/javascript" src="/Blog/Public/admin/article/app.js"></script>
         <section id="content" ng-app="ArticleApp" ng-controller="articleCrtl">
           <section class="vbox">
             <section class="scrollable padder">
@@ -580,7 +581,6 @@
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
         </section>
-<script type="text/javascript" src="/Blog/Public/admin/article/app.js"></script>
 </section>
 </section>    
 </section>
