@@ -29,7 +29,7 @@ class ArticleController extends Controller
 		if(empty($order)){
 			$order = 'aid desc';
 		}
-		$condition = I('condition');
+		$condition = array('if_delete = 0');
 		$cfield = array('cname');
 		$ret = D('Article')->getList($condition,$fields,$currentpage,$perpage,$order,$embed);
 		$i = 0;
@@ -96,6 +96,28 @@ class ArticleController extends Controller
 			$this->ajaxReturn(array('code'=>1,'msg'=>'更新成功'));
 		}else{
 			$this->ajaxReturn(array('code'=>0,'msg'=>'更新失败'));
+		}
+	}
+
+	/**
+	 * 删除操作
+	 * @return [type] [description]
+	 */
+	public function delete()
+	{
+		$arr = json_decode(file_get_contents("php://input"));
+		$data = array();
+		foreach ($arr as $key => $value) {
+			$data[$key] = intval($value);
+		}
+		if(empty($data)){
+			$this->ajaxReturn(array('code' => -1,'msg' => 'para error'));
+		}
+		$ret = D('Article')->updelete($data);
+		if($ret){
+			$this->ajaxReturn(array('code'=>1,'msg'=>'删除成功'));
+		}else{
+			$this->ajaxReturn(array('code'=>0,'msg'=>'删除失败'));
 		}
 	}
 }

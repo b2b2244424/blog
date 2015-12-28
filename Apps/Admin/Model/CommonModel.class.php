@@ -81,7 +81,18 @@ class CommonModel extends RelationModel{
 	}
 
 	/**
-	 * 删除操作
+	 * 逻辑删除
+	 * @param  [type] $condition [description]
+	 * @return [type]            [description]
+	 */
+	public function updelete($condition)
+	{
+		$data = array("if_delete" => 1);
+		$res = $this->where($condition)->data($data)->save();
+		return $res;
+	}
+	/**
+	 * 物理删除操作
 	 * @param  [type] $condition [description]
 	 * @return [type]            [description]
 	 */

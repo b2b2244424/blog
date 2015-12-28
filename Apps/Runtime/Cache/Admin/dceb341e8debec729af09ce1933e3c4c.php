@@ -10,13 +10,18 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
-  <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />  
+  <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
+  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
     <script src="/Blog/Public/admin/js/ie/respond.min.js"></script>
     <script src="/Blog/Public/admin/js/ie/excanvas.js"></script>
+    <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="/Blog/Public/js/angular.min.js"></script>
+  
+  <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
   <section class="vbox">
@@ -554,7 +559,5 @@
   <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
   <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/demo.js"></script>
-  <!--AngularJS-->
-  <script type="text/javascript" src="/Blog/Public/js/angular.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
-        <!-- /.aside -->
-        <section id="content" ng-app="articleApp" ng-controller="ArticleCtrl">
+        <section id="content" ng-app="ArticleApp" ng-controller="articleCrtl">
           <section class="vbox">
             <section class="scrollable padder">
               <div class="m-b-md">
@@ -12,7 +11,7 @@
                       <option value="0">删除</option>
                       <option value="0">编辑</option>
                     </select>
-                    <button class="btn btn-sm btn-primary">操作</button>                
+                    <button class="btn btn-sm btn-primary">操作</button>               
                   </div>
                   <div class="col-sm-3 m-b-xs">
                     <div class="btn-group" data-toggle="buttons">
@@ -26,10 +25,11 @@
                         <input type="radio" name="options"> 月
                       </label>
                     </div>
+                    <!--<h5>Filtered {{ filtered.length }} of {{ totalItems}} total customers</h5>-->
                   </div>
                   <div class="col-sm-4">
                     <div class="input-group">
-                      <input type="text" class="input-sm form-control" placeholder="搜索">
+                      <input type="text"  ng-model="search" ng-change="filter()" class="input-sm form-control" placeholder="搜索">
                       <span class="input-group-btn">
                         <button class="btn btn-sm btn-default" type="button">搜索</button>
                       </span>
@@ -37,23 +37,23 @@
                   </div>
                 </div>
                 <div class="table-responsive">
-                  <table class="table table-striped b-t b-light" st-table="articleCollection" st-pipe="getArticles">
+                  <div class="col-md-12" ng-show="filteredItems > 0">
+                  <table class="table table-striped b-t b-light">
                     <thead>
                       <tr>
                         <th style="width:20px;"><label class="checkbox m-n i-checks"><input type="checkbox"><i></i></label></th>
-                        <th class="th-sortable" data-toggle="class">标题</th>
-                        <th>分类</th>
-                        <th>日期</th>
-                        <th>点击</th>
+                        <th class="th-sortable" data-toggle="class">标题&nbsp;<a class="sort-icon" ng-click="sort_by('title');"><i class="glyphicon glyphicon-sort"></i></a></th>
+                        <th class="th-sortable" data-toggle="class">分类&nbsp;<a class="sort-icon" ng-click="sort_by('cid');"><i class="glyphicon glyphicon-sort"></i></a></th>
+                        <th class="th-sortable" data-toggle="class">日期&nbsp;<a class="sort-icon" ng-click="sort_by('create_time');"><i class="glyphicon glyphicon-sort"></i></a></th>
+                        <th class="th-sortable" data-toggle="class">点击&nbsp;<a class="sort-icon" ng-click="sort_by('rnum');"><i class="glyphicon glyphicon-sort"></i></a></th>
                         <th style="width:40px;border-right: 0px"></th>
                         <th style="width:40px;"></th>
                       </tr>
                     </thead>
                     <tbody>
-                      <p ng-show="loading"></p>
-                      <tr ng-repeat="article in articleCollection">
+                      <tr ng-repeat="article in filtered = (articles | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
                         <td><label class="checkbox m-n i-checks"><input type="checkbox" name="post[]"><i></i></label></td>
-                        <td><a href="">{{article.title}}</a></td>
+                        <td><a href="#">{{article.title}}</a></td>
                         <td>{{article.cname.cname}}</td>
                         <td>{{article.create_time}}</td>
                         <td>{{article.rnum}}</td>
@@ -61,33 +61,31 @@
                           <a href="#" class="active" data-toggle="class"><i class="btn btn-default btn-success btn-sm">编辑</i></a>
                         </td>
                         <td>
-                          <a href="#" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>
+                          <a ng-click="delete(article.aid)" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+                <div class="col-md-12" ng-show="filteredItems == 0">
+                    <div class="col-md-12">
+                        <p style="text-align: center;padding: 10px">没有文章</p>
+                    </div>
+                </div>
+                </div>
                 <footer class="panel-footer">
                   <div class="row">
                     <div class="col-sm-4 hidden-xs">
-                      <select class="input-sm form-control input-s-sm inline v-middle">
-                        <option value="0">美文</option>
-                        <option value="1">学习</option>
-                        <option value="2">心得</option>
-                      </select>
-                      <button class="btn btn-sm btn-default">筛选</button>                  
+                      <select ng-model="entryLimit" class="input-sm form-control input-s-sm inline v-middle">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>50</option>
+                        <option>100</option>
+                      </select>                
                     </div>
-                    <div class="col-sm-4 text-right pull-right text-center-xs">                
-                      <ul class="pagination pagination-sm m-t-none m-b-none">
-                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                      </ul>
-                    </div>
+                    <div class="col-sm-4 text-right pull-right text-center-xs" ng-show="filteredItems > 0">    
+                        <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+                  </div>
                   </div>
                 </footer>
               </section>
@@ -95,5 +93,4 @@
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
         </section>
-<script type="text/javascript" src="__PUBLIC__/admin/article/controller/articleController.js"></script>
 <script type="text/javascript" src="__PUBLIC__/admin/article/app.js"></script>

@@ -10,13 +10,18 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
-  <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />  
+  <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
+  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
     <script src="/Blog/Public/admin/js/ie/respond.min.js"></script>
     <script src="/Blog/Public/admin/js/ie/excanvas.js"></script>
+    <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="/Blog/Public/js/angular.min.js"></script>
+  
+  <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
   <section class="vbox">
@@ -148,7 +153,6 @@
                     <li>
                       <a href="<?php echo U('Admin/Blog/index');?>">
                         <i class="icon-drawer icon text-primary-lter"></i>
-                        <b class="badge bg-primary pull-right">6</b>
                         <span class="font-bold">日志</span>
                       </a>
                     </li>
@@ -353,14 +357,14 @@
                         </span>
                         <i class="icon-grid icon">
                         </i>
-                        <span>Pages</span>
+                        <span>页面</span>
                       </a>
                       <ul class="nav dk text-sm">
                         <li >
                           <a href="profile.html" class="auto">                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
-                            <span>Profile</span>
+                            <span>个人资料</span>
                           </a>
                         </li>
                         <li >
@@ -987,11 +991,13 @@
   <!-- App -->
   <script src="/Blog/Public/admin/js/app.js"></script>
   <script src="/Blog/Public/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- parsley -->
+  <script src="/Blog/Public/admin/js/parsley/parsley.min.js"></script>
+  <script src="/Blog/Public/admin/js/parsley/parsley.extend.js"></script>
   <script src="/Blog/Public/admin/js/app.plugin.js"></script>
+  <!--jplayer-->
   <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
   <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/demo.js"></script>
-  <!--AngularJS-->
-  <script type="text/javascript" src="/Blog/Public/js/angular.min.js"></script>
 </body>
 </html>
