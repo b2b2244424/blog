@@ -59,20 +59,33 @@ class ArticleController extends Controller
 	 * 创建文章
 	 * @return [type] [description]
 	 */
-	public function add()
+	public function addone()
 	{
-		$data['title'] = I('atitle');
-		$data['cid'] = I('cid');
-		$data['content'] = I('contents');
-		//$data['cuid'] = D('Login','Service')->getLoginUid();
+		$data = I('articledata');
+		$data['cid'] = intval($data['cid']);
 		$data['create_time'] = date('Y-m-d H:i:s',time());
 		$data['update_time'] = date('Y-m-d H:i:s',time());
-		$res = D('Article')->add($data);
-		var_dump($res);die;
-		if($res){
+		try{
+			$res = D('Article')->addone($data);
 			$this->ajaxReturn(array('code'=>1,'msg'=>'创建成功'));
-		}else{
+		}catch(Exception $e){
 			$this->ajaxReturn(array('code'=>0,'msg'=>'创建失败'));
+		}
+	}
+
+	/**
+	 * 修改文章页面
+	 * @return [type] [description]
+	 */
+	public function edit()
+	{
+		$aid = intval(I('aid'));
+		$condition = array('aid' => $aid);
+		$data = D('Article')->getone($condition);
+		if($data){
+			$this->ajaxReturn(array('code' => 1,'msg' => '文章获取成功',$data));
+		}else{
+			$this->ajaxReturn(array('code' => 0,'msg' => '文章获取失败'));
 		}
 	}
 
@@ -105,15 +118,12 @@ class ArticleController extends Controller
 	 */
 	public function delete()
 	{
-		$arr = json_decode(file_get_contents("php://input"));
-		$data = array();
-		foreach ($arr as $key => $value) {
-			$data[$key] = intval($value);
-		}
-		if(empty($data)){
+		$aid = intval(I('aid'));
+		$condition = array('aid' => $aid);
+		if(empty($aid)){
 			$this->ajaxReturn(array('code' => -1,'msg' => 'para error'));
 		}
-		$ret = D('Article')->updelete($data);
+		$ret = D('Article')->updelete($condition);
 		if($ret){
 			$this->ajaxReturn(array('code'=>1,'msg'=>'删除成功'));
 		}else{

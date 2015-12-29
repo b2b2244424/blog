@@ -1,20 +1,17 @@
-<script type="text/javascript" src="__PUBLIC__/admin/article/controller/articleController.js"></script>
-<script type="text/javascript" src="__PUBLIC__/admin/article/service/articleService.js"></script>
 <script type="text/javascript" src="__PUBLIC__/admin/article/app.js"></script>
         <!-- /.aside -->
-      
-        <section id="content" ng-app="articleApp" ng-controller="articleController">
+        <section id="content" ng-app="ArticleApp" ng-app ng-controller="articleCrtl">
           <section class="vbox">
             <section class="scrollable padder">
+              <form>
               <div class="m-b-md"></div>
               <section class="panel panel-default">
-                <form data-validate="parsley" class="bs-example form-horizontal" ng-submit="submitArticle()" ng-controller="articleController">
                   <div class="row wrapper">
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label class="col-lg-2 control-label">标题</label>
                         <div class="col-lg-10">
-                          <input type="text" name="atitle" ng-model="articleData.atitle" class="form-control parsley-validated" data-required="true">
+                          <input type="text" name="title" ng-model="articleData.title" class="form-control parsley-validated" data-required="true">
                         </div>
                       </div>
                     </div>
@@ -89,7 +86,7 @@
                             <a class="btn btn-default btn-sm" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
                           </div>
                         </div>
-                        <textarea id="editor" class="form-control parsley-validated" data-required="true" name="contents" ng-model="articleData.contents" style="overflow:scroll;height:250px;max-height:250px"></textarea>
+                        <textarea id="editor" class="form-control parsley-validated" data-required="true" name="content" ng-model="articleData.content" style="overflow:scroll;height:250px;max-height:250px"></textarea>
                       </div>
                     </div>
                   </div>
@@ -98,15 +95,13 @@
                         <div class="form-group">
                           <div class="col-lg-4 col-sm-offset-1">
                             <button type="reset" class="btn btn-default">取消</button>
-                            <button type="submit" class="btn btn-primary">保存</button>
+                            <button type="submit" ng-click="create(articleData)" class="btn btn-primary">保存</button>
                           </div>
                         </div>
-                      </div>
                     </div>
                   </div>
-              </form>
               </section>
+            </form>
             </section>
           </section>
-          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
         </section>

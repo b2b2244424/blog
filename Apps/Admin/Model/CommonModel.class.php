@@ -14,7 +14,7 @@ class CommonModel extends RelationModel{
 	 * 创建实体
 	 * @param [type] $data [description]
 	 */
-	public function add($data)
+	public function addone($data)
 	{
 		$realdata = array();
 		foreach ($data as $key => $value) {
@@ -22,8 +22,7 @@ class CommonModel extends RelationModel{
 				$realdata[$key] = $value;
 			}
 		}
-
-		$ret = $this->add($data);
+		$ret = $this->add($realdata);
 	}
 
 	/**
@@ -32,7 +31,7 @@ class CommonModel extends RelationModel{
 	 * @param  array  $fields    [description]
 	 * @return [type]            [description]
 	 */
-	public function getOne($condition,$fields = array())
+	public function getone($condition,$fields = array())
 	{
 		if($fields){
 			$fields = array_intersect($fields, array_keys($this->fieldsName));
