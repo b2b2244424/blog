@@ -40,6 +40,19 @@ app.config(function($httpProvider){
     }];
 });
 
+/*app.config(function($routeProvider){
+    $routeProvider.when('/edit/:aid', {
+        templateUrl: 'edit.html',
+        controller: 'articleCtrl',
+        resolve: {
+            article : function($route) {
+            var aid = $route.current.params.aid;
+            return getArticle(aid);
+            }
+        }
+    }).otherwise({ redirectTo: '/' })
+});*/
+
 app.filter('startFrom', function() {
     return function(input, start) {
         if(input) {
@@ -83,9 +96,17 @@ app.controller('articleCrtl', function ($scope, $http, $timeout, $location) {
     $scope.edit = function(aid) {
         $http.get('edit?aid='+aid).success(function(data){
             if(data.code == 1){
-                $scope.article = data.data;
             }else{
                 swal("OMG","出错了","error");
+            }
+        });
+    };
+    $scope.update = function(data){
+        $http.post('updateone',{data : data}).success(function(data){
+            if(data.code == 1){
+                swal("修改成功","文章修改成功","success");
+            }else{
+                swal("修改失败","文章修改失败","error");
             }
         });
     };

@@ -546,7 +546,7 @@
                         <td>{{article.create_time}}</td>
                         <td>{{article.rnum}}</td>
                         <td>
-                          <a ng-click="edit(article.aid)" class="active" data-toggle="class"><i class="btn btn-default btn-success btn-sm">编辑</i></a>
+                          <a href="#/edit/{{article.aid}}" class="active" data-toggle="class"><i class="btn btn-default btn-success btn-sm">编辑</i></a>
                         </td>
                         <td>
                           <a ng-click="delete(article)" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>

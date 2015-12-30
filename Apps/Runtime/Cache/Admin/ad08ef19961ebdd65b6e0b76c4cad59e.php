@@ -10,14 +10,18 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/simple-line-icons.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
-  <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />  
+  <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
+  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
     <script src="/Blog/Public/admin/js/ie/respond.min.js"></script>
     <script src="/Blog/Public/admin/js/ie/excanvas.js"></script>
+    <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <![endif]-->
-  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
-  <script src="/Blog/Public/js/angular.js"></script>
+  
+  <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
   <section class="vbox">
@@ -483,18 +487,18 @@
         </aside>
 
         <!-- /.aside -->
-        <section id="content" ng-app="articleApp" ng-controller="articleController">
+        <section id="content" ng-app="ArticleApp" ng-controller="articleCrtl">
           <section class="vbox">
             <section class="scrollable padder">
               <div class="m-b-md"></div>
-              <section class="panel panel-default" ng-repeat="o in one">
+              <section class="panel panel-default" ng-repeat="article in articledata">
                 <form class="bs-example form-horizontal">
                   <div class="row wrapper">
                     <div class="col-sm-6">
                       <div class="form-group">
                         <label class="col-lg-2 control-label">标题</label>
                         <div class="col-lg-10">
-                          <input type="text" class="form-control m-b" value="{{o.title}}">
+                          <input type="text" class="form-control m-b" ng-model="article.title">
                         </div>
                       </div>
                     </div>
@@ -502,9 +506,9 @@
                       <div class="form-group">
                         <label class="col-lg-2 control-label">分类</label>
                         <div class="col-lg-10">
-                          <select class="form-control m-b">
-                            <option>学习</option>
-                            <option>日志</option>
+                          <select class="form-control m-b" name="cid" ng-model="article.cid">
+                            <option value="1">学习</option>
+                            <option value="2">日志</option>
                           </select>
                         </div>
                       </div>
@@ -569,9 +573,7 @@
                             <a class="btn btn-default btn-sm" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
                           </div>
                         </div>
-                        <div id="editor" class="form-control" style="overflow:scroll;height:250px;max-height:250px">
-                          文章内容&hellip;
-                        </div>
+                        <textarea id="editor" class="form-control parsley-validated" data-required="true" name="content" ng-model="article.content" style="overflow:scroll;height:250px;max-height:250px"></textarea>
                       </div>
                     </div>
                   </div>
@@ -579,8 +581,8 @@
                     <div class="col-sm-12">
                         <div class="form-group">
                           <div class="col-lg-4 col-sm-offset-1">
-                            <button type="submit" class="btn btn-default">取消</button>
-                            <button type="submit" class="btn btn-primary">保存</button>
+                            <button type="reset" class="btn btn-default">取消</button>
+                            <button type="submit" ng-click="update(article)" class="btn btn-primary">修改</button>
                           </div>
                         </div>
                       </div>

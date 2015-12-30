@@ -10,6 +10,7 @@ class ArticleModel extends CommonModel{
 		'aid' => '文章编号',
 		'title' => '文章标题',
 		'content' => '文章内容',
+		'plaintxt' => '文章摘要',
 		'if_delete' => '是否已删除',
 		'cuid' => '作者编号',
 		'cid' => '分类编号',

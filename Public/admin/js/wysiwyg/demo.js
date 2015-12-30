@@ -18,7 +18,7 @@ $(function(){
     });
     if ("onwebkitspeechchange" in document.createElement("input")) {
       var editorOffset = $('#editor').offset();
-      // $('#voiceBtn').css('position','absolute').offset({top: editorOffset.top, left: editorOffset.left+$('#editor').innerWidth()-35});
+      //$('#voiceBtn').css('position','absolute').offset({top: editorOffset.top, left: editorOffset.left+$('#editor').innerWidth()-35});
     } else {
       $('#voiceBtn').hide();
     }

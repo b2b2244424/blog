@@ -12,7 +12,7 @@ class CategoryService{
 	public function getCateByid($cid,$fields)
 	{
 		$condition = array('cid' => $cid);
-		$ret = D('Category')->getOne($condition,$fields);
+		$ret = D('Category')->getone($condition,$fields);
 		return $ret;
 	}
 }

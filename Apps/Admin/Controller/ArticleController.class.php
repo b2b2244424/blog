@@ -11,14 +11,6 @@ class ArticleController extends Controller
 		$this->display();
 	}
 
-	public function getone()
-	{
-		$aid = intval(I('aid'));
-		$condition = array('aid' => $aid);
-		$ret = D('Article')->getOne($condition);
-		$this->ajaxReturn(array('code' => 1,'msg' => '获取文章成功','data' => $ret));
-	}
-
 	public function getlist()
 	{
 		$currentpage = I('currentpage');
@@ -63,6 +55,7 @@ class ArticleController extends Controller
 	{
 		$data = I('articledata');
 		$data['cid'] = intval($data['cid']);
+		$data['content'] = htmlspecialchars_decode($data['content']);
 		$data['create_time'] = date('Y-m-d H:i:s',time());
 		$data['update_time'] = date('Y-m-d H:i:s',time());
 		try{
@@ -81,19 +74,23 @@ class ArticleController extends Controller
 	{
 		$aid = intval(I('aid'));
 		$condition = array('aid' => $aid);
-		$data = D('Article')->getone($condition);
-		if($data){
-			$this->ajaxReturn(array('code' => 1,'msg' => '文章获取成功',$data));
-		}else{
-			$this->ajaxReturn(array('code' => 0,'msg' => '文章获取失败'));
-		}
+		$ret = D('Article')->getone($condition);
+		$this->ajaxReturn(array('code' => 1,'msg' => '获取文章成功','data' => $ret));
 	}
+
+	/*public function getone()
+	{
+		$aid = intval(I('aid'));
+		$condition = array('aid' => $aid);
+		$ret = D('Article')->getone($condition);
+		$this->ajaxReturn(array('code' => 1,'msg' => '获取文章成功','data' => $ret));
+	}*/
 
 	/**
 	 * [update description]
 	 * @return [type] [description]
 	 */
-	public function update()
+	public function updateone()
 	{
 		$aid = I('aid');
 		if(empty($aid)){
