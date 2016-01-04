@@ -12,9 +12,6 @@
     <!--JS-->
     <script src="__PUBLIC__/js/jquery.min.js"></script>
     <script src="__PUBLIC__/js/bootstrap.min.js"></script>
-    <script src="__PUBLIC__/js/angular.min.js"></script>
-    <script src="__PUBLIC__/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
-    <script src="__PUBLIC__/home/index/app.js"></script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
@@ -55,28 +52,40 @@
 <script type="text/javascript" charset="utf-8"
         src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#19D&amp;text=分享到"></script>-->
 <!--main content-->
-<div class="container">
+<div class="container" style="min-height: 900px;">
     <div class="row">
-        <div class="col-md-8 col-xs-12" ng-app="IndexApp" ng-controller="IndexCrtl">
-            <div class="left-content" ng-repeat="article in filtered = (articles | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
-                <div class="article-title"><strong>{{article.title}}</strong></div>
+        <div class="col-md-8 col-xs-12">
+            <volist name="articles" id="v">
+            <article>
+            <div class="left-content clearfix">
+                <div class="article-title col-md-12 col-xs-12">
+                    <div class="title-heavy"></div>
+                    <h4>{$v.title}</h4>
+                </div>
                 <div class="article-content center-block">
-                    {{article.content}}
+                    <div class="col-md-4"><img src="__PUBLIC__/images/class1.jpg" style="width:100%"></div>
+                    <div class="col-md-8">{$v.plaintxt}</div>
                 </div>
                 <div class="article-desc">
+                    <div class="col-md-10">
                     <ul>
-                        <li data-toggle="tooltip" data-placement="top" title="发布日期"><i
-                                class="glyphicon glyphicon-time"></i>&nbsp;{{article.create_time}}
+                        <li data-toggle="tooltip" data-placement="right" title="发布日期"><i
+                                class="glyphicon glyphicon-time"></i>&nbsp;{$v.create_time}
                         </li>
-                        <li data-toggle="tooltip" data-placement="top" title="标签"><i
-                                class="glyphicon glyphicon-tag"></i>&nbsp;{{article.cname.cname}}
+                        <li data-toggle="tooltip" data-placement="right" title="标签"><i
+                                class="glyphicon glyphicon-tag"></i>&nbsp;{$v.cname.cname}
                         </li>
-                        <li data-toggle="tooltip" data-placement="top" title="浏览"><i
-                                class="glyphicon glyphicon-eye-open"></i>&nbsp;{{article.rnum}}
+                        <li data-toggle="tooltip" data-placement="right" title="浏览"><i
+                                class="glyphicon glyphicon-eye-open"></i>&nbsp;{$v.rnum}
                         </li>
                     </ul>
+                    </div>
+                    <a href="#" class="col-md-2"><button class="btn btn-primary">查看全文</button></a>
                 </div>
             </div>
+        </article>
+            </volist>
+            {$page}
         </div>
         <!-- <div class="col-md-4 col-xs-6">
             <div class="row">

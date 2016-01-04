@@ -9,6 +9,7 @@ class ArticleModel extends CommonModel{
 	protected $fieldsName = array(
 		'aid' => '文章编号',
 		'title' => '文章标题',
+		'plaintxt' => '摘要',
 		'content' => '文章内容',
 		'if_delete' => '是否已删除',
 		'cuid' => '作者编号',

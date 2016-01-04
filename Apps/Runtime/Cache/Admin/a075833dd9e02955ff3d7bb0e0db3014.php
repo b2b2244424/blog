@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/Blog/Public/css/wysiwyg-editor.css" />
+  <link rel="stylesheet" type="text/css" href="/Blog/Public/css/editor.css" />
   <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
@@ -875,9 +878,9 @@
   <!-- Bootstrap -->
   <script src="/Blog/Public/admin/js/bootstrap.js"></script>
   <!-- wysiwyg -->
-  <script src="/Blog/Public/admin/js/wysiwyg/jquery.hotkeys.js"></script>
-  <script src="/Blog/Public/admin/js/wysiwyg/bootstrap-wysiwyg.js"></script>
-  <script src="/Blog/Public/admin/js/wysiwyg/demo.js"></script>
+  <script src="/Blog/Public/js/wysiwyg.js"></script>
+  <script src="/Blog/Public/js/wysiwyg-editor.js"></script>
+  <script src="/Blog/Public/js/editor.js"></script>
   <!-- App -->
   <script src="/Blog/Public/admin/js/app.js"></script>
   <script src="/Blog/Public/admin/js/slimscroll/jquery.slimscroll.min.js"></script>

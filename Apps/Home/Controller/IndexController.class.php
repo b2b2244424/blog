@@ -5,33 +5,23 @@ class IndexController extends Controller
 {
     public function index()
     {
-    	$this->display();    
-    }
-
-    public function getlist()
-	{
-		$currentpage = I('currentpage');
-		$perpage = I('perpage');
-		$fields = I('fields');
-		$embed = !!I('embed');
-		$order = I('order');
-		if(empty($order)){
-			$order = 'aid desc';
-		}
+    	//数据过滤
+    	$fileds = "aid,title,plaintxt,create_time,cid,rnum";
+    	//排序
+		$order = 'aid asc';
 		$condition = array('if_delete = 0');
+		$count = M('Article')->where($condition)->count();
+		$Page = new \Think\Page($count,5);
+		$show = $Page->show();
 		$cfield = array('cname');
-		$ret = D('Article')->getList($condition,$fields,$currentpage,$perpage,$order,$embed);
+		$ret = M('Article')->where($condition)->order($order)->limit($Page->firstRow.','.$Page->listRows)->select();
 		$i = 0;
-		foreach ($ret['data'] as $k) {
+		foreach ($ret as $k) {
 			$k['cname'] = D('Category','Service')->getCateByid($k['cid'],$cfield);
-			$ret['data'][$i++] = $k;
+			$ret[$i++] = $k;
 		}
-		$this->ajaxReturn(
-			array(
-				'code' => 1,
-				'msg' => '获取文章列表成功',
-				'data' => $ret
-			)
-		);
-	}
+		$this->assign('articles',$ret);
+		$this->assign('page',$show);
+    	$this->display();
+    }
 }

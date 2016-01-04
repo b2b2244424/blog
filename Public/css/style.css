@@ -1,7 +1,16 @@
 body {
     background-color: #f2f4f8;
 }
+.title-heavy{
+    position: absolute;
+    background: #e61729;
+    top: 2px;
+    left: -1px;
+    width: 3px;
+    height: 45px;
+}
 .left-content {
+    min-height: 250px;
     background-color: #fff;
     width: 100%;
     margin: 10px auto;
@@ -13,32 +22,26 @@ body {
 }
 
 .article-title {
-    height: 40px;
-    line-height: 40px;
+    min-height: 50px;
+    line-height: 50px;
     font-size: 18px;
-    padding-left: 10px;
-    color: #98a1a6;
-}
-
-.article-img {
-    width: 98%;
-}
-
-.article-img img {
-    width: 98%;
-    height: 200px;
-    border-radius: 2px;
+    color: #000;
 }
 
 .article-content {
-    width: 97%;
+    min-height: 80%;
+    width: 98%;
     padding: 10px 0;
 }
-
-.article-desc {
-    position: relative;
-    height: 40px;
-    line-height: 40px;
+.article-desc{
+    line-height: 100px;
+    min-height: 100px;
+}
+.article-desc ul{
+    margin-left: -40px;
+    min-height: 100px;
+    line-height: 100px;
+    color: #98a1a6;
 }
 
 .article-desc ul {
@@ -46,9 +49,8 @@ body {
 }
 
 .article-desc ul li {
-    float: left;
-    display: block;
-    margin: 0 5px;
+    display: inline-block;
+    padding: 0 7px;
 }
 
 .right-content {

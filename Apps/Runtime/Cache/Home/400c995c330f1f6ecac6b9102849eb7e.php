@@ -12,9 +12,6 @@
     <!--JS-->
     <script src="/Blog/Public/js/jquery.min.js"></script>
     <script src="/Blog/Public/js/bootstrap.min.js"></script>
-    <script src="/Blog/Public/js/angular.min.js"></script>
-    <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
-    <script src="/Blog/Public/home/index/app.js"></script>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
@@ -55,28 +52,38 @@
 <script type="text/javascript" charset="utf-8"
         src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#19D&amp;text=分享到"></script>-->
 <!--main content-->
-<div class="container">
+<div class="container" style="min-height: 900px;">
     <div class="row">
-        <div class="col-md-8 col-xs-12" ng-app="IndexApp" ng-controller="IndexCrtl">
-            <div class="left-content" ng-repeat="article in filtered = (articles | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
-                <div class="article-title"><strong>{{article.title}}</strong></div>
+        <div class="col-md-8 col-xs-12">
+            <?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><article>
+            <div class="left-content clearfix">
+                <div class="article-title col-md-12 col-xs-12">
+                    <div class="title-heavy"></div>
+                    <h4><?php echo ($v["title"]); ?></h4>
+                </div>
                 <div class="article-content center-block">
-                    {{article.content}}
+                    <div class="col-md-4"><img src="/Blog/Public/images/class1.jpg" style="width:100%"></div>
+                    <div class="col-md-8"><?php echo ($v["plaintxt"]); ?></div>
                 </div>
                 <div class="article-desc">
+                    <div class="col-md-10">
                     <ul>
-                        <li data-toggle="tooltip" data-placement="top" title="发布日期"><i
-                                class="glyphicon glyphicon-time"></i>&nbsp;{{article.create_time}}
+                        <li data-toggle="tooltip" data-placement="right" title="发布日期"><i
+                                class="glyphicon glyphicon-time"></i>&nbsp;<?php echo ($v["create_time"]); ?>
                         </li>
-                        <li data-toggle="tooltip" data-placement="top" title="标签"><i
-                                class="glyphicon glyphicon-tag"></i>&nbsp;{{article.cname.cname}}
+                        <li data-toggle="tooltip" data-placement="right" title="标签"><i
+                                class="glyphicon glyphicon-tag"></i>&nbsp;<?php echo ($v["cname"]["cname"]); ?>
                         </li>
-                        <li data-toggle="tooltip" data-placement="top" title="浏览"><i
-                                class="glyphicon glyphicon-eye-open"></i>&nbsp;{{article.rnum}}
+                        <li data-toggle="tooltip" data-placement="right" title="浏览"><i
+                                class="glyphicon glyphicon-eye-open"></i>&nbsp;<?php echo ($v["rnum"]); ?>
                         </li>
                     </ul>
+                    </div>
+                    <a href="#" class="col-md-2"><button class="btn btn-primary">查看全文</button></a>
                 </div>
             </div>
+        </article><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php echo ($page); ?>
         </div>
         <!-- <div class="col-md-4 col-xs-6">
             <div class="row">

@@ -55,7 +55,7 @@ class CommonModel extends RelationModel{
 	 * @param  [type]  $order       [description]
 	 * @return [type]               [description]
 	 */
-	public function getList($condition,$fields = array(),$currentpage = 1,$perpage = 10,$order,$embed = false)
+	public function getList($condition,$fields = array(),$order)
 	{
 		if($fields){
 			$fields = array_intersect($fields,array_keys($this->fieldsName));
@@ -65,9 +65,7 @@ class CommonModel extends RelationModel{
 
 		$ret = $this
 		->field($fields)
-		->relation(true,$embed)
 		->where($condition)
-		->limit(($currentpage - 1)*$perpage,$perpage)
 		->order($order)
 		->select();
 
