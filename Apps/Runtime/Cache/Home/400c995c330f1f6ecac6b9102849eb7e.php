@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/Blog/Public//Blog/Public/images/favicon.ico">
     <link href="/Blog/Public/css/bootstrap.min.css" rel="stylesheet">
     <link href="/Blog/Public/css/style.css" rel="stylesheet">
-    <!--<script src="/Blog/Public/js/require.js" data-main="/Blog/Public/js/main"></script>-->
+    <script src="/Blog/Public/js/require.js" data-main="/Blog/Public/js/main"></script>
     <!--JS-->
     <script src="/Blog/Public/js/jquery.min.js"></script>
     <script src="/Blog/Public/js/bootstrap.min.js"></script>
@@ -20,8 +20,35 @@
     <title>首页</title>
 </head>
 <body>
+<!--banner-->
+<div class="page-container">
+        <!-- 开始运行滑块 -->  
+        <div class="fullwidthbanner-container slider-main">
+            <div class="fullwidthabnner">
+                <ul id="revolutionul" style="display:none;">            
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="300" data-delay="6400" >
+                            <a href="#"> <img src="/Blog/Public/images/bg6.jpg" alt=""></a>   
+                        </li>
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="300" data-delay="6400" >
+                            <a href="#"><img src="/Blog/Public/images/bg10.jpg" alt=""></a>
+                        </li>
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="300" data-delay="6400" >
+                            <a href="#"><img src="/Blog/Public/images/bg11.jpg" alt=""></a>
+                        </li>  
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="300" data-delay="6400" >
+                            <a href="#"><img src="/Blog/Public/images/bg12.jpg" alt=""></a>                        
+                        </li>
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="300" data-delay="6400" >
+                            <a href="#"><img src="/Blog/Public/images/bg13.jpg" alt=""></a>                        
+                        </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div><!--进度条-->
+            </div>
+        </div>
+        <!-- END  运行滑块 -->
+</div>
 <!--head start-->
-<nav class="navbar-inverse" role="navigation">
+<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"
@@ -55,6 +82,21 @@
 <div class="container" style="min-height: 900px;">
     <div class="row">
         <div class="col-md-8 col-xs-12">
+            <div class="newest-title">
+                最新文章<span>New</span>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="关键字...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
             <?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><article>
             <div class="left-content clearfix">
                 <div class="article-title col-md-12 col-xs-12">
@@ -85,11 +127,61 @@
         </article><?php endforeach; endif; else: echo "" ;endif; ?>
             <?php echo ($page); ?>
         </div>
-        <!-- <div class="col-md-4 col-xs-6">
-            <div class="row">
-                
+        <div class="col-md-4 col-xs-12">
+            <div class="click-top">
+                <div class="title-top">
+                    <i class="glyphicon glyphicon-align-justify"></i>&nbsp;&nbsp;点击排行<span>Top</span>
+                </div>
+                <div class="click-top-list">
+                    <p><i class="glyphicon glyphicon-signal top-1"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="glyphicon glyphicon-signal top-2"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="glyphicon glyphicon-signal top-3"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="glyphicon glyphicon-signal top-4"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="glyphicon glyphicon-signal top-5"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="glyphicon glyphicon-signal top-6"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="glyphicon glyphicon-signal top-7"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                </div>
             </div>
-        </div> -->
+            <!-- <div class="tools">
+                <div class="online-tools">
+                    <i class="glyphicon glyphicon-wrench"></i>&nbsp;&nbsp;在线工具
+                </div>
+                <div class="tools-list">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="tool-block"><a class="btn btn-default">MD5加密工具</a></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <div class="tool-block"><a class="btn btn-default">MD5加密工具</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="tool-block"><a class="btn btn-default">MD5加密工具</a></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <div class="tool-block"><a class="btn btn-default">MD5加密工具</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="tool-block"><a class="btn btn-default">MD5加密工具</a></div>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <div class="tool-block"><a class="btn btn-default">MD5加密工具</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="visitor">
+                <div class="title-visitor">
+                    <i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;最近访客
+                </div>
+                <div class="visitor-list">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--sidebar-->
@@ -115,7 +207,19 @@
     </a>
 </div>
 <div class="container-fluid modal-footer">
-    Copyright@companion.me 2015
+    
 </div>
+<script type="text/javascript" src="/Blog/Public/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="/Blog/Public/js/jquery.themepunch.revolution.min.js"></script> 
+    <script type="text/javascript" src="/Blog/Public/js/jquery.bxslider.min.js"></script>
+    <script src="/Blog/Public/js/app.js"></script>
+    <script src="/Blog/Public/js/index.js"></script> 
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            App.init();    
+            App.initBxSlider();
+            Index.initRevolutionSlider();                    
+        });
+    </script>
 </body>
 </html>
