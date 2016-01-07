@@ -11,7 +11,7 @@ class IndexController extends Controller
 		$order = 'aid asc';
 		$condition = array('if_delete = 0');
 		$count = M('Article')->where($condition)->count();
-		$Page = new \Think\Page($count,2);
+		$Page = new \Think\Page($count,5);
 		$show = $Page->show();
 		$cfield = array('cname');
 		$ret = M('Article')->where($condition)->order($order)->limit($Page->firstRow.','.$Page->listRows)->select();
@@ -22,6 +22,11 @@ class IndexController extends Controller
 		}
 		$this->assign('articles',$ret);
 		$this->assign('page',$show);
+    	$this->display();
+    }
+
+    public function detail()
+    {
     	$this->display();
     }
 }

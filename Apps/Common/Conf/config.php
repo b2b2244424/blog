@@ -12,5 +12,9 @@ return array(
 	'DB_PORT' => 3306,
 	'DB_PREFIX' => '',
 	'DB_CHARSET' => 'utf8',
-	'DB_BUG' => TRUE
+	'DB_BUG' => TRUE,
+
+	//模版文件
+	'LAYOUT_ON' => TRUE,
+	'LAYOUT_NAME' => 'layout'
 );

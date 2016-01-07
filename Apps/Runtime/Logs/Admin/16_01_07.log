@@ -1,0 +1,97 @@
+[ 2016-01-07T11:48:33+08:00 ] 127.0.0.1 /Blog/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2016-01-07T11:48:36+08:00 ] 127.0.0.1 /Blog/admin.php/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000964s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011470s ]
+
+[ 2016-01-07T11:48:36+08:00 ] 127.0.0.1 /Blog/admin.php/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000426s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000790s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015523s ]
+
+[ 2016-01-07T11:48:39+08:00 ] 127.0.0.1 /Blog/admin.php/Article/create.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2016-01-07T11:48:39+08:00 ] 127.0.0.1 /Blog/admin.php/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0027s ]
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
