@@ -76,7 +76,7 @@ app.controller('articleCrtl', function ($scope, $http, $timeout, $location) {
         $scope.currentPage = pageNo;
     };
     $scope.filter = function() {
-        $timeout(function() { 
+        $timeout(function() {
             $scope.filteredItems = $scope.filtered.length;
         }, 10);
     };
