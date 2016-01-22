@@ -47,19 +47,19 @@
                         <th class="th-sortable" data-toggle="class">分类&nbsp;<a class="sort-icon" ng-click="sort_by('cid');"><i class="glyphicon glyphicon-sort"></i></a></th>
                         <th class="th-sortable" data-toggle="class">日期&nbsp;<a class="sort-icon" ng-click="sort_by('create_time');"><i class="glyphicon glyphicon-sort"></i></a></th>
                         <th class="th-sortable" data-toggle="class">点击&nbsp;<a class="sort-icon" ng-click="sort_by('rnum');"><i class="glyphicon glyphicon-sort"></i></a></th>
-                        <th style="width:40px;border-right: 0px"></th>
+                        <th style="width:40px;border-right: 0px">操作</th>
                         <th style="width:40px;"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr ng-repeat="article in filtered = (articles | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
                         <td><label class="checkbox m-n i-checks"><input type="checkbox" name="post[]"><i></i></label></td>
-                        <td><a href="#">{{article.title}}</a></td>
+                        <td><a href="{:U('Admin/Article/edit')}?aid={{article.aid}}">{{article.title}}</a></td>
                         <td>{{article.cname.cname}}</td>
                         <td>{{article.create_time}}</td>
                         <td>{{article.rnum}}</td>
                         <td>
-                          <a href="#/edit/{{article.aid}}" class="active" data-toggle="class"><i class="btn btn-default btn-success btn-sm">编辑</i></a>
+                          <a href="{:U('Admin/Article/edit')}?aid={{article.aid}}"><i class="btn btn-default btn-success btn-sm">编辑</i></a>
                         </td>
                         <td>
                           <a ng-click="delete(article)" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>
@@ -82,7 +82,7 @@
                         <option>10</option>
                         <option>50</option>
                         <option>100</option>
-                      </select>                
+                      </select>
                     </div>
                     <div class="col-sm-4 text-right pull-right text-center-xs" ng-show="filteredItems > 0">    
                         <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>

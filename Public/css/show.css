@@ -1,0 +1,35 @@
+.show-article-title{
+	width: 100%;
+	min-height: 55px;
+	line-height: 55px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 20px;
+}
+
+.show-article-tag{
+	width: 100%;
+	min-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #d0d6d9;
+}
+
+.show-article-tag ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.show-article-tag li{
+	display: inline-block;
+	margin: 10px;
+	color: #7d7e80;
+}
+
+.show-article-content {
+	padding: 15px 20px 15px 20px;
+}
+
+.show-article-share {
+	width: 100%;
+	padding: 15px 20px 15px 20px;
+}

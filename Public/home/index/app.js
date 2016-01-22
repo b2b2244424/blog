@@ -1,5 +1,44 @@
 var app = angular.module('IndexApp', ['ui.bootstrap']);
-
+app.config(function($httpProvider){
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+    $httpProvider.defaults.headers.post['Accept'] = 'application/json, text/javascript, */*; q=0.01';
+    $httpProvider.defaults.transformRequest = [function(data) {
+        /**
+         * The workhorse; converts an object to x-www-form-urlencoded serialization.
+         * @param {Object} obj
+         * @return {String}
+         */
+        var param = function(obj) {
+            var query = '';
+            var name, value, fullSubName, subName, subValue, innerObj, i;
+            for (name in obj) {
+                value = obj[name];
+                if (value instanceof Array) {
+                    for (i = 0; i < value.length; ++i) {
+                        subValue = value[i];
+                        fullSubName = name + '[' + i + ']';
+                        innerObj = {};
+                        innerObj[fullSubName] = subValue;
+                        query += param(innerObj) + '&';
+                    }
+                } else if (value instanceof Object) {
+                    for (subName in value) {
+                        subValue = value[subName];
+                        fullSubName = name + '[' + subName + ']';
+                        innerObj = {};
+                        innerObj[fullSubName] = subValue;
+                        query += param(innerObj) + '&';
+                    }
+                } else if (value !== undefined && value !== null) {
+                    query += encodeURIComponent(name) + '='
+                            + encodeURIComponent(value) + '&';
+                }
+            }
+            return query.length ? query.substr(0, query.length - 1) : query;
+        };
+        return angular.isObject(data) && String(data) !== '[object File]' ? param(data) : data;
+    }];
+});
 app.filter('startFrom', function() {
     return function(input, start) {
         if(input) {
@@ -11,7 +50,12 @@ app.filter('startFrom', function() {
 });
 
 app.controller('IndexCrtl', function ($scope, $http, $timeout, $location) {
-    $http.get('index.php/Index/getlist').success(function(data){
+    /**
+     * 文章列表
+     * @param  {[type]} data){  $scope.list [description]
+     * @return {[type]}         [description]
+     */
+    $http.get('Home/Index/getlist').success(function(data){
         $scope.list = data.data;
         $scope.articles = $scope.list.data;
         $scope.currentPage = 1;
@@ -21,14 +65,18 @@ app.controller('IndexCrtl', function ($scope, $http, $timeout, $location) {
     });
     $scope.setPage = function(pageNo) {
         $scope.currentPage = pageNo;
+        $("html,body").animate({scrollTop:"0px"},200);
     };
     $scope.filter = function() {
         $timeout(function() { 
             $scope.filteredItems = $scope.filtered.length;
         }, 10);
     };
-    $scope.sort_by = function(predicate) {
-        $scope.predicate = predicate;
-        $scope.reverse = !$scope.reverse;
-    };
+
+    /*$scope.detail = function(article) {
+        var aid = article.aid;
+        $http.get('Home/Index/detail?aid='+aid).success(function(data){
+            
+        });
+    }*/
 });

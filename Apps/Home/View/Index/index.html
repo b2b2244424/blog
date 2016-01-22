@@ -26,7 +26,7 @@
         <!-- END  运行滑块 -->
 </div>
 <!--main content-->
-<div class="container" style="min-height: 900px;">
+<div class="container" style="min-height: 900px;" ng-app="IndexApp" ng-controller="IndexCrtl">
     <div class="row">
         <div class="col-md-8 col-xs-12">
             <div class="newest-title">
@@ -35,7 +35,7 @@
         </div>
         <div class="col-md-4 col-xs-6">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="关键字...">
+                <input type="text" class="form-control" ng-model="search" ng-change="filter()" placeholder="关键字...">
                 <span class="input-group-btn">
                     <button class="btn btn-primary" type="button">搜索</button>
                 </span>
@@ -44,39 +44,39 @@
     </div>
     <div class="row">
         <div class="col-md-8 col-xs-12">
-            <volist name="articles" id="v">
-            <article>
+            <article ng-repeat="article in filtered = (articles | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
             <div class="left-content clearfix">
                 <div class="article-title col-md-12 col-xs-12">
                     <div class="title-heavy"></div>
-                    <h4>{$v.title}</h4>
+                    <h4>{{article.title}}</h4>
                 </div>
                 <div class="article-content center-block">
-                    <div class="col-md-4"><img src="__PUBLIC__/images/class1.jpg" style="width:100%"></div>
-                    <div class="col-md-8">{$v.plaintxt}</div>
+                    <div class="col-md-4"><img src="{{article.path.path}}" style="width:100%;height:150px;"></div>
+                    <div class="col-md-8">{{article.plaintxt}}</div>
                 </div>
                 <div class="article-desc">
                     <div class="col-md-10">
                     <ul>
                         <li data-toggle="tooltip" data-placement="right" title="发布日期"><i
-                                class="glyphicon glyphicon-time"></i>&nbsp;{$v.create_time}
+                                class="glyphicon glyphicon-time"></i>&nbsp;{{article.create_time}}
                         </li>
                         <li data-toggle="tooltip" data-placement="right" title="标签"><i
-                                class="glyphicon glyphicon-tag"></i>&nbsp;{$v.cname.cname}
+                                class="glyphicon glyphicon-tag"></i>&nbsp;{{article.cname.cname}}
                         </li>
                         <li data-toggle="tooltip" data-placement="right" title="浏览"><i
-                                class="glyphicon glyphicon-eye-open"></i>&nbsp;{$v.rnum}
+                                class="glyphicon glyphicon-eye-open"></i>&nbsp;{{article.rnum}}
                         </li>
                     </ul>
                     </div>
-                    <a href="#" class="col-md-2"><button class="btn btn-primary">查看全文</button></a>
+                    <a href="article-{{article.aid}}" class="col-md-2"><button class="btn btn-primary">查看全文</button></a>
                 </div>
             </div>
-        </article>
-            </volist>
-            {$page}
+            </article>
+            <div class="col-md-12" style="padding-left: 0" ng-show="filteredItems > 0">    
+                <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+        </div>
         </div>
         <include file="Layout:side"/>
     </div>
 </div>
-<!--sidebar-->
+<!--sidebar

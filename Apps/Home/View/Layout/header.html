@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
-    <link rel="shortcut icon" href="__PUBLIC__/__PUBLIC__/images/favicon.ico">
+    <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico">
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/default.css" rel="stylesheet">
     <link href="__PUBLIC__/css/style.css" rel="stylesheet">
     <script src="__PUBLIC__/js/require.js" data-main="__PUBLIC__/js/main"></script>
     <!--JS-->
     <script src="__PUBLIC__/js/jquery.min.js"></script>
     <script src="__PUBLIC__/js/bootstrap.min.js"></script>
-    <script src="__PUBLIC__/js/canvastimer.js"></script>
+    <!--<script src="__PUBLIC__/js/canvastimer.js"></script>-->
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script src="__PUBLIC__/js/angular.min.js"></script>
+    <script src="__PUBLIC__/js/jquery.complexify.js"></script>
+    <script src="__PUBLIC__/js/jquery.placeholder.min.js"></script>
+    <script src="__PUBLIC__/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="__PUBLIC__/js/angular-sanitize.js"></script>
+    <script src="__PUBLIC__/home/index/app.js"></script>
     <title>首页</title>
+    <script>
+        $(function(){
+            $('#password input[placeholder]').placeholder();
+            $("#password").complexify({}, function(valid, complexity){
+                if (!valid) {
+                    $('#complexity').animate({'width':complexity + '%'}).removeClass('valid').addClass('invalid');
+                } else {
+                    $('#complexity').animate({'width':complexity + '%'}).removeClass('invalid').addClass('valid');
+                }
+                $('#complexity').html(Math.round(complexity) + '%');
+            });
+        });
+    </script>
 </head>
 <body>
 <!--head start-->
@@ -32,11 +52,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Companion</a>
+            <a class="navbar-brand" href="{:U('/index')}">Companion</a>
         </div>
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{:U('Index/index')}">首页</a></li>
+                <li><a href="{:U('/index')}">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -47,16 +67,100 @@
                     </ul>
                 </li>
                 <li><a href="#">相册</a></li>
+                <li><a href="#">音乐</a></li>
                 <li><a href="#">留言板</a></li>
                 <li><a href="#">关于我</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="openlogin"><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
-                <li class="reg"><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
+                <li><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
+                <li><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<div class="modal fade" id="login" tableindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">登录</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密&nbsp;&nbsp;&nbsp;码</label>
+            <input type="password" class="form-control" id="message-text">
+          </div>
+        </form>
+      </div>
+      <div class="button-group">
+        <div class="col-md-2">
+            <div class="others-login"><span>第三方登录</span></div>
+        </div>
+        <div class="col-md-1">
+            <div class="qqlogin"><i class="icon-qq"></i></div>
+        </div>
+        <div class="col-md-1">
+           <div class="weibologin"><i class="icon-weibo"></i></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="register" tableindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">注册用户</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">邮&nbsp;&nbsp;&nbsp;箱</label>
+            <input type="email" class="form-control" id="message-text">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密&nbsp;&nbsp;&nbsp;码</label>
+            <input type="password" placeholder="请输入密码" id="password" class="form-control">
+          </div>
+          <div class="form-group">
+              <div id="complexitywrap">
+                  <div id="complexity">0%</div>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="button-group">
+        <div class="col-md-2">
+            <div class="others-login"><span>第三方登录</span></div>
+        </div>
+        <div class="col-md-1">
+            <div class="qqlogin"><i class="icon-qq"></i></div>
+        </div>
+        <div class="col-md-1">
+           <div class="weibologin"><i class="icon-weibo"></i></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-success">注册</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!--bshare-->
 <!--<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
 <script type="text/javascript" charset="utf-8"

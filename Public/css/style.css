@@ -1038,3 +1038,58 @@ Vertical inline menu
     height: 60px;
     border-radius: 50%;
 }
+
+.ng-binding{
+    cursor: pointer;
+}
+.others-login{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 11px;
+    text-align: center;
+    color: #b2b2b2;
+}
+.qqlogin{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #4cb6cb;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.weibologin{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #fb392f;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+#complexitywrap{
+    padding: 0;
+    border: 1px solid #cccccc;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#complexity{
+    padding: 5px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 5px;
+    color: #CCC;
+}
+.invalid {
+    background: #fb2d33;
+}

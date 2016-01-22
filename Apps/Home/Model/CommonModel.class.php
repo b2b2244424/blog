@@ -82,7 +82,7 @@ class CommonModel extends RelationModel{
 	 * @param  [type] $condition [description]
 	 * @return [type]            [description]
 	 */
-	public function updelete($condition)
+	public function updeleteEntity($condition)
 	{
 		$data = array("if_delete" => 1);
 		$res = $this->where($condition)->data($data)->save();
@@ -93,7 +93,7 @@ class CommonModel extends RelationModel{
 	 * @param  [type] $condition [description]
 	 * @return [type]            [description]
 	 */
-	public function delete($condition)
+	public function deleteEntity($condition)
 	{
 		$res = $this->where($condition)->delete();
 		return $res;
@@ -105,7 +105,7 @@ class CommonModel extends RelationModel{
 	 * @param  [type] $data      [description]
 	 * @return [type]            [description]
 	 */
-	public function update($condition,$data)
+	public function updateEntity($condition,$data)
 	{
 		if(!$condition){
 			return;

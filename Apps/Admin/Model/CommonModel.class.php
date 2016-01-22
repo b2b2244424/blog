@@ -23,6 +23,7 @@ class CommonModel extends RelationModel{
 			}
 		}
 		$ret = $this->add($realdata);
+		return $ret;
 	}
 
 	/**
@@ -31,7 +32,7 @@ class CommonModel extends RelationModel{
 	 * @param  array  $fields    [description]
 	 * @return [type]            [description]
 	 */
-	public function getone($condition,$fields = array())
+	public function getone($condition,$fields = array(),$order)
 	{
 		if($fields){
 			$fields = array_intersect($fields, array_keys($this->fieldsName));
@@ -55,7 +56,7 @@ class CommonModel extends RelationModel{
 	 * @param  [type]  $order       [description]
 	 * @return [type]               [description]
 	 */
-	public function getList($condition,$fields = array(),$currentpage = 1,$perpage = 10,$order,$embed = false)
+	public function getList($condition,$fields = array(),$order,$embed = false)
 	{
 		if($fields){
 			$fields = array_intersect($fields,array_keys($this->fieldsName));
@@ -67,7 +68,6 @@ class CommonModel extends RelationModel{
 		->field($fields)
 		->relation(true,$embed)
 		->where($condition)
-		->limit(($currentpage - 1)*$perpage,$perpage)
 		->order($order)
 		->select();
 
@@ -113,6 +113,18 @@ class CommonModel extends RelationModel{
 			return;
 		}
 		$res = $this->where($condition)->save($data);
+		return $res;
+	}
+
+	/**
+	 * 访问量同步＋1
+	 * @param  [type] $condition [description]
+	 * @param  [type] $data      [description]
+	 * @return [type]            [description]
+	 */
+	public function plusHit($condition,$field)
+	{
+		$res = $this->where($condition)->setInc($field,1);
 		return $res;
 	}
 }

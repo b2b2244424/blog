@@ -13,16 +13,15 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/Blog/Public/css/wysiwyg-editor.css" />
-  <link rel="stylesheet" type="text/css" href="/Blog/Public/css/editor.css" />
-  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
+  <link rel="stylesheet" href="/Blog/Public/admin/css/index.css">
+  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" />
+  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
     <script src="/Blog/Public/admin/js/ie/respond.min.js"></script>
     <script src="/Blog/Public/admin/js/ie/excanvas.js"></script>
-    <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <![endif]-->
-  
+  <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
@@ -35,7 +34,6 @@
         </a>
         <a href="<?php echo U('Admin/Index/index');?>" class="navbar-brand text-lt">
           <i class="icon-home"></i>
-          <img src="/Blog/Public/admin//Blog/Public/admin/images/logo.png" alt="." class="hide">
           <span class="hidden-nav-xs m-l-sm">Companion</span>
         </a>
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
@@ -100,7 +98,7 @@
               <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
                 <img src="/Blog/Public/admin/images/a0.png" alt="...">
               </span>
-              Admin<b class="caret"></b>
+              你好，<?php echo ($username); ?><b class="caret"></b>
             </a>
             <ul class="dropdown-menu animated fadeInRight">            
               <li>
@@ -121,7 +119,7 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a href="modal.lockme.html" data-toggle="ajaxModal" >退出</a>
+                <a href="<?php echo U('Login/logout');?>" data-toggle="ajaxModal" >退出</a>
               </li>
             </ul>
           </li>
@@ -166,9 +164,9 @@
                       </a>
                     </li>
                     <li>
-                      <a href="<?php echo U('Admin/Video/index');?>" data-target="#content" data-el="#bjax-el" data-replace="true">
-                        <i class="icon-social-youtube icon  text-primary"></i>
-                        <span class="font-bold">视频</span>
+                      <a href="<?php echo U('Admin/Users/index');?>">
+                        <i class="icon-user icon  text-primary"></i>
+                        <span class="font-bold">用户</span>
                       </a>
                     </li>
                     <li class="m-b hidden-nav-xs"></li>
@@ -223,14 +221,14 @@
                       </a>
                       <ul class="nav dk text-sm">
                         <li >
-                          <a href="buttons.html" class="auto">                                                        
+                          <a href="<?php echo U('Admin/Tools/buttons');?>" class="auto">                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
                             <span>按钮</span>
                           </a>
                         </li>
                         <li >
-                          <a href="icons.html" class="auto">                            
+                          <a href="<?php echo U('Admin/Tools/icons');?>" class="auto">                            
                             <b class="badge bg-info pull-right">369</b>                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
@@ -285,13 +283,13 @@
                           </a>
                           <ul class="nav dker">
                             <li >
-                              <a href="table-static.html">
+                              <a href="<?php echo U('Admin/Tools/staticTable');?>">
                                 <i class="fa fa-angle-right"></i>
                                 <span>静态表格</span>
                               </a>
                             </li>
                             <li >
-                              <a href="table-datatable.html">
+                              <a href="<?php echo U('Admin/Tools/dataTable');?>">
                                 <i class="fa fa-angle-right"></i>
                                 <span>数据表</span>
                               </a>
@@ -422,25 +420,6 @@
                       </ul>
                     </li>
                   </ul>
-                  <ul class="nav text-sm">
-                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
-                      <span class="pull-right"><a href="#"><i class="icon-plus i-lg"></i></a></span>
-                      播放列表
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-music-tone icon"></i>
-                        <span>Hip-Pop</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-playlist icon text-success-lter"></i>
-                        <b class="badge bg-success dker pull-right">9</b>
-                        <span>Jazz</span>
-                      </a>
-                    </li>
-                  </ul>
                 </nav>
                 <!-- / nav -->
               </div>
@@ -455,10 +434,9 @@
                       </span>
                       <span class="hidden-nav-xs clear">
                         <span class="block m-l">
-                          <strong class="font-bold text-lt">John.Smith</strong> 
+                          <strong class="font-bold text-lt"><?php echo ($username); ?></strong> 
                           <b class="caret"></b>
                         </span>
-                        <span class="text-muted text-xs block m-l">Art Director</span>
                       </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight aside text-left">                      
@@ -480,7 +458,7 @@
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <a href="modal.lockme.html" data-toggle="ajaxModal" >退出</a>
+                        <a href="href="<?php echo U('Login/logout');?>"" data-toggle="ajaxModal" >退出</a>
                       </li>
                     </ul>
                   </div>
@@ -544,23 +522,29 @@
 </section>
 </section>    
 </section>
-  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="/Blog/Public/admin/js/bootstrap.js"></script>
-  <!-- wysiwyg -->
-  <script src="/Blog/Public/js/wysiwyg.js"></script>
-  <script src="/Blog/Public/js/wysiwyg-editor.js"></script>
-  <script src="/Blog/Public/js/editor.js"></script>
   <!-- App -->
   <script src="/Blog/Public/admin/js/app.js"></script>
   <script src="/Blog/Public/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- file input -->  
+  <script src="/Blog/Public/admin/js/file-input/bootstrap-filestyle.min.js"></script>
+  <!-- Sparkline Chart -->
+  <script src="/Blog/Public/admin/js/charts/sparkline/jquery.sparkline.min.js"></script>
+  <!-- Easy Pie Chart -->
+        <!-- Easy Pie Chart -->
+  <script src="/Blog/Public/admin/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.resize.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.orderBars.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.pie.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.grow.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/demo.js"></script>
+  <script src="/Blog/Public/admin/js/app.plugin.js"></script>
   <!-- parsley -->
   <script src="/Blog/Public/admin/js/parsley/parsley.min.js"></script>
   <script src="/Blog/Public/admin/js/parsley/parsley.extend.js"></script>
   <script src="/Blog/Public/admin/js/app.plugin.js"></script>
-  <!--jplayer-->
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/jquery.jplayer.min.js"></script>
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/demo.js"></script>
 </body>
 </html>

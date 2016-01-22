@@ -1,9 +1,62 @@
 <script type="text/javascript" src="__PUBLIC__/admin/article/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+<script>
+  //单独整合图片上传
+  //这个是图片上传的，网上还有附件上传的
+    (function($) {
+        var url='{:U('Admin/Upload/index')}';
+        var image = {
+            editor: null,
+            init: function(editorid, keyid) {
+                var _editor = this.getEditor(editorid,{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'__PUBLIC__/ueditor/',
+                });
+                _editor.ready(function() {
+                    //_editor.setDisabled();
+                    _editor.hide();
+                    _editor.addListener('beforeInsertImage', function(t, arg) {
+                        $("#"+keyid).attr("value", arg[0].src);
+                    });
+                });
+            },
+            getEditor: function(editorid) {
+                this.editor = UE.getEditor(editorid,{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'__PUBLIC__/ueditor/',
+                });
+                return this.editor;
+            },
+            show: function(id) {
+                var _editor = this.editor;
+                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）
+                //和网上一些朋友的代码不同之处就在这里
+                $("#"+id).click(function() {
+                    var image = _editor.getDialog("insertimage");
+                    image.render();
+                    image.open();
+                });
+            },
+            render: function(editorid) {
+                var _editor = this.getEditor(editorid,{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'__PUBLIC__/ueditor/',
+                });
+                _editor.render();
+            }
+        };
+        $(function() {
+            image.init("myeditor", "coverImage");
+            image.show("image");
+        });
+    })(jQuery);
+</script>
         <!-- /.aside -->
-        <section id="content" ng-app="ArticleApp" ng-app ng-controller="articleCrtl">
+        <section id="content">
           <section class="vbox">
             <section class="scrollable padder">
-              <form class="bs-example form-horizontal">
+              <form action="{:U('Article/addone')}" method="post">
               <div class="m-b-md"></div>
               <section class="panel panel-default">
                   <div class="row wrapper">
@@ -11,7 +64,7 @@
                       <div class="form-group">
                         <label class="col-lg-2 control-label">标题</label>
                         <div class="col-lg-10">
-                          <input type="text" name="title" ng-model="articleData.title" class="form-control parsley-validated" data-required="true">
+                          <input type="text" name="title" class="form-control parsley-validated" data-required="true">
                         </div>
                       </div>
                     </div>
@@ -19,10 +72,27 @@
                       <div class="form-group">
                         <label class="col-lg-2 control-label">分类</label>
                         <div class="col-lg-10">
-                          <select class="form-control m-b" name='cid' ng-model="articleData.cid">
-                            <option value="1">学习</option>
-                            <option value="2">日志</option>
+                          <select class="form-control m-b" name='cid'>
+                            <volist name="catelist" id="vo">
+                              <option value="{$vo.cid}">{$vo.cname}</option>
+                            </volist>
                           </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row wrapper">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">封面</label>
+                        <div class="col-lg-11">
+                          <div class="input-group">
+                            <input type="text" name="cover" class="form-control" id="coverImage" readonly value="">
+                            <script id="myeditor"></script>
+                            <span class="input-group-btn">
+                              <input class="btn btn-primary" type="button" value="选择文件" id="image"></button>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -42,8 +112,7 @@
                     <div class="form-group">
                       <label class="col-lg-1 control-label">内容</label>
                       <div class="col-lg-11">
-                          <textarea id="editor1" name="content" ng-model="articleData.content" placeholder="内容...">
-                          </textarea>
+                          <textarea id="editor" class="ueditor" name="content" ng-model="articleData.content" required="" style="width:100%;height:200px;"></textarea>
                       </div>
                     </div>
                   </div>
@@ -52,13 +121,24 @@
                         <div class="form-group">
                           <div class="col-lg-4 col-sm-offset-1">
                             <button type="reset" class="btn btn-default">取消</button>
-                            <button type="submit" ng-click="create(articleData)" class="btn btn-primary">保存</button>
+                            <button type="submit" class="btn btn-primary">保存</button>
                           </div>
                         </div>
                     </div>
                   </div>
               </section>
-            </form>
+             </form>
             </section>
           </section>
         </section>
+        <script type="text/javascript">
+            //文章内容附件上传
+            $(function(){
+                var url='{:U('Admin/Upload/index')}';
+                var ue = UE.getEditor('editor',{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'__PUBLIC__/ueditor/',
+                });
+                
+            });
+        </script>

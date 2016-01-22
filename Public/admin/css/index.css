@@ -1,0 +1,20 @@
+.doc-buttons{
+    background-color: #fff;
+    margin-left: 15px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    min-height: 130px;
+}
+
+.index-banner-nav{
+    min-height: 90px;
+    line-height: 90px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.col-md-4{
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}

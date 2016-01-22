@@ -15,4 +15,22 @@ class BlogController extends Controller{
 	{
 		$this->display();
 	}
+
+    /**
+     * 增加日志
+     * @return array
+     */
+    public function addone()
+    {
+        $data['title'] = I('title');
+        $data['content'] = I('content');
+        $data['create_time'] = date('Y-m-d H:i:s',time());
+        var_dump($data);die;
+        try{
+            D('Blog')->addone($data);
+            $this->success('添加成功','index',3);
+        }catch(Exception $e){
+            $this->error('添加失败','create',3);
+        }
+    }
 }

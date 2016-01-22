@@ -1,0 +1,95 @@
+<script type="text/javascript" src="__PUBLIC__/admin/users/black.js"></script>
+        <section id="content" ng-app="blackApp" ng-controller="blackCrtl">
+          <section class="vbox">
+            <section class="scrollable padder">
+              <div class="m-b-md">
+              </div>
+              <section class="panel panel-default">
+                <div class="row wrapper">
+                  <div class="col-sm-5 m-b-xs">
+                    <select class="input-sm form-control input-s-sm inline v-middle">
+                      <option value="0">删除</option>
+                    </select>
+                    <button class="btn btn-sm btn-primary">操作</button>               
+                  </div>
+                  <div class="col-sm-3 m-b-xs">
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-sm btn-default active">
+                        <input type="radio" name="options"> 日
+                      </label>
+                      <label class="btn btn-sm btn-default">
+                        <input type="radio" name="options"> 星期
+                      </label>
+                      <label class="btn btn-sm btn-default">
+                        <input type="radio" name="options"> 月
+                      </label>
+                    </div>
+                    <!--<h5>Filtered {{ filtered.length }} of {{ totalItems}} total customers</h5>-->
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="input-group">
+                      <input type="text"  ng-model="search" ng-change="filter()" class="input-sm form-control" placeholder="搜索">
+                      <span class="input-group-btn">
+                        <button class="btn btn-sm btn-default" type="button">搜索</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <div class="col-md-12" ng-show="filteredItems > 0">
+                  <table class="table table-striped b-t b-light">
+                    <thead>
+                      <tr>
+                        <th style="width:20px;"><label class="checkbox m-n i-checks"><input type="checkbox"><i></i></label></th>
+                        <th class="th-sortable" data-toggle="class">用户名</th>
+                        <th class="th-sortable" data-toggle="class">登录名</th>
+                        <th class="th-sortable" data-toggle="class">上次登录</th>
+                        <th class="th-sortable" data-toggle="class">登录IP</th>
+                        <th style="width:40px;border-right: 0px">操作</th>
+                        <th style="width:40px;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="black in filtered = (blacks | filter:search) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+                        <td><label class="checkbox m-n i-checks"><input type="checkbox" name="post[]"><i></i></label></td>
+                        <td><a href="#">{{black.username}}</a></td>
+                        <td>{{black.login_name}}</td>
+                        <td>{{black.last_login}}</td>
+                        <td>{{black.ip}}</td>
+                        <td>
+                          <a ng-click="white(black)" class="active" data-toggle="class"><i class="btn btn-default btn-success btn-sm">移出黑名单</i></a>
+                        </td>
+                        <td>
+                          <a ng-click="delete(black)" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>
+                        </td>
+                        <td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-show="filteredItems == 0">
+                    <div class="col-md-12">
+                        <p style="text-align: center;padding: 10px">没有成员</p>
+                    </div>
+                </div>
+                </div>
+                <footer class="panel-footer">
+                  <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+                      <select ng-model="entryLimit" class="input-sm form-control input-s-sm inline v-middle">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>50</option>
+                        <option>100</option>
+                      </select>                
+                    </div>
+                    <div class="col-sm-4 text-right pull-right text-center-xs" ng-show="filteredItems > 0">    
+                        <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+                  </div>
+                  </div>
+                </footer>
+              </section>
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>

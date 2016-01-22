@@ -40,19 +40,6 @@ app.config(function($httpProvider){
     }];
 });
 
-/*app.config(function($routeProvider){
-    $routeProvider.when('/edit/:aid', {
-        templateUrl: 'edit.html',
-        controller: 'articleCtrl',
-        resolve: {
-            article : function($route) {
-            var aid = $route.current.params.aid;
-            return getArticle(aid);
-            }
-        }
-    }).otherwise({ redirectTo: '/' })
-});*/
-
 app.filter('startFrom', function() {
     return function(input, start) {
         if(input) {
@@ -85,7 +72,8 @@ app.controller('articleCrtl', function ($scope, $http, $timeout, $location) {
         $scope.reverse = !$scope.reverse;
     };
     $scope.create = function(articleData){
-        $http.post('addone',{articledata : articleData}).success(function(data,headers){
+        console.log(articleData);
+        $http.post('addone',{articledata : articleData}).success(function(data){
             if(data.code == 1){
                 swal("操作成功",'已成功添加一篇文章','success');
             }else{

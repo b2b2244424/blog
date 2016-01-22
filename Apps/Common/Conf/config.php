@@ -9,9 +9,10 @@ return array(
 	'DB_PORT' => 3306,
 	'DB_PREFIX' => '',
 	'DB_CHARSET' => 'utf8',
+	//开启调试
 	'DB_BUG' => TRUE,
 
-	'MODULE_ALLOW_LIST' => array('Home','Admin'),
+	'MODULE_ALLOW_LIST' => array('Home','admin'),
 	'DEFAULT_MODULE' => 'Home',//默认模块
 	'DEFAULT_ACTION' => 'index',//默认操作
 	'URL_HTML_SUFFIX' => '',//开启伪静态,消除.html

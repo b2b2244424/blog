@@ -1,36 +1,40 @@
 @import url(http://fonts.useso.com/css?family=Raleway:200,500,700,800);
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?rretjt');
-	src:url('../fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?rretjt') format('woff'),
-		url('../fonts/icomoon.ttf?rretjt') format('truetype'),
-		url('../fonts/icomoon.svg?rretjt#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?jsjdww');
+    src:    url('fonts/icomoon.eot?jsjdww#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?jsjdww') format('truetype'),
+        url('fonts/icomoon.woff?jsjdww') format('woff'),
+        url('fonts/icomoon.svg?jsjdww#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-body, html { font-size: 100%; 	padding: 0; margin: 0;}
-/* Reset */
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-weibo:before {
+    content: "\e903";
+}
+.icon-wechat:before {
+    content: "\e901";
+}
+.icon-qq:before {
+    content: "\e900";
+}
+
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,

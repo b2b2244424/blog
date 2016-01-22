@@ -1,0 +1,3274 @@
+[ 2016-01-20T09:22:01+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000889s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2016-01-20T09:22:02+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0180s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0029s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-20T09:22:07+08:00 ] 127.0.0.1 /Blog/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000534s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/dceb341e8debec729af09ce1933e3c4c.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-01-20T09:22:07+08:00 ] 127.0.0.1 /Blog/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/dceb341e8debec729af09ce1933e3c4c.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003272s ]
+
+[ 2016-01-20T09:22:14+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2016-01-20T09:24:31+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-01-20T09:24:46+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2016-01-20T09:31:40+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-01-20T09:31:42+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001316s ]
+
+[ 2016-01-20T09:31:56+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-01-20T09:31:57+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-01-20T09:47:19+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2016-01-20T09:47:21+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2016-01-20T09:49:24+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-01-20T09:51:45+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2016-01-20T09:52:12+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-01-20T09:54:02+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-01-20T09:54:33+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002474s ]
+
+[ 2016-01-20T09:54:42+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2016-01-20T09:55:45+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2016-01-20T09:55:49+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2016-01-20T09:56:44+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-01-20T09:56:47+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2016-01-20T09:57:30+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2016-01-20T09:59:43+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-01-20T10:01:50+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2016-01-20T10:01:59+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2016-01-20T10:06:27+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2016-01-20T10:07:38+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2016-01-20T10:08:54+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2016-01-20T10:08:54+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0017s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-01-20T10:08:56+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2016-01-20T10:10:46+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001210s ]
+
+[ 2016-01-20T10:11:12+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2016-01-20T10:15:44+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-01-20T10:15:48+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2016-01-20T10:16:05+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2016-01-20T10:16:34+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-01-20T10:16:51+08:00 ] 127.0.0.1 /Blog/Admin/Blog/ImgUpload.action
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+ERR: 非法操作:ImgUpload
+
+[ 2016-01-20T10:16:53+08:00 ] 127.0.0.1 /Blog/Admin/Blog/simditor-2.0.1/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-01-20T10:26:24+08:00 ] 127.0.0.1 /Blog/Admin/Blog/simditor-2.0.1/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+
+[ 2016-01-20T10:26:36+08:00 ] 127.0.0.1 /Blog/Admin/Blog/ImgUpload.action
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+ERR: 非法操作:ImgUpload
+
+[ 2016-01-20T10:26:42+08:00 ] 127.0.0.1 /Blog/Admin/Blog/simditor-2.0.1/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-01-20T10:41:43+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-01-20T10:42:15+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-01-20T10:42:16+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-01-20T10:42:17+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2016-01-20T10:42:51+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2016-01-20T10:42:56+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2016-01-20T10:59:35+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2016-01-20T10:59:43+08:00 ] 127.0.0.1 /Blog/Admin/Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+ERR: 非法操作:Admin
+
+[ 2016-01-20T10:59:45+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-01-20T11:03:54+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-01-20T11:04:05+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Undefined index: action /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/UploadController.class.php 第 33 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004314s ]
+
+[ 2016-01-20T11:04:05+08:00 ] 127.0.0.1 /Blog/Admin/Blog/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: 非法操作:undefined
+
+[ 2016-01-20T11:06:06+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+NOTIC: [8] Undefined index: action /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/UploadController.class.php 第 33 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2016-01-20T11:06:07+08:00 ] 127.0.0.1 /Blog/Admin/Blog/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+ERR: 非法操作:undefined
+
+[ 2016-01-20T11:07:50+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-01-20T11:07:56+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-01-20T11:07:58+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-01-20T11:09:53+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2016-01-20T11:09:58+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+
+[ 2016-01-20T11:10:01+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-01-20T11:11:20+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-01-20T11:11:27+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-01-20T11:11:28+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-01-20T11:12:15+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-01-20T11:12:21+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 40 行.
+
+[ 2016-01-20T11:12:23+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-01-20T11:20:11+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2016-01-20T11:20:18+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 40 行.
+
+[ 2016-01-20T11:20:20+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-01-20T11:28:14+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+
+[ 2016-01-20T11:28:38+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-01-20T11:34:26+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2016-01-20T11:34:35+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/UploadService.class.php 第 15 行.
+
+[ 2016-01-20T11:34:39+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+
+[ 2016-01-20T11:39:22+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001967s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000541s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000981s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-01-20T11:39:30+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/UploadService.class.php 第 15 行.
+
+[ 2016-01-20T11:39:32+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T11:40:20+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2016-01-20T11:40:28+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/UploadService.class.php 第 15 行.
+
+[ 2016-01-20T11:40:29+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T11:41:16+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001113s ]
+
+[ 2016-01-20T11:41:23+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [2] file(upload_file): failed to open stream: No such file or directory /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/UploadService.class.php 第 15 行.
+
+[ 2016-01-20T11:41:24+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T11:44:39+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-01-20T11:44:48+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+NOTIC: [8] Undefined index: action /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/UploadController.class.php 第 33 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2016-01-20T11:44:48+08:00 ] 127.0.0.1 /Blog/Admin/Blog/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+ERR: 非法操作:undefined
+
+[ 2016-01-20T11:46:07+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2016-01-20T11:46:14+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+NOTIC: [8] Undefined index: action /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/UploadController.class.php 第 33 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-01-20T11:46:14+08:00 ] 127.0.0.1 /Blog/Admin/Blog/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+ERR: 非法操作:undefined
+
+[ 2016-01-20T12:20:08+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2016-01-20T12:20:16+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [8] Undefined index: action /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/UploadController.class.php 第 33 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2016-01-20T12:20:16+08:00 ] 127.0.0.1 /Blog/Admin/Blog/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+ERR: 非法操作:undefined
+
+[ 2016-01-20T12:21:13+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-01-20T12:21:19+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003349s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-01-20T12:21:21+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T12:53:22+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2016-01-20T13:07:16+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-01-20T13:07:25+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002481s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 43 行.
+
+[ 2016-01-20T13:07:27+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T13:07:55+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-01-20T13:07:57+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-01-20T13:08:06+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 43 行.
+
+[ 2016-01-20T13:08:07+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T13:12:57+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2016-01-20T13:13:04+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000331s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004295s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2016-01-20T13:13:05+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T13:14:15+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2016-01-20T13:14:23+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2016-01-20T13:14:24+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T13:20:54+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-01-20T13:22:45+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2016-01-20T13:23:01+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2016-01-20T13:23:16+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001345s ]
+
+[ 2016-01-20T16:32:22+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001353s ]
+
+[ 2016-01-20T16:32:23+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0036s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0018s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-01-20T16:32:26+08:00 ] 127.0.0.1 /Blog/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/dceb341e8debec729af09ce1933e3c4c.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003528s ]
+
+[ 2016-01-20T16:32:26+08:00 ] 127.0.0.1 /Blog/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002086s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000604s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/dceb341e8debec729af09ce1933e3c4c.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2016-01-20T16:32:28+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-01-20T16:32:45+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+
+[ 2016-01-20T16:32:47+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T16:34:25+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2016-01-20T16:34:32+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-01-20T16:34:34+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Use of undefined constant ROOT_DIR - assumed 'ROOT_DIR' /Applications/MAMP/htdocs/Blog/Apps/Admin/Conf/config.php 第 3 行.
+
+[ 2016-01-20T16:35:14+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2016-01-20T16:35:21+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-01-20T16:35:22+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-01-20T16:36:09+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-01-20T16:36:20+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002886s ]
+
+[ 2016-01-20T16:36:21+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+
+[ 2016-01-20T16:36:52+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000455s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-01-20T16:36:59+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+
+[ 2016-01-20T16:37:00+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-01-20T16:37:17+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001607s ]
+
+[ 2016-01-20T16:37:23+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+
+[ 2016-01-20T16:37:24+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2016-01-20T16:38:17+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001026s ]
+
+[ 2016-01-20T16:38:24+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2016-01-20T16:38:25+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-01-20T16:43:00+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2016-01-20T16:43:11+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+
+[ 2016-01-20T16:43:11+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-01-20T16:43:13+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-01-20T16:44:35+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2016-01-20T16:44:40+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+
+[ 2016-01-20T16:44:40+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-01-20T16:44:42+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-01-20T16:44:50+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2016-01-20T16:44:59+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-01-20T16:44:59+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2016-01-20T16:45:01+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-01-20T16:45:38+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-01-20T16:45:44+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001850s ]
+
+[ 2016-01-20T16:45:44+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2016-01-20T16:45:45+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-01-20T16:45:50+08:00 ] 127.0.0.1 /Blog/Admin/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-01-20T16:45:50+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001547s ]
+
+[ 2016-01-20T16:45:50+08:00 ] 127.0.0.1 /Blog/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2016-01-20T16:45:50+08:00 ] 127.0.0.1 /Blog/Admin/Blog/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+ERR: 非法操作:angular.min.js
+
+[ 2016-01-20T16:45:51+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2016-01-20T16:45:56+08:00 ] 127.0.0.1 /Blog/Admin/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-01-20T16:45:56+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001597s ]
+
+[ 2016-01-20T16:45:56+08:00 ] 127.0.0.1 /Blog/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2016-01-20T16:45:56+08:00 ] 127.0.0.1 /Blog/Admin/Blog/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+ERR: 非法操作:angular.min.js
+
+[ 2016-01-20T16:46:02+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2016-01-20T16:46:08+08:00 ] 127.0.0.1 /Blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+
+[ 2016-01-20T16:46:08+08:00 ] 127.0.0.1 /Blog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-01-20T16:46:08+08:00 ] 127.0.0.1 /Blog/Admin/Login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/ThinkPHP/Library/Think/Verify.class.php 第 166 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2016-01-20T16:46:24+08:00 ] 127.0.0.1 /Blog/Admin/Login/loginHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/UsersModel.class.php on line 34 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 34 行.
+SQL: SELECT `uid`,`username`,`login_name`,`role`,`password`,`email`,`last_login`,`ip`,`if_blacklist`,`if_delete` FROM `users` WHERE `login_name` = 'admin' LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `users` SET `last_login`='2016-01-20 16:46:24',`ip`='127.0.0.1' WHERE `uid` = 2 [ RunTime:0.0105s ]
+NOTIC: [8] A non well formed numeric value encountered /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/UsersModel.class.php 第 48 行.
+
+[ 2016-01-20T16:46:24+08:00 ] 127.0.0.1 /Blog/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2016-01-20T16:46:28+08:00 ] 127.0.0.1 /Blog/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/dceb341e8debec729af09ce1933e3c4c.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-01-20T16:46:28+08:00 ] 127.0.0.1 /Blog/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/dceb341e8debec729af09ce1933e3c4c.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-01-20T16:46:30+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-01-20T16:46:37+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-01-20T16:46:38+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+
+[ 2016-01-20T16:46:47+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-01-20T16:46:53+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2016-01-20T16:46:54+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2016-01-20T16:47:31+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-01-20T16:47:38+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001013s ]
+
+[ 2016-01-20T16:47:39+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-01-20T16:48:36+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001746s ]
+
+[ 2016-01-20T16:48:48+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2016-01-20T16:48:54+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2016-01-20T16:48:56+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-01-20T16:59:54+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000367s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2016-01-20T17:00:07+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2016-01-20T17:00:07+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2016-01-20T17:00:07+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002897s ]
+
+[ 2016-01-20T17:00:09+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-01-20T17:00:09+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2016-01-20T17:00:10+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2016-01-20T17:00:10+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+
+[ 2016-01-20T17:00:10+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002305s ]
+
+[ 2016-01-20T17:00:11+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2016-01-20T17:04:50+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2016-01-20T17:04:57+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001988s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2016-01-20T17:04:59+08:00 ] 127.0.0.1 /Blog/Admin/Blog/Public/simditor/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2016-01-20T17:05:32+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-01-20T17:05:41+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2016-01-20T17:06:30+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2016-01-20T17:06:37+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2016-01-20T17:06:39+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-01-20T17:53:13+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2016-01-20T17:53:23+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2016-01-20T17:53:25+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-01-20T17:54:25+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001968s ]
+
+[ 2016-01-20T17:54:31+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002265s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+
+[ 2016-01-20T17:54:33+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-01-20T17:57:27+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-01-20T17:57:34+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+NOTIC: [8] Use of undefined constant success - assumed 'success' /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 35 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 36 行.
+NOTIC: [8] Use of undefined constant file_path - assumed 'file_path' /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 37 行.
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+NOTIC: [8] Use of undefined constant success - assumed 'success' /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant msg - assumed 'msg' /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 49 行.
+NOTIC: [8] Use of undefined constant file_path - assumed 'file_path' /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 50 行.
+
+[ 2016-01-20T17:57:35+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+
+[ 2016-01-20T17:59:48+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001215s ]
+
+[ 2016-01-20T17:59:55+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002045s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-01-20T17:59:57+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-01-20T18:06:03+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2016-01-20T18:06:09+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-01-20T18:06:10+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+
+[ 2016-01-20T18:06:59+08:00 ] 127.0.0.1 /Blog/Admin/Blog/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] Undefined variable: username /Applications/MAMP/htdocs/Blog/Apps/Runtime/Cache/Admin/a0de21e99fa2e1e2cfd7d27b028ac4b7.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2016-01-20T18:07:05+08:00 ] 127.0.0.1 /Blog/Admin/Common/uploadImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [2048] Only variables should be passed by reference /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/CommonController.class.php 第 43 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-01-20T18:07:06+08:00 ] 127.0.0.1 /Blog/Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+

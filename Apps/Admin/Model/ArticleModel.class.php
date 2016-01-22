@@ -15,7 +15,15 @@ class ArticleModel extends CommonModel{
 		'cuid' => '作者编号',
 		'cid' => '分类编号',
 		'rnum' => '阅读次数',
+		'coverid' => '封面图编号',
 		'create_time' => '创建时间',
 		'update_time' => '更新时间',
 	);
+
+	public function getArticleNuM()
+	{
+		$condition = array('if_delete' => 0);
+		$ret = $this->where($condition)->count();
+		return $ret;
+	}
 }

@@ -12,14 +12,16 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
-  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/Blog/Public/admin/css/index.css">
+  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" />
+  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
     <script src="/Blog/Public/admin/js/ie/respond.min.js"></script>
     <script src="/Blog/Public/admin/js/ie/excanvas.js"></script>
-    <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <![endif]-->
-  
+  <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
@@ -32,7 +34,6 @@
         </a>
         <a href="<?php echo U('Admin/Index/index');?>" class="navbar-brand text-lt">
           <i class="icon-home"></i>
-          <img src="/Blog/Public/admin//Blog/Public/admin/images/logo.png" alt="." class="hide">
           <span class="hidden-nav-xs m-l-sm">Companion</span>
         </a>
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
@@ -97,7 +98,7 @@
               <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
                 <img src="/Blog/Public/admin/images/a0.png" alt="...">
               </span>
-              Admin<b class="caret"></b>
+              你好，<?php echo ($username); ?><b class="caret"></b>
             </a>
             <ul class="dropdown-menu animated fadeInRight">            
               <li>
@@ -118,7 +119,7 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a href="modal.lockme.html" data-toggle="ajaxModal" >退出</a>
+                <a href="<?php echo U('Login/logout');?>" data-toggle="ajaxModal" >退出</a>
               </li>
             </ul>
           </li>
@@ -163,9 +164,9 @@
                       </a>
                     </li>
                     <li>
-                      <a href="<?php echo U('Admin/Video/index');?>" data-target="#content" data-el="#bjax-el" data-replace="true">
-                        <i class="icon-social-youtube icon  text-primary"></i>
-                        <span class="font-bold">视频</span>
+                      <a href="<?php echo U('Admin/Users/index');?>">
+                        <i class="icon-user icon  text-primary"></i>
+                        <span class="font-bold">用户</span>
                       </a>
                     </li>
                     <li class="m-b hidden-nav-xs"></li>
@@ -220,14 +221,14 @@
                       </a>
                       <ul class="nav dk text-sm">
                         <li >
-                          <a href="buttons.html" class="auto">                                                        
+                          <a href="<?php echo U('Admin/Tools/buttons');?>" class="auto">                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
                             <span>按钮</span>
                           </a>
                         </li>
                         <li >
-                          <a href="icons.html" class="auto">                            
+                          <a href="<?php echo U('Admin/Tools/icons');?>" class="auto">                            
                             <b class="badge bg-info pull-right">369</b>                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
@@ -282,13 +283,13 @@
                           </a>
                           <ul class="nav dker">
                             <li >
-                              <a href="table-static.html">
+                              <a href="<?php echo U('Admin/Tools/staticTable');?>">
                                 <i class="fa fa-angle-right"></i>
                                 <span>静态表格</span>
                               </a>
                             </li>
                             <li >
-                              <a href="table-datatable.html">
+                              <a href="<?php echo U('Admin/Tools/dataTable');?>">
                                 <i class="fa fa-angle-right"></i>
                                 <span>数据表</span>
                               </a>
@@ -419,25 +420,6 @@
                       </ul>
                     </li>
                   </ul>
-                  <ul class="nav text-sm">
-                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
-                      <span class="pull-right"><a href="#"><i class="icon-plus i-lg"></i></a></span>
-                      播放列表
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-music-tone icon"></i>
-                        <span>Hip-Pop</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-playlist icon text-success-lter"></i>
-                        <b class="badge bg-success dker pull-right">9</b>
-                        <span>Jazz</span>
-                      </a>
-                    </li>
-                  </ul>
                 </nav>
                 <!-- / nav -->
               </div>
@@ -452,10 +434,9 @@
                       </span>
                       <span class="hidden-nav-xs clear">
                         <span class="block m-l">
-                          <strong class="font-bold text-lt">John.Smith</strong> 
+                          <strong class="font-bold text-lt"><?php echo ($username); ?></strong> 
                           <b class="caret"></b>
                         </span>
-                        <span class="text-muted text-xs block m-l">Art Director</span>
                       </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight aside text-left">                      
@@ -477,7 +458,7 @@
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <a href="modal.lockme.html" data-toggle="ajaxModal" >退出</a>
+                        <a href="href="<?php echo U('Login/logout');?>"" data-toggle="ajaxModal" >退出</a>
                       </li>
                     </ul>
                   </div>
@@ -485,47 +466,24 @@
               </footer>
           </section>
         </aside>
-<script>
-  var formArticle = angular.module('formArticle', []);
-
-  function formController($scope,$http){
-    $scope.formData = {};
-    $scope.processForm = function(){
-      $http({
-        method : 'POST',
-        url : '/Admin/Article/create',
-        data : $.param($scope.formData),
-        headers : {'Content-Type' : 'application/x-www-form-urlencoded'}
-      })
-        .success(function(data){
-          console.log(data);
-
-          if(!data.success){
-            $scope.errorTitles = data.errors.atitle;
-            $scope.errorCname = data.errors.cid;
-            $scope.errorContents = data.errors.contents;
-          }else{
-            $scope.message = data.message;
-          }
-        })
-    }
-  }
-</script>
+<link media="all" rel="stylesheet" type="text/css" href="/Blog/Public/simditor/styles/simditor.css">
+<script type="text/javascript" src="/Blog/Public/simditor/scripts/module.js"></script>
+<script type="text/javascript" src="/Blog/Public/simditor/scripts/hotkeys.js"></script>
+<script type="text/javascript" src="/Blog/Public/simditor/scripts/uploader.js"></script>
+<script type="text/javascript" src="/Blog/Public/simditor/scripts/simditor.js"></script>
         <!-- /.aside -->
-        <section id="content" ng-app="formArticle" ng-controller="formController">
+        <section id="content">
           <section class="vbox">
             <section class="scrollable padder">
               <div class="m-b-md"></div>
               <section class="panel panel-default">
-                <div id="message" ng-show="message" ng-class="{'has-error' : errorTitles}"></div>
-                <form class="bs-example form-horizontal" name="articleForm" ng-submit="processForm()" ng-controller="formController">
+                <form class="bs-example form-horizontal" action="<?php echo U('Blog/addone');?>" method="post">
                   <div class="row wrapper">
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label class="col-lg-1 control-label">标题</label>
                         <div class="col-lg-11">
-                          <input type="text" required name="atitle" class="form-control m-b">
-                          <span class="help-block" ng-show="errorTitles">{{errorTitles}}</span>
+                          <input type="text" required name="title" class="form-control m-b">
                         </div>
                       </div>
                     </div>
@@ -535,62 +493,7 @@
                     <div class="form-group">
                       <label class="col-lg-1 control-label">内容</label>
                       <div class="col-lg-11">
-                        <div class="btn-toolbar m-b-sm btn-editor" data-role="editor-toolbar" data-target="#editor">
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="Font"><i class="fa fa-font"></i><b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                              </ul>
-                          </div>
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
-                              <ul class="dropdown-menu">
-                              <li><a data-edit="fontSize 5" style="font-size:24px">Huge</a></li>
-                              <li><a data-edit="fontSize 3" style="font-size:18px">Normal</a></li>
-                              <li><a data-edit="fontSize 1" style="font-size:14px">Small</a></li>
-                              </ul>
-                          </div>
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
-                          </div>
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-dedent"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
-                          </div>
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
-                          </div>
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
-                            <div class="dropdown-menu">
-                              <div class="input-group m-l-xs m-r-xs">
-                                <input class="form-control input-sm" placeholder="URL" type="text" data-edit="createLink"/>
-                                <div class="input-group-btn">
-                                  <button class="btn btn-default btn-sm" type="button">Add</button>
-                                </div>
-                              </div>
-                            </div>
-                            <a class="btn btn-default btn-sm" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
-                          </div>
-                          
-                          <div class="btn-group hide">
-                            <a class="btn btn-default btn-sm" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-picture-o"></i></a>
-                            <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
-                          </div>
-                          <div class="btn-group">
-                            <a class="btn btn-default btn-sm" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
-                            <a class="btn btn-default btn-sm" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
-                          </div>
-                        </div>
-                        <textarea id="editor" class="form-control" name="contents" style="overflow:scroll;height:250px;max-height:250px"></textarea>
-                        <span class="help-block" ng-show="errorTitles">{{errorContents}}</span>
+                        <textarea id="editor" name="content" placeholder="这里输入内容" autofocus></textarea>
                       </div>
                     </div>
                   </div>
@@ -606,32 +509,61 @@
                     </div>
                   </div>
               </form>
-              <pre>{{formData}}</pre>
               </section>
             </section>
           </section>
           <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
         </section>
+<script>
+  $(function(){
+      toolbar = [ 'title', 'bold', 'italic', 'underline', 'strikethrough',  
+            'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|',  
+            'link', 'hr', '|', 'indent', 'outdent' ]; 
+      var editor = new Simditor({
+        textarea: $('#editor'),
+        toolbar : toolbar,
+        upload  : {
+          url : "<?php echo U('Admin/Common/uploadImage');?>",
+          params : null,
+          fileKey : 'upload_file',
+          connectionCount: 1,
+          leaveConfirm: '正在上传文件...'
+        },
+        pasteImage: true
+      });
+  });
+</script>
+<style type="text/css">
+  .simditor{
+    border-radius: 2px;
+  }
+</style>
 </section>
 </section>    
 </section>
-  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="/Blog/Public/admin/js/bootstrap.js"></script>
-  <!-- wysiwyg -->
-  <script src="/Blog/Public/admin/js/wysiwyg/jquery.hotkeys.js"></script>
-  <script src="/Blog/Public/admin/js/wysiwyg/bootstrap-wysiwyg.js"></script>
-  <script src="/Blog/Public/admin/js/wysiwyg/demo.js"></script>
   <!-- App -->
   <script src="/Blog/Public/admin/js/app.js"></script>
   <script src="/Blog/Public/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- file input -->  
+  <script src="/Blog/Public/admin/js/file-input/bootstrap-filestyle.min.js"></script>
+  <!-- Sparkline Chart -->
+  <script src="/Blog/Public/admin/js/charts/sparkline/jquery.sparkline.min.js"></script>
+  <!-- Easy Pie Chart -->
+        <!-- Easy Pie Chart -->
+  <script src="/Blog/Public/admin/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.resize.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.orderBars.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.pie.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.grow.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/demo.js"></script>
+  <script src="/Blog/Public/admin/js/app.plugin.js"></script>
   <!-- parsley -->
   <script src="/Blog/Public/admin/js/parsley/parsley.min.js"></script>
   <script src="/Blog/Public/admin/js/parsley/parsley.extend.js"></script>
   <script src="/Blog/Public/admin/js/app.plugin.js"></script>
-  <!--jplayer-->
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/jquery.jplayer.min.js"></script>
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/demo.js"></script>
 </body>
 </html>

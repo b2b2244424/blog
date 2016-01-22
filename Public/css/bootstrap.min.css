@@ -4665,7 +4665,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 20px
+    line-height: 25px
 }
 
 @media (max-width: 767px) {

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="__PUBLIC__/css/show.css">
+<script src="__PUBLIC__/Ueditor/third-party/SyntaxHighlighter/shCore.min.js" type="text/javascript"></script>
+    <link href="__PUBLIC__/Ueditor/third-party/SyntaxHighlighter/shCore.min.css"rel="stylesheet" type="text/css" >
+    <script type="text/javascript" language="javascript">
+        $(function(){
+            SyntaxHighlighter.all();
+        });
+    </script>
+<div class="container" style="margin-top: 40px;">
+	<div class="row">
+        <div class="col-md-12 col-xs-12">
+            <article>
+            <div class="left-content clearfix">
+                <div class="show-article-title">{$data.title}</div>
+                <div class="show-article-tag">
+                	<ul>
+                		<li><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;东风</li>
+                		<li><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{$data.create_time}</li>
+                		<li><i class="glyphicon glyphicon-tags"></i>&nbsp;&nbsp;学习心得</li>
+                		<li><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;{$data.rnum}</li>
+                	</ul>
+                </div>
+                <div class="show-article-content">
+                	{$data.content|htmlspecialchars_decode|stripslashes}
+                </div>
+                <div class="show-article-share">
+            		<div id="SOHUCS"></div>
+						<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+						<script type="text/javascript">
+    							window.changyan.api.config({
+        						appid: 'cysbX9VCC',
+        						conf: 'prod_10b8a48016be44a73661ab476c177439'
+    							});
+						</script> 
+            	</div>
+            </div>
+            </article>
+        </div>
+    </div>
+</div>

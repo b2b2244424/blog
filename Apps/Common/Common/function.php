@@ -58,13 +58,13 @@ function getOS()
 function verify()
 {
     $verify = new \Think\Verify();
-    $verify->codeSet = '123456789abcdefghigklmnpqrstuvwxyz';
+    $verify->codeSet = '3456789abcdefghjkmnpqrstuvwxy';
     $verify->fontSize = '18px';
-    $verify->imageW = '150';
+    $verify->imageW = '180';
     $verify->imageH = '50';
     $verify->length = '4';
-    $verify->useCurve = false;
-    $verify->useNoise = false;
+    $verify->useCurve = true;
+    $verify->useNoise = true;
     $verify->entry();
 }
 
@@ -79,9 +79,9 @@ function checkVerify($code)
 function plus($id)
 {
     $condition = array('aid' => $id);
-    $data = D('Article')->getone($condition);
+    $data = D('Home/Article')->getone($condition);
     $data['rnum'] = $data['rnum'] + 1;
-    $ret = D('Article')->update($condition,$data);
+    $ret = D('Article')->updateEntity($condition,$data);
     return $ret;
 }
 

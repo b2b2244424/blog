@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
-    <link rel="shortcut icon" href="/Blog/Public//Blog/Public/images/favicon.ico">
+    <link rel="shortcut icon" href="/Blog/Public/images/favicon.ico">
     <link href="/Blog/Public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Blog/Public/css/default.css" rel="stylesheet">
     <link href="/Blog/Public/css/style.css" rel="stylesheet">
     <script src="/Blog/Public/js/require.js" data-main="/Blog/Public/js/main"></script>
     <!--JS-->
     <script src="/Blog/Public/js/jquery.min.js"></script>
     <script src="/Blog/Public/js/bootstrap.min.js"></script>
-    <script src="/Blog/Public/js/canvastimer.js"></script>
+    <!--<script src="/Blog/Public/js/canvastimer.js"></script>-->
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script src="/Blog/Public/js/angular.min.js"></script>
+    <script src="/Blog/Public/js/jquery.complexify.js"></script>
+    <script src="/Blog/Public/js/jquery.placeholder.min.js"></script>
+    <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="/Blog/Public/js/angular-sanitize.js"></script>
+    <script src="/Blog/Public/home/index/app.js"></script>
     <title>首页</title>
+    <script>
+        $(function(){
+            $('#password input[placeholder]').placeholder();
+            $("#password").complexify({}, function(valid, complexity){
+                if (!valid) {
+                    $('#complexity').animate({'width':complexity + '%'}).removeClass('valid').addClass('invalid');
+                } else {
+                    $('#complexity').animate({'width':complexity + '%'}).removeClass('invalid').addClass('valid');
+                }
+                $('#complexity').html(Math.round(complexity) + '%');
+            });
+        });
+    </script>
 </head>
 <body>
 <!--head start-->
@@ -32,11 +52,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Companion</a>
+            <a class="navbar-brand" href="<?php echo U('/index');?>">Companion</a>
         </div>
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+                <li><a href="<?php echo U('/index');?>">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -47,16 +67,100 @@
                     </ul>
                 </li>
                 <li><a href="#">相册</a></li>
+                <li><a href="#">音乐</a></li>
                 <li><a href="#">留言板</a></li>
                 <li><a href="#">关于我</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="openlogin"><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
-                <li class="reg"><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
+                <li><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
+                <li><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<div class="modal fade" id="login" tableindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">登录</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密&nbsp;&nbsp;&nbsp;码</label>
+            <input type="password" class="form-control" id="message-text">
+          </div>
+        </form>
+      </div>
+      <div class="button-group">
+        <div class="col-md-2">
+            <div class="others-login"><span>第三方登录</span></div>
+        </div>
+        <div class="col-md-1">
+            <div class="qqlogin"><i class="icon-qq"></i></div>
+        </div>
+        <div class="col-md-1">
+           <div class="weibologin"><i class="icon-weibo"></i></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="register" tableindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">注册用户</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">用户名</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">邮&nbsp;&nbsp;&nbsp;箱</label>
+            <input type="email" class="form-control" id="message-text">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">密&nbsp;&nbsp;&nbsp;码</label>
+            <input type="password" placeholder="请输入密码" id="password" class="form-control">
+          </div>
+          <div class="form-group">
+              <div id="complexitywrap">
+                  <div id="complexity">0%</div>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="button-group">
+        <div class="col-md-2">
+            <div class="others-login"><span>第三方登录</span></div>
+        </div>
+        <div class="col-md-1">
+            <div class="qqlogin"><i class="icon-qq"></i></div>
+        </div>
+        <div class="col-md-1">
+           <div class="weibologin"><i class="icon-weibo"></i></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-success">注册</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!--bshare-->
 <!--<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a>
 <script type="text/javascript" charset="utf-8"
@@ -90,7 +194,7 @@
         <!-- END  运行滑块 -->
 </div>
 <!--main content-->
-<div class="container" style="min-height: 900px;">
+<div class="container" style="min-height: 900px;" ng-app="IndexApp" ng-controller="IndexCrtl">
     <div class="row">
         <div class="col-md-8 col-xs-12">
             <div class="newest-title">
@@ -99,7 +203,7 @@
         </div>
         <div class="col-md-4 col-xs-6">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="关键字...">
+                <input type="text" class="form-control" ng-model="search" ng-change="filter()" placeholder="关键字...">
                 <span class="input-group-btn">
                     <button class="btn btn-primary" type="button">搜索</button>
                 </span>
@@ -108,45 +212,43 @@
     </div>
     <div class="row">
         <div class="col-md-8 col-xs-12">
-            <?php if(is_array($articles)): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><article>
+            <article ng-repeat="article in filtered = (articles | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
             <div class="left-content clearfix">
                 <div class="article-title col-md-12 col-xs-12">
                     <div class="title-heavy"></div>
-                    <h4><?php echo ($v["title"]); ?></h4>
+                    <h4>{{article.title}}</h4>
                 </div>
                 <div class="article-content center-block">
-                    <div class="col-md-4"><img src="/Blog/Public/images/class1.jpg" style="width:100%"></div>
-                    <div class="col-md-8"><?php echo ($v["plaintxt"]); ?></div>
+                    <div class="col-md-4"><img src="{{article.path.path}}" style="width:100%;height:150px;"></div>
+                    <div class="col-md-8">{{article.plaintxt}}</div>
                 </div>
                 <div class="article-desc">
                     <div class="col-md-10">
                     <ul>
                         <li data-toggle="tooltip" data-placement="right" title="发布日期"><i
-                                class="glyphicon glyphicon-time"></i>&nbsp;<?php echo ($v["create_time"]); ?>
+                                class="glyphicon glyphicon-time"></i>&nbsp;{{article.create_time}}
                         </li>
                         <li data-toggle="tooltip" data-placement="right" title="标签"><i
-                                class="glyphicon glyphicon-tag"></i>&nbsp;<?php echo ($v["cname"]["cname"]); ?>
+                                class="glyphicon glyphicon-tag"></i>&nbsp;{{article.cname.cname}}
                         </li>
                         <li data-toggle="tooltip" data-placement="right" title="浏览"><i
-                                class="glyphicon glyphicon-eye-open"></i>&nbsp;<?php echo ($v["rnum"]); ?>
+                                class="glyphicon glyphicon-eye-open"></i>&nbsp;{{article.rnum}}
                         </li>
                     </ul>
                     </div>
-                    <a href="#" class="col-md-2"><button class="btn btn-primary">查看全文</button></a>
+                    <a href="article-{{article.aid}}" class="col-md-2"><button class="btn btn-primary">查看全文</button></a>
                 </div>
             </div>
-        </article><?php endforeach; endif; else: echo "" ;endif; ?>
-            <?php echo ($page); ?>
+            </article>
+            <div class="col-md-12" style="padding-left: 0" ng-show="filteredItems > 0">    
+                <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+        </div>
         </div>
         <div class="col-md-4 col-xs-12">
-            <div class="canvas-block">
-                <div id="timer">
-                    <canvas id="canvas"></canvas>
-                </div>
-            </div>
+            
             <div class="click-top">
                 <div class="title-top">
-                    <i class="glyphicon glyphicon-align-justify"></i>&nbsp;&nbsp;点击排行<span>Top</span>
+                    <i class="glyphicon glyphicon-align-justify"></i>&nbsp;&nbsp;点击排行<!-- <span>Top</span> -->
                 </div>
                 <div class="click-top-list">
                     <p><i class="glyphicon glyphicon-signal top-1"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
@@ -212,154 +314,6 @@
                     <img data-toggle="tooltip" data-placement="top" title="唐春林" src="/Blog/Public/images/2.jpg">
                 </div>
             </div>
-            <div class="new-mutual-title">
-                <div class="title-friend-link">
-                    <i class="glyphicon glyphicon-random"></i>&nbsp;&nbsp;最新互动
-                </div>
-                <div class="friend-link-list new-mutual">
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a style="border-left:none;border-top: none;color:#000" href="#home" aria-controls="home" role="tab" data-toggle="tab">最新评论</a></li>
-                        <li role="presentation"><a style="border-top:none;border-radius: 0;color:#000" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">最新留言</a></li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-6" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        <span>文章</span>&nbsp;&nbsp;借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-4" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        <span>文章</span>&nbsp;&nbsp;借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-4" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        <span>文章</span>&nbsp;&nbsp;借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-4" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        <span>文章</span>&nbsp;&nbsp;借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-4" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        <span>文章</span>&nbsp;&nbsp;借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="profile">
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-6" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-6" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-6" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-6" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-xs-12">
-                                <div class="col-md-4 col-xs-6" style="padding-left:0;padding-right: 5px;;margin-left: -10px;">
-                                    <img src="/Blog/Public/images/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-xs-12" style="padding-left:0;margin-left: -30px;">
-                                    <div class="message-uname">
-                                        <i class="glyphicon glyphicon-comment"></i>&nbsp;&nbsp;virtual
-                                    </div>
-                                    <div class="message-txt">
-                                        借用了，感谢博主...
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="friend-link">
                 <div class="title-friend-link">
                     <i class="glyphicon glyphicon-link"></i>&nbsp;&nbsp;友情链接
@@ -371,9 +325,9 @@
         </div>
     </div>
 </div>
-<!--sidebar-->
+<!--sidebar
 <!--footer-->
-<div class="toolbar">
+<!-- <div class="toolbar">
     <a href="javascript:;" class="toolbar-item">
         <span class="toolbar-btn">
             <i class="toolbar-icon icon-wechat"></i>
@@ -393,9 +347,11 @@
             <span class="toolbar-text">返回<br>顶部</span>
         </span>
     </a>
-</div>
+</div> -->
 <div class="container-fluid modal-footer">
-    
+    <ul class="nav pull-right">
+        <li><a href="<?php echo U('/admin');?>">博客管理</a></li>
+    </ul>
 </div>
 <script type="text/javascript" src="/Blog/Public/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="/Blog/Public/js/jquery.themepunch.revolution.min.js"></script> 

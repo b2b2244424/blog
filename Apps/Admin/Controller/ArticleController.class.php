@@ -4,26 +4,26 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class ArticleController extends Controller
+class ArticleController extends CommonController
 {
 	public function index()
 	{
 		$this->display();
 	}
 
+	
+
 	public function getlist()
 	{
-		$currentpage = I('currentpage');
-		$perpage = I('perpage');
 		$fields = I('fields');
 		$embed = !!I('embed');
 		$order = I('order');
 		if(empty($order)){
-			$order = 'aid desc';
+			$order = 'create_time desc';
 		}
 		$condition = array('if_delete = 0');
 		$cfield = array('cname');
-		$ret = D('Article')->getList($condition,$fields,$currentpage,$perpage,$order,$embed);
+		$ret = D('Article')->getList($condition,$fields,$order,$embed);
 		$i = 0;
 		foreach ($ret['data'] as $k) {
 			$k['cname'] = D('Category','Service')->getCateByid($k['cid'],$cfield);
@@ -44,6 +44,8 @@ class ArticleController extends Controller
 	 */
 	public function create()
 	{
+		$category = D('Category')->getList();
+		$this->assign('catelist',$category['data']);
 		$this->display();
 	}
 
@@ -53,16 +55,25 @@ class ArticleController extends Controller
 	 */
 	public function addone()
 	{
-		$data = I('articledata');
-		$data['cid'] = intval($data['cid']);
-		$data['content'] = htmlspecialchars_decode($data['content']);
+		$data['title'] = I('title');
+		$data['cid'] = I('cid');
+		$data['plaintxt'] = I('plaintxt');
+		$data['content'] = I('content');
 		$data['create_time'] = date('Y-m-d H:i:s',time());
 		$data['update_time'] = date('Y-m-d H:i:s',time());
+		$cover = I('cover');
+		$ext = D('Common','Service')->getExt($cover);
+		$coverinfo = array('path' => $cover,'ext' => $ext);
 		try{
+			$addcover = D('CoverImg')->addone($coverinfo);
+			$data['coverid'] = $addcover;
 			$res = D('Article')->addone($data);
-			$this->ajaxReturn(array('code'=>1,'msg'=>'创建成功'));
+			$condition = array('cid' => $addcover);
+			$updata = array('aid' => $res);
+			D('CoverImg')->update($condition,$updata);
+			$this->success('添加成功','index',3);
 		}catch(Exception $e){
-			$this->ajaxReturn(array('code'=>0,'msg'=>'创建失败'));
+			$this->error('添加失败','create',3);
 		}
 	}
 
@@ -72,10 +83,11 @@ class ArticleController extends Controller
 	 */
 	public function edit()
 	{
-		$aid = intval(I('aid'));
+		$aid = intval($_GET['aid']);
 		$condition = array('aid' => $aid);
 		$ret = D('Article')->getone($condition);
-		$this->ajaxReturn(array('code' => 1,'msg' => '获取文章成功','data' => $ret));
+		$this->assign('article',$ret);
+		$this->display();
 	}
 
 	/*public function getone()
@@ -97,15 +109,15 @@ class ArticleController extends Controller
 			$this->ajaxReturn(array('code'=>-1,'msg'=>'para error'));
 		}
 		$condition = array('aid' => $aid);
-		$data['title'] = I('atitle');
+		$data['title'] = I('title');
 		$data['cid'] = I('cid');
-		$data['content'] = I('contents');
+		$data['content'] = I('content');
 		$data['update_time'] = date('Y-m-d H:i:s',time());
 		$ret = D('Article')->update($condition,$data);
 		if($ret){
-			$this->ajaxReturn(array('code'=>1,'msg'=>'更新成功'));
+			$this->success('更新成功','index',3);
 		}else{
-			$this->ajaxReturn(array('code'=>0,'msg'=>'更新失败'));
+			$this->error('更新失败');
 		}
 	}
 

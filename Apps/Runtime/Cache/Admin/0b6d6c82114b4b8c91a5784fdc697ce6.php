@@ -13,16 +13,15 @@
   <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
   <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/Blog/Public/css/wysiwyg-editor.css" />
-  <link rel="stylesheet" type="text/css" href="/Blog/Public/css/editor.css" />
-  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" /
+  <link rel="stylesheet" href="/Blog/Public/admin/css/index.css">
+  <link rel="shortcut icon" href="/Blog/Public/images/admin.ico" type="image/x-icon" />
+  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="/Blog/Public/admin/js/ie/html5shiv.js"></script>
     <script src="/Blog/Public/admin/js/ie/respond.min.js"></script>
     <script src="/Blog/Public/admin/js/ie/excanvas.js"></script>
-    <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <![endif]-->
-  
+  <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
@@ -35,7 +34,6 @@
         </a>
         <a href="<?php echo U('Admin/Index/index');?>" class="navbar-brand text-lt">
           <i class="icon-home"></i>
-          <img src="/Blog/Public/admin//Blog/Public/admin/images/logo.png" alt="." class="hide">
           <span class="hidden-nav-xs m-l-sm">Companion</span>
         </a>
         <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
@@ -100,7 +98,7 @@
               <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
                 <img src="/Blog/Public/admin/images/a0.png" alt="...">
               </span>
-              Admin<b class="caret"></b>
+              你好，<?php echo ($username); ?><b class="caret"></b>
             </a>
             <ul class="dropdown-menu animated fadeInRight">            
               <li>
@@ -121,7 +119,7 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a href="modal.lockme.html" data-toggle="ajaxModal" >退出</a>
+                <a href="<?php echo U('Login/logout');?>" data-toggle="ajaxModal" >退出</a>
               </li>
             </ul>
           </li>
@@ -166,9 +164,9 @@
                       </a>
                     </li>
                     <li>
-                      <a href="<?php echo U('Admin/Video/index');?>" data-target="#content" data-el="#bjax-el" data-replace="true">
-                        <i class="icon-social-youtube icon  text-primary"></i>
-                        <span class="font-bold">视频</span>
+                      <a href="<?php echo U('Admin/Users/index');?>">
+                        <i class="icon-user icon  text-primary"></i>
+                        <span class="font-bold">用户</span>
                       </a>
                     </li>
                     <li class="m-b hidden-nav-xs"></li>
@@ -223,14 +221,14 @@
                       </a>
                       <ul class="nav dk text-sm">
                         <li >
-                          <a href="buttons.html" class="auto">                                                        
+                          <a href="<?php echo U('Admin/Tools/buttons');?>" class="auto">                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
                             <span>按钮</span>
                           </a>
                         </li>
                         <li >
-                          <a href="icons.html" class="auto">                            
+                          <a href="<?php echo U('Admin/Tools/icons');?>" class="auto">                            
                             <b class="badge bg-info pull-right">369</b>                                                        
                             <i class="fa fa-angle-right text-xs"></i>
 
@@ -285,13 +283,13 @@
                           </a>
                           <ul class="nav dker">
                             <li >
-                              <a href="table-static.html">
+                              <a href="<?php echo U('Admin/Tools/staticTable');?>">
                                 <i class="fa fa-angle-right"></i>
                                 <span>静态表格</span>
                               </a>
                             </li>
                             <li >
-                              <a href="table-datatable.html">
+                              <a href="<?php echo U('Admin/Tools/dataTable');?>">
                                 <i class="fa fa-angle-right"></i>
                                 <span>数据表</span>
                               </a>
@@ -480,7 +478,7 @@
                       </li>
                       <li class="divider"></li>
                       <li>
-                        <a href="modal.lockme.html" data-toggle="ajaxModal" >退出</a>
+                        <a href="href="<?php echo U('Login/logout');?>"" data-toggle="ajaxModal" >退出</a>
                       </li>
                     </ul>
                   </div>
@@ -489,11 +487,64 @@
           </section>
         </aside>
 <script type="text/javascript" src="/Blog/Public/admin/article/app.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Blog/Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Blog/Public/ueditor/ueditor.all.min.js"></script>
+<script>
+  //单独整合图片上传
+  //这个是图片上传的，网上还有附件上传的
+    (function($) {
+        var url='<?php echo U('Admin/Upload/index');?>';
+        var image = {
+            editor: null,
+            init: function(editorid, keyid) {
+                var _editor = this.getEditor(editorid,{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'/Blog/Public/ueditor/',
+                });
+                _editor.ready(function() {
+                    //_editor.setDisabled();
+                    _editor.hide();
+                    _editor.addListener('beforeInsertImage', function(t, arg) {
+                        $("#"+keyid).attr("value", arg[0].src);
+                    });
+                });
+            },
+            getEditor: function(editorid) {
+                this.editor = UE.getEditor(editorid,{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'/Blog/Public/ueditor/',
+                });
+                return this.editor;
+            },
+            show: function(id) {
+                var _editor = this.editor;
+                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）
+                //和网上一些朋友的代码不同之处就在这里
+                $("#"+id).click(function() {
+                    var image = _editor.getDialog("insertimage");
+                    image.render();
+                    image.open();
+                });
+            },
+            render: function(editorid) {
+                var _editor = this.getEditor(editorid,{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'/Blog/Public/ueditor/',
+                });
+                _editor.render();
+            }
+        };
+        $(function() {
+            image.init("myeditor", "coverImage");
+            image.show("image");
+        });
+    })(jQuery);
+</script>
         <!-- /.aside -->
-        <section id="content" ng-app="ArticleApp" ng-app ng-controller="articleCrtl">
+        <section id="content">
           <section class="vbox">
             <section class="scrollable padder">
-              <form class="bs-example form-horizontal">
+              <form action="<?php echo U('Article/addone');?>" method="post">
               <div class="m-b-md"></div>
               <section class="panel panel-default">
                   <div class="row wrapper">
@@ -501,7 +552,7 @@
                       <div class="form-group">
                         <label class="col-lg-2 control-label">标题</label>
                         <div class="col-lg-10">
-                          <input type="text" name="title" ng-model="articleData.title" class="form-control parsley-validated" data-required="true">
+                          <input type="text" name="title" class="form-control parsley-validated" data-required="true">
                         </div>
                       </div>
                     </div>
@@ -509,10 +560,25 @@
                       <div class="form-group">
                         <label class="col-lg-2 control-label">分类</label>
                         <div class="col-lg-10">
-                          <select class="form-control m-b" name='cid' ng-model="articleData.cid">
-                            <option value="1">学习</option>
-                            <option value="2">日志</option>
+                          <select class="form-control m-b" name='cid'>
+                            <?php if(is_array($catelist)): $i = 0; $__LIST__ = $catelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cid"]); ?>"><?php echo ($vo["cname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                           </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row wrapper">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label class="col-lg-1 control-label">封面</label>
+                        <div class="col-lg-11">
+                          <div class="input-group">
+                            <input type="text" name="cover" class="form-control" id="coverImage" readonly value="">
+                            <script id="myeditor"></script>
+                            <span class="input-group-btn">
+                              <input class="btn btn-primary" type="button" value="选择文件" id="image"></button>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -532,8 +598,7 @@
                     <div class="form-group">
                       <label class="col-lg-1 control-label">内容</label>
                       <div class="col-lg-11">
-                          <textarea id="editor1" name="content" ng-model="articleData.content" placeholder="内容...">
-                          </textarea>
+                          <textarea id="editor" class="ueditor" name="content" ng-model="articleData.content" required="" style="width:100%;height:200px;"></textarea>
                       </div>
                     </div>
                   </div>
@@ -542,36 +607,53 @@
                         <div class="form-group">
                           <div class="col-lg-4 col-sm-offset-1">
                             <button type="reset" class="btn btn-default">取消</button>
-                            <button type="submit" ng-click="create(articleData)" class="btn btn-primary">保存</button>
+                            <button type="submit" class="btn btn-primary">保存</button>
                           </div>
                         </div>
                     </div>
                   </div>
               </section>
-            </form>
+             </form>
             </section>
           </section>
         </section>
+        <script type="text/javascript">
+            //文章内容附件上传
+            $(function(){
+                var url='<?php echo U('Admin/Upload/index');?>';
+                var ue = UE.getEditor('editor',{
+                    serverUrl :url,
+                    UEDITOR_HOME_URL:'/Blog/Public/ueditor/',
+                });
+                
+            });
+        </script>
 </section>
 </section>    
 </section>
-  <script src="/Blog/Public/admin/js/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="/Blog/Public/admin/js/bootstrap.js"></script>
-  <!-- wysiwyg -->
-  <script src="/Blog/Public/js/wysiwyg.js"></script>
-  <script src="/Blog/Public/js/wysiwyg-editor.js"></script>
-  <script src="/Blog/Public/js/editor.js"></script>
   <!-- App -->
   <script src="/Blog/Public/admin/js/app.js"></script>
   <script src="/Blog/Public/admin/js/slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- file input -->  
+  <script src="/Blog/Public/admin/js/file-input/bootstrap-filestyle.min.js"></script>
+  <!-- Sparkline Chart -->
+  <script src="/Blog/Public/admin/js/charts/sparkline/jquery.sparkline.min.js"></script>
+  <!-- Easy Pie Chart -->
+        <!-- Easy Pie Chart -->
+  <script src="/Blog/Public/admin/js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.resize.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.orderBars.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.pie.min.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/jquery.flot.grow.js"></script>
+  <script src="/Blog/Public/admin/js/charts/flot/demo.js"></script>
+  <script src="/Blog/Public/admin/js/app.plugin.js"></script>
   <!-- parsley -->
   <script src="/Blog/Public/admin/js/parsley/parsley.min.js"></script>
   <script src="/Blog/Public/admin/js/parsley/parsley.extend.js"></script>
   <script src="/Blog/Public/admin/js/app.plugin.js"></script>
-  <!--jplayer-->
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/jquery.jplayer.min.js"></script>
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/add-on/jplayer.playlist.min.js"></script>
-  <script type="text/javascript" src="/Blog/Public/admin/js/jPlayer/demo.js"></script>
 </body>
 </html>
