@@ -3472,8 +3472,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #e61729;
-    border-color: #e61729
+    background-color: #545ca6;
+    border-color: #545ca6
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -3484,8 +3484,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #e61729;
-    border-color: #e61729
+    background-color: #428bca;
+    border-color: #428bca
 }
 
 .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
@@ -4858,12 +4858,12 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-default {
-    background-color: #fff;
-    border-color: #e61729;
+    background-color: #36b0c8;
+    border-color: #fff;
 }
 
 .navbar-default .navbar-brand {
-    color: #777
+    color: #fff
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -4876,7 +4876,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #777
+    color: #fff
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
@@ -5130,8 +5130,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     z-index: 2;
     color: #fff;
     cursor: default;
-    background-color: #e61729;
-    border-color: #e61729
+    background-color: #428bca;
+    border-color: #428bca
 }
 
 .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {

@@ -479,63 +479,118 @@
               </footer>
           </section>
         </aside>
-<style>
-  .panel {
-      width: 50%;
-      margin: 10% auto;
-      text-align: center;
-      min-height: 200px;
-  }
-  #growthrate {
-    font-size: 18px;
-    line-height: 150px;
-  }
-  .success-icon {
-    color : #1ab667;
-  }
-  .error-icon {
-    color : #f05050;
-  }
-</style>
 <section id="content">
-          <section class="wrapper">
-          <div class="m-b">
-            <span class="h3 font-thin"><i class="i i-arrow-left3"></i></span> 
-          </div>
-          <?php if(isset($message)){?>
-          <section class="panel panel-default">
-            <header class="panel-heading">
-                提示信息
-            </header>
-            <div class="table-responsive" id="growthrate">
-                  <i class="icon-check success-icon"></i>&nbsp;&nbsp;操作成功,页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+    <section class="wrapper">
+        <div class="m-b">
+            <span class="h3 font-thin"><i class="i i-arrow-left3"></i>System Manage</span> 
+        </div>
+        <form action="<?php echo U('Admin/System/update');?>" method="post">
+        <input type="hidden" name="sid" value="<?php echo ($system["sid"]); ?>">
+        <section class="panel panel-default">
+            <div class="row wrapper">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">网站名称</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_title" class="form-control" value="<?php echo ($system["web_title"]); ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">二级名称</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_title_2" class="form-control" value="<?php echo ($system["web_title_2"]); ?>">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </section>
-          <?php }else{?>
-            <section class="panel panel-default">
-            <header class="panel-heading">
-                提示信息
-            </header>
-            <div class="table-responsive" id="growthrate">
-                  <i class="icon-close error-icon"></i>&nbsp;&nbsp;操作失败,页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+            <div class="row wrapper">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">关键字</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_keyword" class="form-control" value="<?php echo ($system["web_keyword"]); ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">标记</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_remark" class="form-control" value="<?php echo ($system["web_remark"]); ?>">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </section>
-          <?php }?>
+            <div class="row wrapper">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">作者</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_author" class="form-control" value="<?php echo ($system["web_author"]); ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">创建时间</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_time" class="form-control" value="<?php echo ($system["web_time"]); ?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wrapper">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">备案号</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_icp" class="form-control" value="<?php echo ($system["web_icp"]); ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">版权信息</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_copy" class="form-control" value="<?php echo ($system["web_copy"]); ?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wrapper">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">网站地址</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_url" class="form-control" value="<?php echo ($system["web_url"]); ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">访问量</label>
+                        <div class="col-lg-10">
+                            <input type="text" name="web_hit" class="form-control" value="<?php echo ($system["web_hit"]); ?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wrapper">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                          <div class="col-lg-4 col-sm-offset-1">
+                            <a href="<?php echo U('Admin/System/index');?>" class="btn btn-default">取消</a>
+                            <button type="submit" class="btn btn-primary">保存</button>
+                          </div>
+                        </div>
+                    </div>
+            </div>
         </section>
-          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </form>
+    </section>
 </section>
-<script type="text/javascript">
-  (function(){
-      var wait = document.getElementById('wait'),href = document.getElementById('href').href;
-      var interval = setInterval(function(){
-      var time = --wait.innerHTML;
-      if(time <= 0) {
-          location.href = href;
-          clearInterval(interval);
-      };
-  }, 1000);
-  })();
-</script>
 </section>
 </section>    
 </section>

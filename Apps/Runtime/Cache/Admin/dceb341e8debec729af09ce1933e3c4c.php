@@ -23,6 +23,7 @@
   <![endif]-->
   <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/angular-sanitize.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
@@ -167,6 +168,18 @@
                       <a href="<?php echo U('Admin/Users/index');?>">
                         <i class="icon-user icon  text-primary"></i>
                         <span class="font-bold">用户</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Permission/index');?>">
+                        <i class="icon-wrench icon  text-danger"></i>
+                        <span class="font-bold">权限管理</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/System/index');?>">
+                        <i class="icon-settings icon  text-warning"></i>
+                        <span class="font-bold">系统设置</span>
                       </a>
                     </li>
                     <li class="m-b hidden-nav-xs"></li>
@@ -466,9 +479,10 @@
               </footer>
           </section>
         </aside>
-<section id="content">
+<script type="text/javascript" src="/Blog/Public/admin/blog/app.js"></script>
+<section id="content" ng-app="blogApp" ng-controller="blogCrtl">
           <section class="vbox">
-            <section class="scrollable wrapper-lg">
+            <section class="scrollable wrapper-lg" ng-repeat="blog in filtered = blogs | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="row">
@@ -483,37 +497,28 @@
                 <div class="col-sm-12">
                   <div class="blog-post">                   
                     <div class="post-item">
-                      <div class="post-media">
-                        <img src="/Blog/Public/admin/images/m42.jpg" class="img-full">
-                      </div>
                       <div class="caption wrapper-lg">
-                        <h2 class="post-title"><a href="#">7 things you need to know about the flat design</a></h2>
-                        <div class="post-sum">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. 
-                          <br><br>
-                          Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.</p>
+                        <h2 class="post-title">{{blog.title}}</h2>
+                        <div class="post-sum" ng-bind-html="blog.content | trustHtml">
                         </div>
                         <div class="line line-lg"></div>
                         <div class="text-muted">
                           <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">Admin</a>
-                          <i class="fa fa-clock-o icon-muted"></i> Feb 20, 2013
-                          <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 2 comments</a>
+                          <i class="fa fa-clock-o icon-muted"></i>{{blog.create_time}}
+                          <i class="fa fa-comment-o icon-muted"></i> 2 comments
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="text-center m-t-lg m-b-lg">
-                    <ul class="pagination pagination-md">
-                      <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                    </ul>
-                  </div>
                 </div>
+                <div class="col-md-12" ng-show="filteredItems == 0">
+                    <div class="col-md-12">
+                        <p style="text-align: center;padding: 10px">没有日志</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-right pull-right text-center-xs" ng-show="filteredItems > 0">    
+                  <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+            </div>
               </div>
             </section>
           </section>

@@ -169,6 +169,18 @@
                         <span class="font-bold">用户</span>
                       </a>
                     </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Permission/index');?>">
+                        <i class="icon-wrench icon  text-danger"></i>
+                        <span class="font-bold">权限管理</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/System/index');?>">
+                        <i class="icon-settings icon  text-warning"></i>
+                        <span class="font-bold">系统设置</span>
+                      </a>
+                    </li>
                     <li class="m-b hidden-nav-xs"></li>
                   </ul>
                   <ul class="nav" data-ride="collapse">
@@ -522,22 +534,9 @@
       var editor = new Simditor({
         textarea: $('#editor'),
         toolbar : toolbar,
-        upload  : {
-          url : "<?php echo U('Admin/Common/uploadImage');?>",
-          params : null,
-          fileKey : 'upload_file',
-          connectionCount: 1,
-          leaveConfirm: '正在上传文件...'
-        },
-        pasteImage: true
       });
   });
 </script>
-<style type="text/css">
-  .simditor{
-    border-radius: 2px;
-  }
-</style>
 </section>
 </section>    
 </section>

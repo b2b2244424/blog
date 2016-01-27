@@ -11,8 +11,10 @@ class ArticleController extends CommonController
 		$this->display();
 	}
 
-	
-
+	/**
+	 * 文章列表
+	 * @return [type] [description]
+	 */
 	public function getlist()
 	{
 		$fields = I('fields');

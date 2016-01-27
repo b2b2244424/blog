@@ -710,7 +710,7 @@ Vertical inline menu
     padding-left: 0;
     font-size: 18px;
     font-weight: bold;
-    border-bottom: 2px solid #e61729;
+    border-bottom: 2px solid #545ca6;
     font-style: italic;
 }
 
@@ -723,7 +723,7 @@ Vertical inline menu
 
 .title-heavy{
     position: absolute;
-    background: #e61729;
+    background: #545ca6;
     top: 2px;
     left: -1px;
     width: 3px;
@@ -941,7 +941,7 @@ Vertical inline menu
     width: 100%;
     min-height: 30px;
     border-radius: 3px 3px 0 0; 
-    background-color: #e61729;
+    background-color: #545ca6;
     line-height: 30px;
     color: #fff;
     font-weight: bold;

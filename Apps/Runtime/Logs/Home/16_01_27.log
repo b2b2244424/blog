@@ -1,0 +1,1660 @@
+[ 2016-01-27T09:20:17+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002797s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:20:18+08:00 ] 127.0.0.1 /Blog/Public/admin/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:20:34+08:00 ] 127.0.0.1 /Blog/Public/admin/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:20:34+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:21:15+08:00 ] 127.0.0.1 /Blog/Public/admin/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:21:15+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:22:28+08:00 ] 127.0.0.1 /Blog/Public/admin/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:22:28+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:31:35+08:00 ] 127.0.0.1 /Blog/Public/admin/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:31:35+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:32:27+08:00 ] 127.0.0.1 /Blog/Public/admin/css/bootstrap.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T09:32:27+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:23:50+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2016-01-27T15:23:50+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:23:50+08:00 ] 127.0.0.1 /Blog/Public/imgages/shadow1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2016-01-27T15:23:50+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0033s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0109s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0026s ]
+
+[ 2016-01-27T15:24:29+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-01-27T15:24:29+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:24:30+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:24:30+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:25:19+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:26:07+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-01-27T15:26:07+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:26:07+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:26:07+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001324s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0091s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0012s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-01-27T15:26:07+08:00 ] 127.0.0.1 /Blog/Public/imgages/shadow1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-01-27T15:26:08+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000594s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-01-27T15:26:09+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:26:09+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:26:09+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0103s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0013s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:26:19+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2016-01-27T15:26:20+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:26:20+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:26:20+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:26:20+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0111s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0011s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:27:44+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-01-27T15:27:45+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:27:45+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001944s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:27:45+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0101s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:28:32+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-01-27T15:28:32+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:28:32+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:28:32+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:28:33+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0095s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0011s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:28:35+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2016-01-27T15:28:35+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:28:35+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:28:36+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0015s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:29:46+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2016-01-27T15:29:46+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:29:47+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006743s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:29:47+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:29:47+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0107s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0011s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:30:53+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-01-27T15:30:53+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:30:54+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:30:54+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000295s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:30:54+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0098s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0016s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-01-27T15:31:21+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2016-01-27T15:31:21+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:31:21+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:31:21+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:31:22+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0091s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0009s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:32:26+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-01-27T15:32:27+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:27+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:27+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:32:27+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0087s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0014s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-01-27T15:32:28+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2016-01-27T15:32:28+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:28+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002485s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:32:28+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0094s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0019s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-01-27T15:32:57+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2016-01-27T15:32:58+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:58+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:58+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:32:58+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0092s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0011s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:32:59+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-01-27T15:32:59+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:59+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:32:59+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002573s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:32:59+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0095s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0011s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:33:08+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002224s ]
+
+[ 2016-01-27T15:33:08+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:33:08+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:33:09+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:33:31+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:34:09+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2016-01-27T15:34:09+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:09+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:09+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:34:09+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0107s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0015s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2016-01-27T15:34:09+08:00 ] 127.0.0.1 /Blog/Public/imgages/shadow1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2016-01-27T15:34:11+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2016-01-27T15:34:11+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:11+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:11+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:34:11+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:34:31+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000714s ]
+
+[ 2016-01-27T15:34:31+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:32+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:32+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:34:32+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0015s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0018s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2016-01-27T15:34:32+08:00 ] 127.0.0.1 /Blog/Public/imgages/shadow1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-01-27T15:34:33+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003072s ]
+
+[ 2016-01-27T15:34:33+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:33+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:34:33+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0089s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0024s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-01-27T15:34:37+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2016-01-27T15:34:37+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:37+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:34:37+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0010s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:34:57+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:35:15+08:00 ] 127.0.0.1 /Blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-01-27T15:35:15+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:35:16+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:35:16+08:00 ] 127.0.0.1 /Blog/Public/js/angular.min.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:35:16+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0092s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0012s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-01-27T15:35:16+08:00 ] 127.0.0.1 /Blog/Public/imgages/shadow1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001199s ]
+
+[ 2016-01-27T15:35:47+08:00 ] 127.0.0.1 /Blog/article-99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0019s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 49 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `article` SET `rnum`=rnum+1 WHERE `aid` = 99 [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-01-27T15:35:47+08:00 ] 127.0.0.1 /Blog/Public/Ueditor/third-party/SyntaxHighlighter/shCore.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:35:47+08:00 ] 127.0.0.1 /Blog/Public/Ueditor/third-party/SyntaxHighlighter/shCore.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-27T15:35:57+08:00 ] 127.0.0.1 /Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2016-01-27T15:35:57+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:35:57+08:00 ] 127.0.0.1 /Blog/%7B%7Barticle.path.path%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+ERR: 无法加载控制器:{{article.path
+
+[ 2016-01-27T15:35:58+08:00 ] 127.0.0.1 /Blog/Home/Index/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php 第 55 行.
+NOTIC: [2048] Declaration of Admin\Model\CommonModel::delete() should be compatible with Think\Model::delete($options = Array) /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0092s ]
+NOTIC: [2] array_intersect(): Argument #1 is not an array /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 62 行.
+SQL: SELECT * FROM `article` WHERE (  if_delete = 0 ) ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Home\Service\CategoryService::getCateByid(), called in /Applications/MAMP/htdocs/Blog/Apps/Home/Controller/IndexController.class.php on line 23 and defined /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: fields /Applications/MAMP/htdocs/Blog/Apps/Home/Service/CategoryService.class.php 第 15 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `coverimg` [ RunTime:0.0011s ]
+SQL: SELECT `cid`,`path`,`aid` FROM `coverimg` WHERE `aid` = 99 LIMIT 1   [ RunTime:0.0002s ]
+

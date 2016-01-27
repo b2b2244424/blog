@@ -23,6 +23,7 @@
   <![endif]-->
   <script src="__PUBLIC__/js/sweetalert.min.js"></script>
   <script src="__PUBLIC__/js/angular.min.js"></script>
+  <script src="__PUBLIC__/js/angular-sanitize.js"></script>
   <script src="__PUBLIC__/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
@@ -167,6 +168,18 @@
                       <a href="{:U('Admin/Users/index')}">
                         <i class="icon-user icon  text-primary"></i>
                         <span class="font-bold">用户</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{:U('Admin/Permission/index')}">
+                        <i class="icon-wrench icon  text-danger"></i>
+                        <span class="font-bold">权限管理</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{:U('Admin/System/index')}">
+                        <i class="icon-settings icon  text-warning"></i>
+                        <span class="font-bold">系统设置</span>
                       </a>
                     </li>
                     <li class="m-b hidden-nav-xs"></li>

@@ -116,4 +116,37 @@ class UsersController extends CommonController
 		$this->assign('userinfo',$userinfo);
 		$this->display();
 	}
+
+	/**
+	 * 更新用户信息
+	 * @return [type] [description]
+	 */
+	public function updateone()
+	{
+		$uid = I('uid');
+		$data['username'] = I('username');
+		$data['gender'] = I('gender');
+		$data['domain'] = I('domain');
+		if(empty($uid)){
+			$this->error('参数错误','index',2);
+		}
+		$condition = array('uid' => $uid);
+		try {
+			D('Users')->update($condition,$data);
+			$this->success('修改成功','index',2);
+		} catch (Exception $e) {
+			$this->error('更新失败','index',2);
+		}
+	}
+
+	/**
+	 * 头像更改
+	 * @return [type] [description]
+	 */
+	public function updateHead()
+	{
+		$data = $_POST;
+		$data = $_FILES;
+		var_dump($data);die;
+	}
 }

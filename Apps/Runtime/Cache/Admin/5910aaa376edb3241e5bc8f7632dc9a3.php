@@ -169,6 +169,18 @@
                         <span class="font-bold">用户</span>
                       </a>
                     </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Users/index');?>">
+                        <i class="icon-wrench icon  text-danger"></i>
+                        <span class="font-bold">权限管理</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Users/index');?>">
+                        <i class="icon-settings icon  text-warning"></i>
+                        <span class="font-bold">系统设置</span>
+                      </a>
+                    </li>
                     <li class="m-b hidden-nav-xs"></li>
                   </ul>
                   <ul class="nav" data-ride="collapse">

@@ -23,7 +23,6 @@
   <![endif]-->
   <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
-  <script src="/Blog/Public/js/angular-sanitize.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
@@ -479,63 +478,26 @@
               </footer>
           </section>
         </aside>
-<style>
-  .panel {
-      width: 50%;
-      margin: 10% auto;
-      text-align: center;
-      min-height: 200px;
+<style type="text/css">
+  .mask{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5
   }
-  #growthrate {
-    font-size: 18px;
-    line-height: 150px;
-  }
-  .success-icon {
-    color : #1ab667;
-  }
-  .error-icon {
-    color : #f05050;
+  .mask p{
+    text-align: center;
+    line-height: 600px;
+    color: #fff;
+    font-size: 40px;
+    font-style: italic;
   }
 </style>
 <section id="content">
-          <section class="wrapper">
-          <div class="m-b">
-            <span class="h3 font-thin"><i class="i i-arrow-left3"></i></span> 
-          </div>
-          <?php if(isset($message)){?>
-          <section class="panel panel-default">
-            <header class="panel-heading">
-                提示信息
-            </header>
-            <div class="table-responsive" id="growthrate">
-                  <i class="icon-check success-icon"></i>&nbsp;&nbsp;操作成功,页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
-            </div>
-          </section>
-          <?php }else{?>
-            <section class="panel panel-default">
-            <header class="panel-heading">
-                提示信息
-            </header>
-            <div class="table-responsive" id="growthrate">
-                  <i class="icon-close error-icon"></i>&nbsp;&nbsp;操作失败,页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
-            </div>
-          </section>
-          <?php }?>
-        </section>
-          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+    <div class="mask">
+      <p>即将完工,敬请期待......</p>
+    </div>
 </section>
-<script type="text/javascript">
-  (function(){
-      var wait = document.getElementById('wait'),href = document.getElementById('href').href;
-      var interval = setInterval(function(){
-      var time = --wait.innerHTML;
-      if(time <= 0) {
-          location.href = href;
-          clearInterval(interval);
-      };
-  }, 1000);
-  })();
-</script>
 </section>
 </section>    
 </section>
