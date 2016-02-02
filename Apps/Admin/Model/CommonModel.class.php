@@ -95,7 +95,7 @@ class CommonModel extends RelationModel{
 	 * @param  [type] $condition [description]
 	 * @return [type]            [description]
 	 */
-	public function delete($condition)
+	public function deleteEntity($condition)
 	{
 		$res = $this->where($condition)->delete();
 		return $res;

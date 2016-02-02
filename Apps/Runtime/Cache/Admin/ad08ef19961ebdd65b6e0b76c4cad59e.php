@@ -137,15 +137,6 @@
                 <!-- nav -->                 
                 <nav class="nav-primary hidden-xs">
                   <ul class="nav bg clearfix">
-                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
-                      发现
-                    </li>
-                    <li>
-                      <a href="<?php echo U('Admin/Index/index');?>">
-                        <i class="icon-disc icon text-success"></i>
-                        <span class="font-bold">发现</span>
-                      </a>
-                    </li>
                     <li>
                       <a href="<?php echo U('Admin/Music/index');?>">
                         <i class="icon-music-tone-alt icon text-info"></i>
@@ -165,9 +156,27 @@
                       </a>
                     </li>
                     <li>
+                      <a href="<?php echo U('Admin/Message/index');?>">
+                        <i class="icon-bubbles icon  text-success"></i>
+                        <span class="font-bold">留言</span>
+                      </a>
+                    </li>
+                    <li>
                       <a href="<?php echo U('Admin/Users/index');?>">
-                        <i class="icon-user icon  text-primary"></i>
+                        <i class="icon-users icon  text-primary"></i>
                         <span class="font-bold">用户</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/About');?>">
+                        <i class="icon-user icon text-info"></i>
+                        <span class="font-bold">关于我</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Link/index');?>">
+                        <i class="icon-link icon  text-info-dker"></i>
+                        <span class="font-bold">链接管理</span>
                       </a>
                     </li>
                     <li>
@@ -503,8 +512,7 @@
                         <label class="col-lg-2 control-label">分类</label>
                         <div class="col-lg-10">
                           <select class="form-control m-b" name='cid' value="<?php echo ($article["cid"]); ?>">
-                            <option value="1">学习</option>
-                            <option value="2">日志</option>
+                            <?php if(is_array($catelist)): $i = 0; $__LIST__ = $catelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$voc): $mod = ($i % 2 );++$i;?><option value="<?php echo ($voc["cid"]); ?>"><?php echo ($voc["cname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                           </select>
                         </div>
                       </div>

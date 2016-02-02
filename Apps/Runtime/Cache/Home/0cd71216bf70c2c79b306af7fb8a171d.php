@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
     <link rel="shortcut icon" href="/Blog/Public/images/favicon.ico">
-    <link href="/Blog/Public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Blog/Public/admin/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Blog/Public/admin/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="/Blog/Public/admin/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
+    <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
     <link href="/Blog/Public/css/default.css" rel="stylesheet">
     <link href="/Blog/Public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
     <script src="/Blog/Public/js/require.js" data-main="/Blog/Public/js/main"></script>
     <!--JS-->
     <script src="/Blog/Public/js/jquery.min.js"></script>
@@ -19,12 +24,12 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script src="/Blog/Public/js/sweetalert.min.js"></script>
     <script src="/Blog/Public/js/angular.min.js"></script>
     <script src="/Blog/Public/js/jquery.complexify.js"></script>
     <script src="/Blog/Public/js/jquery.placeholder.min.js"></script>
     <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
     <script src="/Blog/Public/js/angular-sanitize.js"></script>
-    <script src="/Blog/Public/home/index/app.js"></script>
     <title>首页</title>
     <script>
         $(function(){
@@ -42,7 +47,7 @@
 </head>
 <body>
 <!--head start-->
-<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"
@@ -56,21 +61,22 @@
         </div>
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo U('/index');?>">首页</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">学习笔记</a></li>
-                        <li><a href="#">闲言碎语</a></li>
-                        <li><a href="#">热点分享</a></li>
-                        <li><a href="#">博客相关</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">相册</a></li>
-                <li><a href="#">音乐</a></li>
-                <li><a href="#">留言板</a></li>
-                <li><a href="#">关于我</a></li>
-            </ul>
+    <li><a href="<?php echo U('/index');?>">首页</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="<?php echo U('Article/lists');?>?c=php">PHP</a></li>
+            <li><a href="<?php echo U('Article/list');?>?c=js">JavaScript</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a >Linux</a></li>
+            <li><a href="#">存储</a></li>
+        </ul>
+    </li>
+    <li><a href="<?php echo U('/Album');?>">相册</a></li>
+    <li><a href="#">音乐</a></li>
+    <li><a href="<?php echo U('/Message/index');?>">留言板</a></li>
+    <li><a href="#">关于我</a></li>
+</ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
                 <li><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
@@ -182,16 +188,16 @@
                 <div class="show-article-title"><?php echo ($data["title"]); ?></div>
                 <div class="show-article-tag">
                 	<ul>
-                		<li><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;东风</li>
+                		<li><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;<?php echo ($data["author"]); ?></li>
                 		<li><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;<?php echo ($data["create_time"]); ?></li>
-                		<li><i class="glyphicon glyphicon-tags"></i>&nbsp;&nbsp;学习心得</li>
+                		<li><i class="glyphicon glyphicon-tags"></i>&nbsp;&nbsp;<?php echo ($data["cname"]); ?></li>
                 		<li><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;<?php echo ($data["rnum"]); ?></li>
                 	</ul>
                 </div>
                 <div class="show-article-content">
                 	<?php echo (stripslashes(htmlspecialchars_decode($data["content"]))); ?>
                 </div>
-                <div class="show-article-share">
+                <!-- <div class="show-article-share">
             		<div id="SOHUCS"></div>
 						<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
 						<script type="text/javascript">
@@ -200,7 +206,7 @@
         						conf: 'prod_10b8a48016be44a73661ab476c177439'
     							});
 						</script> 
-            	</div>
+            	</div> -->
             </div>
             </article>
         </div>

@@ -1,0 +1,51 @@
+<!--
+    /.aside
+-->
+<section id="content">
+    <section class="vbox">
+        <section class="scrollable padder">
+            <form action="{:U('Message/doReply')}" method="post">
+                <input type="hidden" name="rid" value="{$uid}">
+                <input type="hidden" name="mid" value="{$message.mid}">
+                <div class="m-b-md">
+                </div>
+                <section class="panel panel-default">
+                <div class="row wrapper">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-lg-1 control-label">
+                                留言
+                            </label>
+                            <div class="col-lg-11">
+                                <textarea name="content" readonly class="form-control parsley-validated" rows="6" data-minwords="6" data-required="true" style="margin: 0px -0.5px 0px 0px; height: 100px; width: 100%;">{$message.content}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wrapper">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="col-lg-1 control-label">
+                                回复
+                            </label>
+                            <div class="col-lg-11">
+                                <textarea name="reply" class="form-control parsley-validated" rows="6" data-minwords="6" data-required="true" placeholder="回复内容..." style="margin: 0px -0.5px 0px 0px;height: 100px; width: 100%;">{$message.reply}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wrapper">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="col-lg-4 col-sm-offset-1">
+                                    <button type="submit" class="btn btn-primary">
+                                        回复
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </section>
+    </section>
+</section>

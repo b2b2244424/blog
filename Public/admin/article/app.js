@@ -72,7 +72,6 @@ app.controller('articleCrtl', function ($scope, $http, $timeout, $location) {
         $scope.reverse = !$scope.reverse;
     };
     $scope.create = function(articleData){
-        console.log(articleData);
         $http.post('addone',{articledata : articleData}).success(function(data){
             if(data.code == 1){
                 swal("操作成功",'已成功添加一篇文章','success');

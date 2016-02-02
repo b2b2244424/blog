@@ -1,0 +1,17 @@
+<ul class="nav navbar-nav">
+    <li><a href="{:U('/index')}">首页</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="{:U('Article/index')}?c=php">PHP</a></li>
+            <li><a href="{:U('Article/list')}?c=js">JavaScript</a></li>
+            <li><a href="{:U('Article/list')}?c=python">Python</a></li>
+            <li><a href="{:U('Article/list')}?c=linux">Linux</a></li>
+            <li><a href="{:U('Article/list')}?c=storage">存储</a></li>
+        </ul>
+    </li>
+    <li><a href="{:U('/Album')}">相册</a></li>
+    <li><a href="#">音乐</a></li>
+    <li><a href="{:U('/Message/index')}">留言板</a></li>
+    <li><a href="#">关于我</a></li>
+</ul>

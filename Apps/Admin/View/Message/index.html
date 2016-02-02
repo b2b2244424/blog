@@ -1,0 +1,87 @@
+<script type="text/javascript" src="__PUBLIC__/admin/message/app.js"></script>
+        <section id="content" ng-app="MessageApp" ng-controller="MessageCrtl">
+          <section class="vbox">
+            <section class="scrollable padder">
+              <div class="m-b-md">
+              </div>
+              <section class="panel panel-default">
+                <div class="row wrapper">
+                  <div class="col-sm-5 m-b-xs">
+                    <select class="input-sm form-control input-s-sm inline v-middle">
+                      <option value="0">删除</option>
+                    </select>
+                    <button class="btn btn-sm btn-primary">操作</button>               
+                  </div>
+                  <div class="col-sm-3 m-b-xs">
+                    <h5>当前{{ filtered.length }} 条留言/共 {{ totalItems}} 条留言 </h5>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="input-group">
+                      <input type="text"  ng-model="search" ng-change="filter()" class="input-sm form-control" placeholder="搜索">
+                      <span class="input-group-btn">
+                        <button class="btn btn-sm btn-default" type="button">搜索</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <div class="col-md-12" ng-show="filteredItems > 0">
+                  <table class="table table-striped b-t b-light">
+                    <thead>
+                      <tr>
+                        <th style="width:20px;"><label class="checkbox m-n i-checks"><input type="checkbox"><i></i></label></th>
+                        <th class="th-sortable" data-toggle="class">留言</th>
+                        <th class="th-sortable" data-toggle="class">留言人</th>
+                        <th class="th-sortable" data-toggle="class">留言日期</th>
+                        <th class="th-sortable" data-toggle="class">状态</th>
+                        <th style="width:40px;border-right: 0px">操作</th>
+                        <th style="width:40px;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="message in filtered = (messages | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+                        <td><label class="checkbox m-n i-checks"><input type="checkbox" name="post[]"><i></i></label></td>
+                        <td><a href="javascript:;">{{message.content}}</a></td>
+                        <td>{{message.username}}</td>
+                        <td>{{message.ctime}}</td>
+                        <td ng-show="message.rid > 0">已回复</td>
+                        <td ng-show="message.rid <= 0">未回复</td>
+                        <td ng-show="message.rid <= 0">
+                          <a href="{:U('Admin/Message/reply')}?mid={{message.mid}}"><i class="btn btn-default btn-success btn-sm">回复</i></a>
+                        </td>
+                        <td ng-show="message.rid > 0">
+                          <a href="{:U('Admin/Message/reply')}?mid={{message.mid}}"><i class="btn btn-primary btn-sm">查看</i></a>
+                        </td>
+                        <td>
+                          <a ng-click="delete(message)" class="active" data-toggle="class"><i class="btn btn-default btn-danger btn-sm">删除</i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-md-12" ng-show="filteredItems == 0">
+                    <div class="col-md-12">
+                        <p style="text-align: center;padding: 10px">没有留言</p>
+                    </div>
+                </div>
+                </div>
+                <footer class="panel-footer">
+                  <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+                      <select ng-model="entryLimit" class="input-sm form-control input-s-sm inline v-middle">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>50</option>
+                        <option>100</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-4 text-right pull-right text-center-xs" ng-show="filteredItems > 0">    
+                        <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+                  </div>
+                  </div>
+                </footer>
+              </section>
+            </section>
+          </section>
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html"></a>
+        </section>

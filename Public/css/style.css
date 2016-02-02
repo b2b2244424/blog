@@ -991,29 +991,28 @@ Vertical inline menu
 .click-top-list p span{
     margin-left: 5px;
 }
-
+.click-top-list i{
+}
 .top-1{
-    color: #e72e1c;
+    font-size: 24px;
 }
-
 .top-2{
-    color: #e75b1c;
+    font-size: 22px;
 }
-
 .top-3{
-    color: #e7871c;
+    font-size: 20px;
 }
-
 .top-4{
-    color: #e7991c;
+    font-size: 18px;
 }
-
 .top-5{
-    color: #e7ab1c;
+    font-size: 16px;
 }
-
-.top-6,.top-7{
-    color: #e7b41c;
+.top-6{
+    font-size: 14px;
+}
+.top-7{
+    font-size: 12px;
 }
 .tool-block {
     padding: 25px;
@@ -1092,4 +1091,57 @@ Vertical inline menu
 }
 .invalid {
     background: #fb2d33;
+}
+/***********留言板***********/
+.mymessage{
+        height: 150px;
+        padding-left: 0px;
+        margin-bottom: 10px;
+    }
+#message{
+        min-height: 150px;
+        width: 100%;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+        border: 1px solid #545ca6;
+        border-radius: 3px;
+        font-style: italic;
+        color: #36b0c8
+    }
+.main-message-content{
+    min-height: 70px;
+    margin-bottom: 10px;
+}
+.message-img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.message-content{
+    min-height: 70px;
+    line-height: 60px;
+}
+
+.main-reply-content{
+    min-height: 50px;
+}
+.reply-img{
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+}
+.reply-img img{
+
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.reply-content{
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    min-height: 50px;
+    line-height: 50px;
 }

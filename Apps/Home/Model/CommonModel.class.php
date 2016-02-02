@@ -23,6 +23,7 @@ class CommonModel extends RelationModel{
 			}
 		}
 		$ret = $this->add($realdata);
+		return $ret;
 	}
 
 	/**

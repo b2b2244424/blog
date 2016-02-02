@@ -87,7 +87,9 @@ class ArticleController extends CommonController
 	{
 		$aid = intval($_GET['aid']);
 		$condition = array('aid' => $aid);
+		$category = D('Category')->getList();
 		$ret = D('Article')->getone($condition);
+		$this->assign('catelist',$category['data']);
 		$this->assign('article',$ret);
 		$this->display();
 	}

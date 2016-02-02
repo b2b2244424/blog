@@ -23,6 +23,7 @@
   <![endif]-->
   <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/angular-sanitize.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
@@ -136,15 +137,6 @@
                 <!-- nav -->                 
                 <nav class="nav-primary hidden-xs">
                   <ul class="nav bg clearfix">
-                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
-                      发现
-                    </li>
-                    <li>
-                      <a href="<?php echo U('Admin/Index/index');?>">
-                        <i class="icon-disc icon text-success"></i>
-                        <span class="font-bold">发现</span>
-                      </a>
-                    </li>
                     <li>
                       <a href="<?php echo U('Admin/Music/index');?>">
                         <i class="icon-music-tone-alt icon text-info"></i>
@@ -164,9 +156,33 @@
                       </a>
                     </li>
                     <li>
+                      <a href="<?php echo U('Admin/Message/index');?>">
+                        <i class="icon-bubbles icon  text-success"></i>
+                        <span class="font-bold">留言</span>
+                      </a>
+                    </li>
+                    <li>
                       <a href="<?php echo U('Admin/Users/index');?>">
                         <i class="icon-user icon  text-primary"></i>
                         <span class="font-bold">用户</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Link/index');?>">
+                        <i class="icon-link icon  text-info-dker"></i>
+                        <span class="font-bold">链接管理</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Permission/index');?>">
+                        <i class="icon-wrench icon  text-danger"></i>
+                        <span class="font-bold">权限管理</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/System/index');?>">
+                        <i class="icon-settings icon  text-warning"></i>
+                        <span class="font-bold">系统设置</span>
                       </a>
                     </li>
                     <li class="m-b hidden-nav-xs"></li>
@@ -420,25 +436,6 @@
                       </ul>
                     </li>
                   </ul>
-                  <ul class="nav text-sm">
-                    <li class="hidden-nav-xs padder m-t m-b-sm text-xs text-muted">
-                      <span class="pull-right"><a href="#"><i class="icon-plus i-lg"></i></a></span>
-                      播放列表
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-music-tone icon"></i>
-                        <span>Hip-Pop</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon-playlist icon text-success-lter"></i>
-                        <b class="badge bg-success dker pull-right">9</b>
-                        <span>Jazz</span>
-                      </a>
-                    </li>
-                  </ul>
                 </nav>
                 <!-- / nav -->
               </div>
@@ -453,10 +450,9 @@
                       </span>
                       <span class="hidden-nav-xs clear">
                         <span class="block m-l">
-                          <strong class="font-bold text-lt">John.Smith</strong> 
+                          <strong class="font-bold text-lt"><?php echo ($username); ?></strong> 
                           <b class="caret"></b>
                         </span>
-                        <span class="text-muted text-xs block m-l">Art Director</span>
                       </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight aside text-left">                      

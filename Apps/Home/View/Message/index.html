@@ -1,0 +1,46 @@
+<script type="text/javascript" src="__PUBLIC__/home/message/app.js"></script>
+<!--main content-->
+<div class="container" style="min-height: 900px;margin-top:40px;" ng-app="MessageApp" ng-controller="MessageCrtl">
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <div class="newest-title">
+                留言板<span>Message</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-xs-12">
+            <article ng-repeat="message in filtered = messages | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+            <div class="left-content clearfix main-div" style="min-height: 200px;">
+                <div class="main-message-content">
+                    <div class="col-md-2 message-img"><img src="__PUBLIC__/images/2.jpg"></div>
+                    <div class="col-md-10 message-content">{{message.content}}</div>
+                </div>
+                <div class="main-reply-content" ng-show="message.rid > 0">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2 reply-img"><img src="__PUBLIC__/images/2.jpg"></div>
+                    <div class="col-md-8 reply-content">回复:{{message.reply}}</div>
+                </div>
+            </div>
+            </article>
+            <div class="col-md-12" ng-show="filteredItems == 0">
+                    <div class="col-md-12">
+                        <p style="text-align: center;padding: 10px;font-size: 20px;color: #ccc"><i class="glyphicon glyphicon-book"></i>&nbsp;&nbsp;没有留言</p>
+                    </div>
+            </div>
+            <div class="col-md-12" style="padding-left: 0" ng-show="filteredItems > 0">    
+                <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;">
+            </div>
+            <div class="col-md-12 mymessage">
+                <textarea id="message" name="content" ng-model="message.content" placeholder="请填写留言内容......"></textarea>
+            </div>
+            <div class="col-md-12 mymessage">
+                <button class="btn btn-default" type="reset">取消</button>
+                <button class="btn btn-primary" type="submit" ng-click="message(message)">发布</button>
+            </div>
+        </div>
+        </div>
+        <include file="Layout:side"/>
+    </div>
+</div>
+<!--sidebar

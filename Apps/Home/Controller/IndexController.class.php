@@ -7,7 +7,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-    	 $this->display();
+    	$this->display();
     }
 
     public function getlist()
@@ -47,6 +47,10 @@ class IndexController extends Controller
     	$aid = I('get.aid');
     	$condition = array('aid' => $aid);
     	$data = D('Admin/Article')->getone($condition);
+        $cate = D('Admin/Category')->getone(array('cid' => $data['cid']));
+        $user = D('Admin/Users')->getone(array('uid' => $data['cuid']));
+        $data['cname'] = $cate['cname'];
+        $data['author'] = $user['username'];
     	$field = 'rnum';
     	D('Admin/Article')->plusHit($condition,$field);
     	$this->assign('data',$data);

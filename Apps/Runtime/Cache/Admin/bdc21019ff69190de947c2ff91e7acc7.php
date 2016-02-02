@@ -23,6 +23,7 @@
   <![endif]-->
   <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/angular-sanitize.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
@@ -176,7 +177,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="<?php echo U('Admin/Users/index');?>">
+                      <a href="<?php echo U('Admin/System/index');?>">
                         <i class="icon-settings icon  text-warning"></i>
                         <span class="font-bold">系统设置</span>
                       </a>

@@ -23,6 +23,7 @@
   <![endif]-->
   <script src="/Blog/Public/js/sweetalert.min.js"></script>
   <script src="/Blog/Public/js/angular.min.js"></script>
+  <script src="/Blog/Public/js/angular-sanitize.js"></script>
   <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 </head>
 <body class="">
@@ -161,6 +162,12 @@
                       <a href="<?php echo U('Admin/Article/index');?>">
                         <i class="icon-list icon  text-info-dker"></i>
                         <span class="font-bold">文章</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/Message/index');?>">
+                        <i class="icon-bubbles icon  text-success"></i>
+                        <span class="font-bold">留言</span>
                       </a>
                     </li>
                     <li>

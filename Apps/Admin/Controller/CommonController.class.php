@@ -26,6 +26,7 @@ class CommonController extends Controller
 		}
 
 		$this->username = session('username');
+    $this->uid = session('uid');
 		$this->loginname = session('login_name');
 	}
 

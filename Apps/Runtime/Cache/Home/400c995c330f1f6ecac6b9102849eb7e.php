@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
     <link rel="shortcut icon" href="/Blog/Public/images/favicon.ico">
-    <link href="/Blog/Public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Blog/Public/admin/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Blog/Public/admin/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="/Blog/Public/admin/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
+    <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
     <link href="/Blog/Public/css/default.css" rel="stylesheet">
     <link href="/Blog/Public/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
     <script src="/Blog/Public/js/require.js" data-main="/Blog/Public/js/main"></script>
     <!--JS-->
     <script src="/Blog/Public/js/jquery.min.js"></script>
@@ -19,12 +24,12 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script src="/Blog/Public/js/sweetalert.min.js"></script>
     <script src="/Blog/Public/js/angular.min.js"></script>
     <script src="/Blog/Public/js/jquery.complexify.js"></script>
     <script src="/Blog/Public/js/jquery.placeholder.min.js"></script>
     <script src="/Blog/Public/js/ui-bootstrap-tpls-0.10.0.min.js"></script>
     <script src="/Blog/Public/js/angular-sanitize.js"></script>
-    <script src="/Blog/Public/home/index/app.js"></script>
     <title>首页</title>
     <script>
         $(function(){
@@ -42,7 +47,7 @@
 </head>
 <body>
 <!--head start-->
-<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"
@@ -56,21 +61,22 @@
         </div>
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="<?php echo U('/index');?>">首页</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">学习笔记</a></li>
-                        <li><a href="#">闲言碎语</a></li>
-                        <li><a href="#">热点分享</a></li>
-                        <li><a href="#">博客相关</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">相册</a></li>
-                <li><a href="#">音乐</a></li>
-                <li><a href="#">留言板</a></li>
-                <li><a href="#">关于我</a></li>
-            </ul>
+    <li><a href="<?php echo U('/index');?>">首页</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="<?php echo U('Article/index');?>?c=php">PHP</a></li>
+            <li><a href="<?php echo U('Article/list');?>?c=js">JavaScript</a></li>
+            <li><a href="<?php echo U('Article/list');?>?c=python">Python</a></li>
+            <li><a href="<?php echo U('Article/list');?>?c=linux">Linux</a></li>
+            <li><a href="<?php echo U('Article/list');?>?c=storage">存储</a></li>
+        </ul>
+    </li>
+    <li><a href="<?php echo U('/Album');?>">相册</a></li>
+    <li><a href="#">音乐</a></li>
+    <li><a href="<?php echo U('/Message/index');?>">留言板</a></li>
+    <li><a href="#">关于我</a></li>
+</ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a data-toggle="modal" data-target="#login" data-whatever="@mdo" href="javascript:;">登录</a></li>
                 <li><a data-toggle="modal" data-target="#register" data-whatever="@fat" href="javascript:;">注册</a></li>
@@ -167,6 +173,7 @@
         src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#19D&amp;text=分享到">
 </script>-->
 <!--banner-->
+<script src="/Blog/Public/home/index/app.js"></script>
 <div class="page-container">
         <!-- 开始运行滑块 -->  
         <div class="fullwidthbanner-container slider-main">
@@ -219,7 +226,7 @@
                     <h4>{{article.title}}</h4>
                 </div>
                 <div class="article-content center-block">
-                    <div class="col-md-4"><img src="{{article.path.path}}" style="width:100%;height:150px;"></div>
+                    <div class="col-md-4"><img src="{{article.path.path}}" style="width:100%;height:100px;"></div>
                     <div class="col-md-8">{{article.plaintxt}}</div>
                 </div>
                 <div class="article-desc">
@@ -240,6 +247,11 @@
                 </div>
             </div>
             </article>
+            <div class="col-md-12" ng-show="filteredItems == 0">
+                    <div class="col-md-12">
+                        <p style="text-align: center;padding: 10px;font-size: 20px;color: #ccc"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;没有文章</p>
+                    </div>
+            </div>
             <div class="col-md-12" style="padding-left: 0" ng-show="filteredItems > 0">    
                 <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
         </div>
@@ -251,13 +263,13 @@
                     <i class="glyphicon glyphicon-align-justify"></i>&nbsp;&nbsp;点击排行<!-- <span>Top</span> -->
                 </div>
                 <div class="click-top-list">
-                    <p><i class="glyphicon glyphicon-signal top-1"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
-                    <p><i class="glyphicon glyphicon-signal top-2"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
-                    <p><i class="glyphicon glyphicon-signal top-3"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
-                    <p><i class="glyphicon glyphicon-signal top-4"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
-                    <p><i class="glyphicon glyphicon-signal top-5"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
-                    <p><i class="glyphicon glyphicon-signal top-6"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
-                    <p><i class="glyphicon glyphicon-signal top-7"></i><span>互联网创业潮流越来越猛互联网创业互联网创业联...<span></p>
+                    <p><i class="top-1">No.1</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <p><i class="top-2">No.2</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <p><i class="top-3">No.3</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <p><i class="top-4">No.4</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <p><i class="top-5">No.5</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <p><i class="top-6">No.6</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <p><i class="top-7">No.7</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
                 </div>
             </div>
             <!-- <div class="tools">

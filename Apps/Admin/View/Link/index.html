@@ -1,0 +1,156 @@
+<script type="text/javascript" src="__PUBLIC__/admin/link/app.js">
+</script>
+<section id="content" ng-app="LinkApp" ng-controller="LinkCrtl">
+    <section class="vbox">
+        <section class="scrollable padder">
+            <div class="m-b-md">
+            </div>
+            <section class="panel panel-default">
+                <div class="row wrapper">
+                    <div class="col-sm-5 m-b-xs">
+                        <a href="{:U('Admin/Link/create')}">
+                            <button class="btn btn-sm btn-success">
+                                添加+
+                            </button>
+                        </a>
+                        <select class="input-sm form-control input-s-sm inline v-middle">
+                            <option value="0">
+                                删除
+                            </option>
+                            <option value="0">
+                                编辑
+                            </option>
+                        </select>
+                        <button class="btn btn-sm btn-primary">
+                            操作
+                        </button>
+                    </div>
+                    <div class="col-sm-3 m-b-xs">
+                        
+                        <!--
+                            <h5>
+                                Filtered {{ filtered.length }} of {{ totalItems}} total customers
+                            </h5>
+                        -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="text"  ng-model="search" ng-change="filter()" class="input-sm form-control" placeholder="搜索"/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-sm btn-default" type="button">
+                                    搜索
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <div class="col-md-12" ng-show="filteredItems >0">
+                        <table class="table table-striped b-t b-light">
+                            <thead>
+                                <tr>
+                                    <th style="width:20px;">
+                                        <label class="checkbox m-n i-checks">
+                                            <input type="checkbox"/>
+                                            <i>
+                                            </i>
+                                        </label>
+                                    </th>
+                                    <th class="th-sortable" data-toggle="class">
+                                        链接
+                                    </th>
+                                    <th class="th-sortable" data-toggle="class">
+                                        链接地址
+                                    </th>
+                                    <th class="th-sortable" data-toggle="class">
+                                        雇主
+                                    </th>
+                                    <th style="width:40px;border-right: 0px">
+                                        操作
+                                    </th>
+                                    <th style="width:40px;">
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="link in filtered = (links | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+                                    <td>
+                                        <label class="checkbox m-n i-checks">
+                                            <input type="checkbox" name="post[]"/>
+                                            <i>
+                                            </i>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <a href="{:U('Admin/Article/edit')}?aid={{article.aid}}">
+                                            {{link.linkname}}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="{{link.linkurl}}">{{link.linkurl}}</a>
+                                    </td>
+                                    <td>
+                                        {{link.linkuser}}
+                                    </td>
+                                    <td>
+                                        <a href="{:U('Admin/Link/edit')}?lid={{link.lid}}">
+                                            <i class="btn btn-default btn-success btn-sm">
+                                                编辑
+                                            </i>
+                                        </a>
+                                    </td>
+                                    <td ng-show="link.stop == 0">
+                                        <a ng-click="stop(link)" class="active" data-toggle="class">
+                                            <i class="btn btn-default btn-danger btn-sm">
+                                                停用
+                                            </i>
+                                        </a>
+                                    </td>
+                                    <td ng-show="link.stop == 1">
+                                        <a ng-click="open(link)" class="active" data-toggle="class">
+                                            <i class="btn btn-default btn-success btn-sm">
+                                                启用
+                                            </i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a ng-click="delete(link)" class="active" data-toggle="class">
+                                            <i class="btn btn-default btn-danger btn-sm">
+                                                删除
+                                            </i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-12" ng-show="filteredItems == 0">
+                        <div class="col-md-12">
+                            <p style="text-align: center;padding: 10px">
+                                <i class="icon icon-link"></i>&nbsp;&nbsp;没有链接
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-4 hidden-xs">
+                            <select ng-model="entryLimit" class="input-sm form-control input-s-sm inline v-middle">
+                                <option>5</option>
+                                <option>10</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 text-right pull-right text-center-xs" ng-show="filteredItems >0">
+                            <div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;">
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </section>
+    </section>
+    <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+    </a>
+</section>
