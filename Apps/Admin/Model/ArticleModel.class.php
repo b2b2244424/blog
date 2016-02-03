@@ -19,11 +19,4 @@ class ArticleModel extends CommonModel{
 		'create_time' => '创建时间',
 		'update_time' => '更新时间',
 	);
-
-	public function getArticleNuM()
-	{
-		$condition = array('if_delete' => 0);
-		$ret = $this->where($condition)->count();
-		return $ret;
-	}
 }

@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
     <link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico">
-    <link href="__PUBLIC__/admin/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="__PUBLIC__/admin/css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="__PUBLIC__/admin/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="__PUBLIC__/admin/css/font.css" type="text/css" />
-    <link rel="stylesheet" href="__PUBLIC__/admin/css/app.css" type="text/css" />
+    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
     <link href="__PUBLIC__/css/default.css" rel="stylesheet">
     <link href="__PUBLIC__/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="__PUBLIC__/css/sweetalert.css" type="text/css" />
@@ -19,11 +15,6 @@
     <script src="__PUBLIC__/js/jquery.min.js"></script>
     <script src="__PUBLIC__/js/bootstrap.min.js"></script>
     <!--<script src="__PUBLIC__/js/canvastimer.js"></script>-->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
     <script src="__PUBLIC__/js/sweetalert.min.js"></script>
     <script src="__PUBLIC__/js/angular.min.js"></script>
     <script src="__PUBLIC__/js/jquery.complexify.js"></script>
@@ -33,6 +24,8 @@
     <title>首页</title>
     <script>
         $(function(){
+            var winHeight = $(document).scrollTop();
+            $('[data-toggle="tooltip"]').tooltip();
             $('#password input[placeholder]').placeholder();
             $("#password").complexify({}, function(valid, complexity){
                 if (!valid) {
@@ -42,12 +35,20 @@
                 }
                 $('#complexity').html(Math.round(complexity) + '%');
             });
+            $(window).scroll(function(){
+              var scrollY = $(document).scrollTop();
+              if(scrollY > 320){
+                $('.mynav').addClass('minnav');
+              }else{
+                $('.mynav').removeClass('minnav');
+              }
+            });
         });
     </script>
 </head>
 <body>
 <!--head start-->
-<nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse  navbar-fixed-top mynav" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"
@@ -57,7 +58,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{:U('/index')}">Companion</a>
+            <a class="navbar-brand logo" href="{:U('/index')}"></a>
         </div>
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <include file="Layout:nav"/>

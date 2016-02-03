@@ -1,7 +1,3 @@
-body {
-    padding-top: 20px;
-    background-color: #f2f4f8;
-}
 /***
 Slider
 ***/
@@ -709,8 +705,7 @@ Vertical inline menu
     padding: 5px;
     padding-left: 0;
     font-size: 18px;
-    font-weight: bold;
-    border-bottom: 2px solid #545ca6;
+    border-bottom: 2px solid #ccc;
     font-style: italic;
 }
 
@@ -723,7 +718,7 @@ Vertical inline menu
 
 .title-heavy{
     position: absolute;
-    background: #545ca6;
+    background: #00c3b6;
     top: 2px;
     left: -1px;
     width: 3px;
@@ -771,6 +766,11 @@ Vertical inline menu
 .article-desc ul li {
     display: inline-block;
     padding: 0 7px;
+    color: #ccc;
+}
+
+.article-desc ul li span{
+    padding-left: 5px;
 }
 
 .right-content {
@@ -941,14 +941,13 @@ Vertical inline menu
     width: 100%;
     min-height: 30px;
     border-radius: 3px 3px 0 0; 
-    background-color: #545ca6;
+    background-color: #00c3b5;
+    border-bottom: 1px solid #ccc;
     line-height: 30px;
     color: #fff;
-    font-weight: bold;
     padding-left: 5px;
     font-size: 16px;
 }
-
 .new-mutual-title{
     min-height: 420px;
     background-color: #fff;
@@ -986,6 +985,7 @@ Vertical inline menu
     height: 25px;
     line-height: 25px;
     padding: 5px;
+    color: grey
 }
 
 .click-top-list p span{
@@ -1102,7 +1102,7 @@ Vertical inline menu
         min-height: 150px;
         width: 100%;
         box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
-        border: 1px solid #545ca6;
+        border: 1px solid #00c3b5;
         border-radius: 3px;
         font-style: italic;
         color: #36b0c8
@@ -1144,4 +1144,158 @@ Vertical inline menu
     margin-top: 10px;
     min-height: 50px;
     line-height: 50px;
+}
+
+.minnav{
+    box-shadow: 0 0 4px rgba(255,255,255,0.15);
+    background-color: #232c32;
+}
+
+.index-article-title{
+    font-size: 16px;
+    color: #333;
+    padding: 5px 50px 5px 0;
+    display: inline-block;
+}
+
+.index-article-title a{
+    color: #000;
+    text-decoration: none;
+}
+
+.index-article-title a:hover{
+    color: #00c3b5;
+}
+
+.logo{
+    background: url('../images/logo.png');
+    background-size: 100% 100%;
+    width: 150px;
+    margin-right: 40px;
+}
+
+#footer{
+    background-color: #222;
+    color: #999;
+    position: relative;
+}
+
+.footer-content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer .inner {
+    height: auto;
+    overflow: hidden;
+    color: rgba(255,255,255,0.25);
+    padding-left: 30px;
+}
+
+#footer .site-info {
+    padding-left: 30px;
+}
+
+#footer .site-info .copyright {
+    border-top: 1px solid rgba(255,255,255,0.065);
+    padding: 15px 0;
+}
+
+#footer .inner #describe {
+    width: 40%;
+    padding-right: 70px;
+}
+
+#footer .inner .group {
+    float: left;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 0 30px 20px 0;
+    font-size: 12px;
+}
+
+#footer .inner .group h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.65);
+}
+
+#footer .inner #describe .describe-text {
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+#footer .inner #social,#footer .inner #footer-null{
+    width: 30%;
+}
+#footer .inner .group ul{
+    padding: 0;
+}
+#footer .inner .group ul li {
+    margin-bottom: 5px;
+    display: block;
+}
+
+#footer .inner .group a {
+    color: rgba(255,255,255,0.35);
+}
+
+#footer .inner .group .social-icon {
+    margin-top: 20px;
+}
+
+#footer .inner .group .social-icon a {
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 18px;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+#footer .inner .group .social-icon a:hover{
+    color: #00c3b6;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?jsjdww');
+    src:    url('fonts/icomoon.eot?jsjdww#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?jsjdww') format('truetype'),
+        url('fonts/icomoon.woff?jsjdww') format('woff'),
+        url('fonts/icomoon.svg?jsjdww#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weibo:before {
+    content: "\e903";
+}
+.icon-wechat:before {
+    content: "\e901";
+}
+.icon-qq:before {
+    content: "\e900";
 }

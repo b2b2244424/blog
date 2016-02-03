@@ -58,11 +58,4 @@ class UsersModel extends CommonModel
 		SESSION('ip',$data['ip']);
 		return 4;
 	}
-
-	public function getUsersNum()
-	{
-		$condition = array('if_delete' => 0,'if_blacklist' => 0);
-		$ret = $this->where($condition)->count();
-		return $ret;
-	}
 }

@@ -1,4 +1,4 @@
-var app = angular.module('blogApp', ['ui.bootstrap']);
+var app = angular.module('blogApp', ['ui.bootstrap','ngSanitize']);
 app.config(function($httpProvider){
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
     $httpProvider.defaults.headers.post['Accept'] = 'application/json, text/javascript, */*; q=0.01';
@@ -79,8 +79,8 @@ app.controller('blogCrtl', function ($scope, $http, $timeout, $location) {
     };
     $scope.delete = function(blog){
         swal({
-            title : '确定要删除吗?',
-            text : '确定要删除这篇日志?',
+            title : '确定要删除这篇日志?',
+            text : '确定要删除?',
             type : 'warning',
             showCancelButton : true,
             closeOnConfirm : false,
@@ -88,7 +88,7 @@ app.controller('blogCrtl', function ($scope, $http, $timeout, $location) {
             confirmButtonColor : '#ec6c62'
         },function(){
             var bid = blog.bid;
-            $http.post('delete',{bid : bid}).success(function(data){
+            $http.post('deleteone',{bid : bid}).success(function(data){
                 if(data.code == 1){
                     swal("操作成功!", "已成功删除日志", "success");
                     $scope.blogs.forEach(function(r,i){

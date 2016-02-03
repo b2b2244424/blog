@@ -1,0 +1,1645 @@
+[ 2016-02-03T10:13:28+08:00 ] 127.0.0.1 /Blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+ERR: SQLSTATE[HY000] [2002] Connection refused
+
+[ 2016-02-03T10:13:48+08:00 ] 127.0.0.1 /Blog/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `if_delete` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `if_delete` = 0 AND `if_blacklist` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `album` WHERE `if_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0018s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getCount(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/IndexController.class.php on line 16 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 137 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `message` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0024s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getCount(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/IndexController.class.php on line 17 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 137 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `link` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `link` WHERE `stop` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-02-03T10:28:39+08:00 ] 127.0.0.1 /Blog/Admin/Permission/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001835s ]
+
+[ 2016-02-03T10:28:39+08:00 ] 127.0.0.1 /Blog/Admin/Permission/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2016-02-03T10:28:51+08:00 ] 127.0.0.1 /Blog/Admin/Tools/buttons
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004336s ]
+
+[ 2016-02-03T10:28:51+08:00 ] 127.0.0.1 /Blog/Admin/Tools/buttons
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000909s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001804s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010240s ]
+
+[ 2016-02-03T11:39:40+08:00 ] 127.0.0.1 /Blog/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `if_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `if_delete` = 0 AND `if_blacklist` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `album` WHERE `if_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getCount(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/IndexController.class.php on line 16 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 137 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `message` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getCount(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/IndexController.class.php on line 17 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 137 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `link` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `link` WHERE `stop` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2016-02-03T12:01:39+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2016-02-03T12:01:39+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0088s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-02-03T12:01:41+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=108
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0103s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 108 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2016-02-03T12:01:42+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472102022
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-02-03T12:01:54+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: UPDATE `article` SET `title`='CSS3实现三角形',`cid`='7',`content`='&lt;pre class=&quot;brush:css;toolbar:false&quot;&gt;div{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;border:&amp;nbsp;1px&amp;nbsp;solid&amp;nbsp;#dddddd;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;padding:&amp;nbsp;4px&amp;nbsp;40px&amp;nbsp;4px&amp;nbsp;8px;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;position:&amp;nbsp;relative;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;amp;:after&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;content:&amp;nbsp;&amp;#39;&amp;nbsp;&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;margin-top:&amp;nbsp;-5px;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;display:&amp;nbsp;block;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;position:&amp;nbsp;absolute;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;right:&amp;nbsp;8px;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;top:&amp;nbsp;50%;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;width:&amp;nbsp;0;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;height:&amp;nbsp;0;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;border-left:&amp;nbsp;12px&amp;nbsp;transparent&amp;nbsp;solid;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;border-right:&amp;nbsp;12px&amp;nbsp;transparent&amp;nbsp;solid;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;border-top:&amp;nbsp;12px&amp;nbsp;#000000&amp;nbsp;solid;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:01:54' WHERE `aid` = 108 [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-02-03T12:01:58+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-02-03T12:01:58+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0072s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0032s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-02-03T12:02:04+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0095s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 100 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021787s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-02-03T12:02:04+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472124421
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-02-03T12:02:24+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: UPDATE `article` SET `title`='AngularJS文件上传指令',`cid`='2',`content`='&lt;p&gt;&lt;span style=&quot;color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; background-color: rgb(255, 255, 255);&quot;&gt;随着对angularjs指令研究的越来越深，发现之前写的很多东西都有必要重写一次了，今天要讨论的是angularjs多文件上传指令，支持进度条喔!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Html/Js代码:&lt;/p&gt;&lt;pre class=&quot;brush:html;toolbar:false&quot;&gt;&amp;lt;!DOCTYPE&amp;nbsp;html&amp;gt;
+&amp;lt;html&amp;nbsp;ng-app=&amp;quot;app&amp;quot;&amp;gt;
+&amp;lt;head&amp;nbsp;lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;meta&amp;nbsp;charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;meta&amp;nbsp;name=&amp;quot;viewport&amp;quot;&amp;nbsp;content=&amp;quot;width=device-width,&amp;nbsp;initial-scale=1&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;title&amp;gt;AngularToggle&amp;lt;/title&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;link&amp;nbsp;rel=&amp;quot;stylesheet&amp;quot;&amp;nbsp;href=&amp;quot;angular-upload.css&amp;quot;/&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;style&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;font-family:&amp;nbsp;Consolas,&amp;nbsp;&amp;quot;Microsoft&amp;nbsp;Yahei&amp;quot;,&amp;nbsp;arial,&amp;nbsp;sans-serif;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;nbsp;ng-controller=&amp;quot;MainCtrl&amp;quot;&amp;gt;
+&amp;lt;div&amp;nbsp;style=&amp;quot;width:&amp;nbsp;400px&amp;quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;angular-upload&amp;nbsp;action=&amp;quot;upload.php&amp;quot;&amp;nbsp;name=&amp;quot;file&amp;quot;&amp;nbsp;accept=&amp;quot;image/*&amp;quot;&amp;nbsp;multiple=&amp;quot;true&amp;quot;&amp;nbsp;ng-model=&amp;quot;files&amp;quot;&amp;gt;&amp;lt;/angular-upload&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;http://cdn.bootcss.com/angular.js/1.3.15/angular.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;nbsp;src=&amp;quot;angular-upload.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;quot;use&amp;nbsp;strict&amp;quot;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;angular.module(&amp;#39;app&amp;#39;,&amp;nbsp;[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;xl-angular-upload&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;]).controller(&amp;#39;MainCtrl&amp;#39;,&amp;nbsp;[&amp;#39;$scope&amp;#39;,&amp;nbsp;function&amp;nbsp;($scope)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$scope.$watch(&amp;#39;files&amp;#39;,&amp;nbsp;function&amp;nbsp;(n,&amp;nbsp;o)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;console.log(n);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}]);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;})();
+&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/pre&gt;&lt;pre class=&quot;brush:js;toolbar:false&quot;&gt;angular.module(&amp;#39;xl-angular-upload&amp;#39;,&amp;nbsp;[])
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;.directive(&amp;#39;angularUpload&amp;#39;,&amp;nbsp;[function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;restrict:&amp;nbsp;&amp;#39;E&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;require:&amp;nbsp;&amp;#39;ngModel&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;template:&amp;nbsp;&amp;#39;&amp;lt;div&amp;nbsp;class=&amp;quot;xl-angular-upload&amp;quot;&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;!--upload&amp;nbsp;button--&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;button&amp;nbsp;class=&amp;quot;xl-btn&amp;nbsp;btn-primary&amp;quot;&amp;gt;上传\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;input&amp;nbsp;type=&amp;quot;file&amp;quot;/&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/button&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;!--upload&amp;nbsp;queue--&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;queue&amp;quot;&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;item&amp;quot;&amp;nbsp;ng-repeat=&amp;quot;item&amp;nbsp;in&amp;nbsp;queue&amp;quot;&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;info&amp;quot;&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;no&amp;quot;&amp;gt;{{$index+1}}&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;name&amp;quot;&amp;gt;{{item.name}}&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;size&amp;quot;&amp;gt;{{(item.size/1024).toFixed(2)}}KB&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;process-bar&amp;quot;&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;process&amp;quot;&amp;nbsp;style=&amp;quot;width:{{item.process}}%&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;\\n&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;\\n&amp;lt;/div&amp;gt;&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;replace:&amp;nbsp;true,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;link:&amp;nbsp;function&amp;nbsp;(scope,&amp;nbsp;ele,&amp;nbsp;attrs,&amp;nbsp;ctrl)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//必要属性检测
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(!attrs.action)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;throw&amp;nbsp;new&amp;nbsp;Error(&amp;#39;请设置上传action&amp;#39;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//初始化
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scope.queue&amp;nbsp;=&amp;nbsp;[];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;file&amp;nbsp;=&amp;nbsp;angular.element(document.querySelector(&amp;#39;.xl-angular-upload&amp;gt;.xl-btn&amp;gt;input[type=&amp;quot;file&amp;quot;]&amp;#39;));
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;files&amp;nbsp;=&amp;nbsp;[];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;attrs.accept&amp;nbsp;&amp;amp;&amp;amp;&amp;nbsp;file.attr(&amp;#39;accept&amp;#39;,&amp;nbsp;attrs.accept);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;attrs.multiple&amp;nbsp;&amp;amp;&amp;amp;&amp;nbsp;file.attr(&amp;#39;multiple&amp;#39;,&amp;nbsp;attrs.multiple);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;file.bind(&amp;quot;change&amp;quot;,&amp;nbsp;function&amp;nbsp;(e)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scope.$apply(function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scope.queue&amp;nbsp;=&amp;nbsp;[];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;for&amp;nbsp;(var&amp;nbsp;i&amp;nbsp;in&amp;nbsp;e.target.files)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(/^\\d+$/.test(i))&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;e.target.files[i].process&amp;nbsp;=&amp;nbsp;0;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scope.queue.push(e.target.files[i]);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//准备上传
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scope.queue.forEach(function&amp;nbsp;(item)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;data&amp;nbsp;=&amp;nbsp;new&amp;nbsp;FormData;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;data.append(attrs.name&amp;nbsp;||&amp;nbsp;&amp;#39;file&amp;#39;,&amp;nbsp;item);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;xhr&amp;nbsp;=&amp;nbsp;new&amp;nbsp;XMLHttpRequest();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;xhr.open(&amp;#39;POST&amp;#39;,&amp;nbsp;attrs.action,&amp;nbsp;true);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//事件监听
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;xhr.onreadystatechange&amp;nbsp;=&amp;nbsp;function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(xhr.readyState&amp;nbsp;==&amp;nbsp;4&amp;nbsp;&amp;amp;&amp;amp;&amp;nbsp;xhr.status&amp;nbsp;==&amp;nbsp;200)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//上传完成了
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var&amp;nbsp;resp&amp;nbsp;=&amp;nbsp;JSON.parse(xhr.responseText);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(resp.error)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;throw&amp;nbsp;new&amp;nbsp;Error(resp.error);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&amp;nbsp;else&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;files.push(resp);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ctrl.$setViewValue(files);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;};
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;xhr.onerror&amp;nbsp;=&amp;nbsp;function&amp;nbsp;(error)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;throw&amp;nbsp;new&amp;nbsp;Error(error);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;};
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;xhr.upload&amp;nbsp;&amp;amp;&amp;amp;&amp;nbsp;(xhr.upload.onprogress&amp;nbsp;=&amp;nbsp;function&amp;nbsp;(e)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(e.lengthComputable)&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scope.$apply(function&amp;nbsp;()&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;item.process&amp;nbsp;=&amp;nbsp;parseInt((e.loaded&amp;nbsp;/&amp;nbsp;e.total)&amp;nbsp;*&amp;nbsp;100);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;xhr.send(data);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;});
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}]);&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:02:24' WHERE `aid` = 100 [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2016-02-03T12:02:27+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2016-02-03T12:02:27+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0099s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:02:30+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=103
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0097s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0016s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 103 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2016-02-03T12:02:30+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472150448
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-02-03T12:02:38+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+SQL: UPDATE `article` SET `title`='Linux文档管理常用命令',`cid`='6',`content`='&lt;ul class=&quot; list-paddingleft-2&quot; style=&quot;width: 945.25px; white-space: normal;&quot;&gt;&lt;li&gt;&lt;h4 style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.5; font-family: inherit; vertical-align: baseline;&quot;&gt;Linux find命令&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/h4&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;将目前目录及其子目录下所有延伸档名是 c 的文件列出来。&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;# find . -name &amp;quot;*.c&amp;quot;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;将目前目录及其子目录下所有最近 20 分钟内更新过的文件列出&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;find . -ctime -20&lt;/span&gt;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;/p&gt;&lt;ul class=&quot; list-paddingleft-2&quot; style=&quot;width: 945.25px; white-space: normal;&quot;&gt;&lt;li&gt;&lt;h4 style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.5; font-family: inherit; vertical-align: baseline;&quot;&gt;Linux less命令&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/h4&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;ps查看进程信息并通过less分页显示&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;ps -ef |less&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;查看命令历史使用记录并通过less分页显示&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;3.其它导航&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;G - 移动到最后一行&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;g - 移动到第一行&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;q / ZZ - 退出 less 命令&lt;/span&gt;&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;/p&gt;&lt;ul class=&quot; list-paddingleft-2&quot; style=&quot;width: 945.25px; white-space: normal;&quot;&gt;&lt;li&gt;&lt;h4 style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.5; font-family: inherit; vertical-align: baseline;&quot;&gt;Linux more命令&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;/h4&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14px; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示&lt;br style=&quot;box-sizing: border-box;&quot;/&gt;&lt;/span&gt;&lt;/p&gt;&lt;h4 style=&quot;white-space: normal; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;&lt;p&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-stretch: inherit; line-height: 1.5; font-family: inherit; vertical-align: baseline; font-size: 14px;&quot;&gt;mv [options] source dest&lt;/span&gt;&lt;/p&gt;&lt;/h4&gt;&lt;p style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;再如将/usr/student下的所有文件和目录移到当前目录下，命令行为：&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(51, 51, 51); font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);&quot;/&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;mv /usr/student/* &amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-stretch: inherit; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:02:38' WHERE `aid` = 103 [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2016-02-03T12:02:40+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2016-02-03T12:02:40+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2016-02-03T12:02:40+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:02:41+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2016-02-03T12:02:41+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0096s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-02-03T12:02:44+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0103s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 104 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-02-03T12:02:44+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472164450
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2016-02-03T12:02:50+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0012s ]
+SQL: UPDATE `article` SET `title`='PHP实现手机微信扫描二维码登录网站',`cid`='1',`content`='&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;扫描二维码登录对于现在的web应用来说，确实是个很炫酷的功能，安全性也可以保障，不少朋友可能觉得这是个很复杂的工作，其实不然，真正说来只有几个步骤而已。&lt;/p&gt;&lt;h2 style=&quot;margin: 20px -20px 20px -24px; font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-weight: normal; line-height: 18px; color: rgb(85, 85, 85); text-rendering: optimizeLegibility; font-size: 18px; padding: 10px 20px 9px; border-left-width: 4px; border-left-style: solid; border-left-color: rgb(66, 139, 202); white-space: normal; background-color: rgb(251, 251, 251);&quot;&gt;原理&lt;/h2&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;1.PC浏览器展示一张二维码图片，该图片二维码值为一段绝对地址的url，大致如下：http://www.example.com/oauth/qrcode?key=key&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;2.PC浏览器定期轮询&amp;nbsp;http://www.example.com/oauth/query，可能有的同学会问，怎么不用带上key？这里我们用session来保存key，所以链接中不用带上key，将这个key作为服务端的缓存key且值为空，如果该缓存&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;值为空，证明没被扫描，继续轮询，如果已经被扫描，展示扫描结果。&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;3.手机微信扫描之后会直接访问http://www.example.com/oauth/qrcode?key=key，这里我们先把这个key保存的session中（这个session和2中的不同，一个是PC，一个是手机）。然后检测用户在手机端是否登录，如果已登录，则把用户信息存到2中的key缓存中，这时候前端查询的时候就会有值了。如果用户在手机未登录，则直接跳转微信登录，登陆成功之后再将用户信息设置到2中的key缓存&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:02:50' WHERE `aid` = 104 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2016-02-03T12:02:51+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2016-02-03T12:02:51+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-02-03T12:02:52+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0088s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0028s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:02:53+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2016-02-03T12:02:53+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0119s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:02:55+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=106
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 106 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2016-02-03T12:02:56+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472176146
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-02-03T12:03:01+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0012s ]
+SQL: UPDATE `article` SET `title`='PHP下载远程文件',`cid`='1',`content`='&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;在做小偷程序的时候，文章的图片往往是有防盗链措施的，一个比较好的解决办法是通过PHP下载图片到本地并且替换URL实现。&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;由于图片这种东西不能直接像下载HTML那样直接下载，所以需要指定fopen的打开模式为b(二进制模式)&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;$url&amp;nbsp;=&amp;nbsp;&amp;#39;http://picturescdn.qiniudn.com/93aa93787ae02be68192b3533d3e76b0&amp;#39;;
+$remote_fp&amp;nbsp;=&amp;nbsp;fopen($url,&amp;#39;rb&amp;#39;);
+$local_fp&amp;nbsp;=&amp;nbsp;fopen(date(&amp;#39;YmdHis&amp;#39;),&amp;#39;wb&amp;#39;);
+while(!feof($remote_fp)){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fwrite($local_fp,fread($remote_fp,128));
+}
+fclose($remote_fp);
+fclose($local_fp);&lt;/pre&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;这样就在本地目录生成了一张图片&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:03:01' WHERE `aid` = 106 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-02-03T12:03:02+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-02-03T12:03:03+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-02-03T12:03:03+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0096s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-02-03T12:03:04+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-02-03T12:03:04+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-02-03T12:03:08+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=105
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0095s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 105 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-02-03T12:03:08+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472188610
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-02-03T12:03:13+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0012s ]
+SQL: UPDATE `article` SET `title`='PHP文件缓存类',`cid`='1',`content`='&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;缓存有很多方法，memcache,databse,file,redis等等，原理都差不多，简要介绍一下，写入缓存就不多说了，主要是读取缓存。&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;1.检测指定key是否存在，如不存在则返回false;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;2.检测指定key是否过期，如过期则返回false;&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;3.指定key存在且未过期，返回缓存值。&lt;/p&gt;&lt;p style=&quot;margin-top: 0px; margin-bottom: 15px; color: rgb(85, 85, 85); font-family: &amp;#39;Microsoft Yahei&amp;#39;, &amp;#39;Helvetica Neue&amp;#39;, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25px; white-space: normal;&quot;&gt;本文介绍文件缓存的实现，其他类型可以参照实现。&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+&amp;nbsp;
+/**
+&amp;nbsp;*&amp;nbsp;@project&amp;nbsp;wechatPublicPlatform
+&amp;nbsp;*&amp;nbsp;@date&amp;nbsp;2015-4-13
+&amp;nbsp;*&amp;nbsp;@author&amp;nbsp;xialei&amp;nbsp;&amp;lt;xialeistudio@gmail.com&amp;gt;
+&amp;nbsp;*/
+class&amp;nbsp;Cache
+{
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;function&amp;nbsp;__construct()
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;throw&amp;nbsp;new&amp;nbsp;Exception(&amp;#39;不可被实例化&amp;#39;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;/**
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;设置缓存
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;string&amp;nbsp;$key
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;string&amp;nbsp;$value
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;int&amp;nbsp;$expires&amp;nbsp;0为不过期
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@return&amp;nbsp;int
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*/
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;static&amp;nbsp;function&amp;nbsp;set($key,&amp;nbsp;$value,&amp;nbsp;$expires&amp;nbsp;=&amp;nbsp;0)
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$cachePath&amp;nbsp;=&amp;nbsp;__DIR__&amp;nbsp;.&amp;nbsp;&amp;#39;/cache&amp;#39;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(!is_dir($cachePath))&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;mkdir($cachePath,&amp;nbsp;666);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$data&amp;nbsp;=&amp;nbsp;[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;key&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;$key,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;value&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;$value,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;expires&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;$expires
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;file_put_contents($cachePath&amp;nbsp;.&amp;nbsp;&amp;#39;/&amp;#39;&amp;nbsp;.&amp;nbsp;md5($key),&amp;nbsp;json_encode($data,&amp;nbsp;JSON_UNESCAPED_UNICODE));
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;/**
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;获取缓存
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;string&amp;nbsp;$key
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@return&amp;nbsp;bool
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*/
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;static&amp;nbsp;function&amp;nbsp;get($key)
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$cacheFile&amp;nbsp;=&amp;nbsp;__DIR__&amp;nbsp;.&amp;nbsp;&amp;#39;/cache/&amp;#39;&amp;nbsp;.&amp;nbsp;md5($key);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//检测是否存在
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(!is_file($cacheFile))&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;false;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//检测是否过期
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$data&amp;nbsp;=&amp;nbsp;json_decode(file_get_contents($cacheFile),&amp;nbsp;true);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//获取最近修改时间
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$mtime&amp;nbsp;=&amp;nbsp;filemtime($cacheFile);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(time()&amp;nbsp;&amp;gt;&amp;nbsp;$mtime&amp;nbsp;+&amp;nbsp;$data[&amp;#39;expires&amp;#39;])&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;unlink($cacheFile);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;false;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;$data[&amp;#39;value&amp;#39;];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;/**
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;删除缓存
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;string&amp;nbsp;$key
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*&amp;nbsp;@return&amp;nbsp;bool
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*/
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;static&amp;nbsp;function&amp;nbsp;delete($key)
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$cacheFile&amp;nbsp;=&amp;nbsp;__DIR__&amp;nbsp;.&amp;nbsp;&amp;#39;/cache/&amp;#39;&amp;nbsp;.&amp;nbsp;md5($key);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if&amp;nbsp;(is_file($cacheFile))&amp;nbsp;{
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;unlink($cacheFile);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;true;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+}&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:03:13' WHERE `aid` = 105 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-02-03T12:03:15+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2016-02-03T12:03:15+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-02-03T12:03:15+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0118s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-02-03T12:03:16+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-02-03T12:03:16+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0117s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 5 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:03:18+08:00 ] 127.0.0.1 /Blog/Admin/Article/edit?aid=101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getList(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 90 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 59 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 70 行.
+NOTIC: [8] Undefined variable: order /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 71 行.
+SQL: SELECT `cid`,`cname`,`created_at`,`updated_at` FROM `category`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 74 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/ArticleController.class.php on line 91 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE `aid` = 101 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2016-02-03T12:03:18+08:00 ] 127.0.0.1 /Blog/Admin/Upload/index?action=config&&noCache=1454472198712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2016-02-03T12:03:23+08:00 ] 127.0.0.1 /Blog/Admin/Article/updateone
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0011s ]
+SQL: UPDATE `article` SET `title`='PHP操作redis',`cid`='1',`content`='&lt;h3 style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-size: 18px; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;连接到Redis服务器&lt;/h3&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//Connecting&amp;nbsp;to&amp;nbsp;Redis&amp;nbsp;server&amp;nbsp;on&amp;nbsp;localhost
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Redis();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;connect(&amp;#39;127.0.0.1&amp;#39;,&amp;nbsp;6379);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Connection&amp;nbsp;to&amp;nbsp;server&amp;nbsp;sucessfully&amp;quot;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//check&amp;nbsp;whether&amp;nbsp;server&amp;nbsp;is&amp;nbsp;running&amp;nbsp;or&amp;nbsp;not
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Server&amp;nbsp;is&amp;nbsp;running:&amp;nbsp;&amp;quot;+&amp;nbsp;$redis-&amp;gt;ping();
+?&amp;gt;&lt;/pre&gt;&lt;h3 style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-size: 18px; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Redis的PHP字符串实例&lt;/h3&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//Connecting&amp;nbsp;to&amp;nbsp;Redis&amp;nbsp;server&amp;nbsp;on&amp;nbsp;localhost
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Redis();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;connect(&amp;#39;127.0.0.1&amp;#39;,&amp;nbsp;6379);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Connection&amp;nbsp;to&amp;nbsp;server&amp;nbsp;sucessfully&amp;quot;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//set&amp;nbsp;the&amp;nbsp;data&amp;nbsp;in&amp;nbsp;redis&amp;nbsp;string
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;set(&amp;quot;tutorial-name&amp;quot;,&amp;nbsp;&amp;quot;Redis&amp;nbsp;tutorial&amp;quot;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;Get&amp;nbsp;the&amp;nbsp;stored&amp;nbsp;data&amp;nbsp;and&amp;nbsp;print&amp;nbsp;it
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Stored&amp;nbsp;string&amp;nbsp;in&amp;nbsp;redis::&amp;nbsp;&amp;quot;&amp;nbsp;+&amp;nbsp;jedis.get(&amp;quot;tutorial-name&amp;quot;);
+?&amp;gt;&lt;/pre&gt;&lt;h3 style=&quot;box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; font-weight: inherit; font-stretch: inherit; font-size: 18px; font-family: &amp;#39;Microsoft YaHei&amp;#39;, simsun, &amp;#39;Helvetica Neue&amp;#39;, Arial, Helvetica, sans-serif; vertical-align: baseline; color: rgb(51, 51, 51); white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Redis的PHP列表示例&lt;/h3&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//Connecting&amp;nbsp;to&amp;nbsp;Redis&amp;nbsp;server&amp;nbsp;on&amp;nbsp;localhost
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Redis();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;connect(&amp;#39;127.0.0.1&amp;#39;,&amp;nbsp;6379);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Connection&amp;nbsp;to&amp;nbsp;server&amp;nbsp;sucessfully&amp;quot;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//store&amp;nbsp;data&amp;nbsp;in&amp;nbsp;redis&amp;nbsp;list
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;lpush(&amp;quot;tutorial-list&amp;quot;,&amp;nbsp;&amp;quot;Redis&amp;quot;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;lpush(&amp;quot;tutorial-list&amp;quot;,&amp;nbsp;&amp;quot;Mongodb&amp;quot;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;lpush(&amp;quot;tutorial-list&amp;quot;,&amp;nbsp;&amp;quot;Mysql&amp;quot;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;Get&amp;nbsp;the&amp;nbsp;stored&amp;nbsp;data&amp;nbsp;and&amp;nbsp;print&amp;nbsp;it
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$arList&amp;nbsp;=&amp;nbsp;$redis-&amp;gt;lrange(&amp;quot;tutorial-list&amp;quot;,&amp;nbsp;0&amp;nbsp;,5);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Stored&amp;nbsp;string&amp;nbsp;in&amp;nbsp;redis::&amp;nbsp;&amp;quot;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;print_r($arList);
+?&amp;gt;&lt;/pre&gt;&lt;p&gt;Redis的php键例&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//Connecting&amp;nbsp;to&amp;nbsp;Redis&amp;nbsp;server&amp;nbsp;on&amp;nbsp;localhost
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis&amp;nbsp;=&amp;nbsp;new&amp;nbsp;Redis();
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$redis-&amp;gt;connect(&amp;#39;127.0.0.1&amp;#39;,&amp;nbsp;6379);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Connection&amp;nbsp;to&amp;nbsp;server&amp;nbsp;sucessfully&amp;quot;;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;Get&amp;nbsp;the&amp;nbsp;stored&amp;nbsp;keys&amp;nbsp;and&amp;nbsp;print&amp;nbsp;it
+&amp;nbsp;&amp;nbsp;&amp;nbsp;$arList&amp;nbsp;=&amp;nbsp;$redis-&amp;gt;keys(&amp;quot;*&amp;quot;);
+&amp;nbsp;&amp;nbsp;&amp;nbsp;echo&amp;nbsp;&amp;quot;Stored&amp;nbsp;keys&amp;nbsp;in&amp;nbsp;redis::&amp;nbsp;&amp;quot;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;print_r($arList);
+?&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`update_time`='2016-02-03 12:03:23' WHERE `aid` = 101 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-02-03T12:03:25+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000578s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2016-02-03T12:03:25+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002236s ]
+
+[ 2016-02-03T12:03:26+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0016s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:03:26+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2016-02-03T12:03:26+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0100s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-02-03T12:03:36+08:00 ] 127.0.0.1 /Blog/Admin/Article/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2016-02-03T12:03:37+08:00 ] 127.0.0.1 /Blog/Admin/Article/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0087s ]
+SQL: SELECT `aid`,`title`,`content`,`plaintxt`,`if_delete`,`cuid`,`cid`,`rnum`,`coverid`,`create_time`,`update_time` FROM `article` WHERE (  if_delete = 0 ) ORDER BY create_time desc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (  if_delete = 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 3 for Admin\Model\CommonModel::getone(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Service/CategoryService.class.php on line 15 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 35 行.
+SQL: SELECT `cname` FROM `category` WHERE `cid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-02-03T12:13:09+08:00 ] 127.0.0.1 /Blog/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `if_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `if_delete` = 0 AND `if_blacklist` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `album` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `album` WHERE `if_delete` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getCount(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/IndexController.class.php on line 16 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 137 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `message` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\CommonModel::getCount(), called in /Applications/MAMP/htdocs/Blog/Apps/Admin/Controller/IndexController.class.php on line 17 and defined /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 135 行.
+NOTIC: [8] Undefined variable: condition /Applications/MAMP/htdocs/Blog/Apps/Admin/Model/CommonModel.class.php 第 137 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `link` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `link` WHERE `stop` = 0 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+

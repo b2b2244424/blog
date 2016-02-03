@@ -1351,11 +1351,13 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 12px/1.5 "Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Microsoft Yahei", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff
+    background-color: #f2f4f8;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
 button, input, select, textarea {
@@ -3472,8 +3474,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #545ca6;
-    border-color: #545ca6
+    background-color: #00c3b6;
+    border-color: #00c3b6
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -3484,8 +3486,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #428bca;
-    border-color: #428bca
+    background-color: #00c2b6;
+    border-color: #00c2b6
 }
 
 .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
@@ -4957,12 +4959,17 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 }
 
 .navbar-inverse {
-    background-color: #000000;
-    border-color: #e61729;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 1px rgba(255,255,255,0.15);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
 }
 
 .navbar-inverse .navbar-brand {
-    color: #ffffff;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
@@ -5130,8 +5137,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     z-index: 2;
     color: #fff;
     cursor: default;
-    background-color: #428bca;
-    border-color: #428bca
+    background-color: #00c3b6;
+    border-color: #00c3b6;
 }
 
 .pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {

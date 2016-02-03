@@ -1,20 +1,106 @@
-.doc-buttons{
+.briefly{
     background-color: #fff;
-    margin-left: 15px;
-    text-align: center;
     color: #fff;
     margin-top: 10px;
-    min-height: 130px;
+    height: auto;
+    overflow: hidden;
+}
+.briefly ul{
+    list-style: none;
 }
 
-.index-banner-nav{
-    min-height: 90px;
-    line-height: 90px;
-    width: 100%;
+.briefly ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 23.65%;
+    float: left;
+    margin-left: 4px;
+    background-color: #0bacd3;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.briefly ul li .visual{
+    float: left;
+    font-size: 40px;
+    margin: 15px;
+}
+
+.briefly ul li .number{
+    float: right;
+    margin: 15px;
     font-size: 30px;
+    text-align: right;
 }
 
-.col-md-4{
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+.briefly ul li .number span{
+    display: block;
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+}
+
+.briefly ul li .more{
+    clear: both;
+}
+
+.briefly ul li .more a{
+    display: block;
+    color: rgba(255,255,255,0.85);
+    background-color: rgba(0,0,0,0.15);
+    padding: 5px 15px;
+}
+
+.briefly ul li .more i{
+    float: right;
+    margin-top: 4px;
+}
+
+.briefly ul li.album{
+    background-color: #ea4c89;
+}
+
+.briefly ul li.user{
+    background-color: #ffb848;
+}
+
+.briefly ul li.music{
+    background-color: #00c3b6;
+}
+
+.summary{
+    width: 100%;
+    margin: 20px auto;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.summary-list{
+    width: 92.5%;
+    margin: 10px auto;
+}
+
+.summary .box{
+    width: 49.5%;
+    float: left;
+    min-height: 200px;
+    box-sizing: border-box;
+}
+
+.summary .box .title{
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.list-group .panel-collapse{
+    border-left: 1px solid #e4e8ea;
+    border-right: 1px solid #e4e8ea;
+}
+
+.ng-binding{
+    cursor: pointer;
 }

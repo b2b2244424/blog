@@ -443,7 +443,6 @@
                     </li>
                   </ul>
                 </nav>
-                <!-- / nav -->
               </div>
             </section>
             <footer class="footer hidden-xs no-padder text-center-nav-xs">

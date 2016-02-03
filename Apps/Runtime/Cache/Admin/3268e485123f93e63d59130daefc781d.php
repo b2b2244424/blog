@@ -163,8 +163,14 @@
                     </li>
                     <li>
                       <a href="<?php echo U('Admin/Users/index');?>">
-                        <i class="icon-user icon  text-primary"></i>
+                        <i class="icon-users icon  text-primary"></i>
                         <span class="font-bold">用户</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/About');?>">
+                        <i class="icon-user icon text-info"></i>
+                        <span class="font-bold">关于我</span>
                       </a>
                     </li>
                     <li>
@@ -437,7 +443,6 @@
                     </li>
                   </ul>
                 </nav>
-                <!-- / nav -->
               </div>
             </section>
             <footer class="footer hidden-xs no-padder text-center-nav-xs">

@@ -23,7 +23,7 @@ class BlogController extends Controller{
     public function addone()
     {
         $data['title'] = I('title');
-        $data['content'] = I('content');
+        $data['content'] = htmlspecialchars_decode(I('content'));
         $data['create_time'] = date('Y-m-d H:i:s',time());
         try{
             D('Blog')->addone($data);
@@ -39,11 +39,23 @@ class BlogController extends Controller{
      */
     public function getlist()
     {
-        $res = D('Blog')->getList();
+        $order = 'create_time desc';
+        $res = D('Blog')->getList($cond = '',$fields = '',$order);
         if($res){
             $this->ajaxReturn(array('code' => 1,'msg' => '获取列表成功','data' => $res));
         }else{
             $this->ajaxReturn(array('code' => 0,'msg' => '获取列表失败'));
         }
+    }
+
+    public function deleteone()
+    {
+        $bid = I('bid');
+        $cond = array('bid' => $bid);
+        $res = D('Blog')->deleteEntity($cond);
+        if($res){
+            $this->ajaxReturn(array('code' => 1,'msg' => '删除成功'));
+        }
+        $this->ajaxReturn(array('code' => 0,'msg' => '删除失败'));
     }
 }

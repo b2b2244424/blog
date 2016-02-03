@@ -127,4 +127,14 @@ class CommonModel extends RelationModel{
 		$res = $this->where($condition)->setInc($field,1);
 		return $res;
 	}
+
+	/**
+	 * 信息统计
+	 * @return [type] [description]
+	 */
+	public function getCount($condition)
+	{
+		$count = $this->where($condition)->count();
+		return $count;
+	}
 }

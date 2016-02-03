@@ -163,8 +163,14 @@
                     </li>
                     <li>
                       <a href="<?php echo U('Admin/Users/index');?>">
-                        <i class="icon-user icon  text-primary"></i>
+                        <i class="icon-users icon  text-primary"></i>
                         <span class="font-bold">用户</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo U('Admin/About');?>">
+                        <i class="icon-user icon text-info"></i>
+                        <span class="font-bold">关于我</span>
                       </a>
                     </li>
                     <li>
@@ -437,49 +443,8 @@
                     </li>
                   </ul>
                 </nav>
-                <!-- / nav -->
               </div>
             </section>
-            <footer class="footer hidden-xs no-padder text-center-nav-xs">
-              <div class="bg hidden-xs ">
-                  <div class="dropdown dropup wrapper-sm clearfix">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      <span class="thumb-sm avatar pull-left m-l-xs">                        
-                        <img src="/Blog/Public/admin/images/a3.png" class="dker" alt="...">
-                        <i class="on b-black"></i>
-                      </span>
-                      <span class="hidden-nav-xs clear">
-                        <span class="block m-l">
-                          <strong class="font-bold text-lt"><?php echo ($username); ?></strong> 
-                          <b class="caret"></b>
-                        </span>
-                      </span>
-                    </a>
-                    <ul class="dropdown-menu animated fadeInRight aside text-left">                      
-                      <li>
-                        <span class="arrow bottom hidden-nav-xs"></span>
-                        <a href="#">设置</a>
-                      </li>
-                      <li>
-                        <a href="profile.html">资料</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <span class="badge bg-danger pull-right">3</span>
-                          提醒
-                        </a>
-                      </li>
-                      <li>
-                        <a href="docs.html">帮助</a>
-                      </li>
-                      <li class="divider"></li>
-                      <li>
-                        <a href="href="<?php echo U('Login/logout');?>"" data-toggle="ajaxModal" >退出</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>            
-              </footer>
           </section>
         </aside>
 <script type="text/javascript" src="/Blog/Public/admin/message/app.js"></script>

@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="博客,唐春林,技术博客,唐春林技术博客">
     <link rel="shortcut icon" href="/Blog/Public/images/favicon.ico">
-    <link href="/Blog/Public/admin/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="/Blog/Public/admin/css/animate.css" type="text/css" />
-    <link rel="stylesheet" href="/Blog/Public/admin/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="/Blog/Public/admin/css/font.css" type="text/css" />
-    <link rel="stylesheet" href="/Blog/Public/admin/css/app.css" type="text/css" />
+    <link href="/Blog/Public/css/bootstrap.min.css" rel="stylesheet">
     <link href="/Blog/Public/css/default.css" rel="stylesheet">
     <link href="/Blog/Public/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="/Blog/Public/css/sweetalert.css" type="text/css" />
@@ -19,11 +15,6 @@
     <script src="/Blog/Public/js/jquery.min.js"></script>
     <script src="/Blog/Public/js/bootstrap.min.js"></script>
     <!--<script src="/Blog/Public/js/canvastimer.js"></script>-->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
     <script src="/Blog/Public/js/sweetalert.min.js"></script>
     <script src="/Blog/Public/js/angular.min.js"></script>
     <script src="/Blog/Public/js/jquery.complexify.js"></script>
@@ -33,6 +24,8 @@
     <title>首页</title>
     <script>
         $(function(){
+            var winHeight = $(document).scrollTop();
+            $('[data-toggle="tooltip"]').tooltip();
             $('#password input[placeholder]').placeholder();
             $("#password").complexify({}, function(valid, complexity){
                 if (!valid) {
@@ -42,12 +35,20 @@
                 }
                 $('#complexity').html(Math.round(complexity) + '%');
             });
+            $(window).scroll(function(){
+              var scrollY = $(document).scrollTop();
+              if(scrollY > 320){
+                $('.mynav').addClass('minnav');
+              }else{
+                $('.mynav').removeClass('minnav');
+              }
+            });
         });
     </script>
 </head>
 <body>
 <!--head start-->
-<nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse  navbar-fixed-top mynav" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false"
@@ -57,7 +58,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo U('/index');?>">Companion</a>
+            <a class="navbar-brand logo" href="<?php echo U('/index');?>"></a>
         </div>
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
@@ -174,7 +175,7 @@
 </script>-->
 <script type="text/javascript" src="/Blog/Public/home/message/app.js"></script>
 <!--main content-->
-<div class="container" style="min-height: 900px;margin-top:40px;" ng-app="MessageApp" ng-controller="MessageCrtl">
+<div class="container" style="margin-top:70px;" ng-app="MessageApp" ng-controller="MessageCrtl">
     <div class="row">
         <div class="col-md-8 col-xs-12">
             <div class="newest-title">
@@ -221,13 +222,13 @@
                     <i class="glyphicon glyphicon-align-justify"></i>&nbsp;&nbsp;点击排行<!-- <span>Top</span> -->
                 </div>
                 <div class="click-top-list">
-                    <p><i class="top-1">No.1</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
-                    <p><i class="top-2">No.2</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
-                    <p><i class="top-3">No.3</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
-                    <p><i class="top-4">No.4</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
-                    <p><i class="top-5">No.5</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
-                    <p><i class="top-6">No.6</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
-                    <p><i class="top-7">No.7</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p>
+                    <a href=""><p><i class="top-1">No.1</i><span>互联网创业潮流越来越猛互联网创业互联...<span></p></a>
+                    <a><p><i class="top-2">No.2</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p></a>
+                    <a><p><i class="top-3">No.3</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p></a>
+                    <a><p><i class="top-4">No.4</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p></a>
+                    <a><p><i class="top-5">No.5</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p></a>
+                    <a><p><i class="top-6">No.6</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p></a>
+                    <a><p><i class="top-7">No.7</i><span>互联网创业潮流越来越猛互联网创业互联网联...<span></p></a>
                 </div>
             </div>
             <!-- <div class="tools">
@@ -318,11 +319,36 @@
         </span>
     </a>
 </div> -->
-<div class="container-fluid modal-footer">
-    <ul class="nav pull-right">
-        <li><a href="<?php echo U('/admin');?>">博客管理</a></li>
-    </ul>
-</div>
+<footer id="footer">
+    <div class="footer-content">
+        <nav class="inner">
+            <aside id="describe" class="group">
+                <h3>简介</h3>
+                <p class="describe-text">
+                    以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！
+                </p>
+            </aside>
+            <aside id="footer-null" class="group"></aside>
+            <aside id="social" class="group">
+                <h3>关注</h3>
+                <ul>
+                    <li>Email:<a href="mailto:tangchunlinit@163.com">tangchunlinit@163.com<a></li>
+                    <li class="social-icon">
+                        
+                        <a class="icon-wechat" href="#"></a>
+                        <a class="icon-weibo" target="_blank" href="#"></a>
+                        <a class="icon-qq" target="_blank" href="#"></a>
+                    </li>
+                </ul>
+            </aside>
+        </nav>
+        <section class="site-info">
+            <p class="copyright">
+                Copyright&copyright;2015-2016 by Companion All Rights Reserved. 京ICP备12073831号-1
+            </p>
+        </section>
+    </div>
+</footer>
 <script type="text/javascript" src="/Blog/Public/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="/Blog/Public/js/jquery.themepunch.revolution.min.js"></script> 
     <script type="text/javascript" src="/Blog/Public/js/jquery.bxslider.min.js"></script>

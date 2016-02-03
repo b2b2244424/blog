@@ -1,14 +1,135 @@
 <section id="content">
-  <div class="row">
-    <div class="doc-buttons col-md-12">
-    <div class="col-md-4">
-      <a class="btn btn-danger index-banner-nav">文章({$info['anum']})</a>
+    <div class="briefly">
+      <ul>
+        <li class="post">
+          <div class="visual">
+            <i class="icon-notebook"></i>
+          </div>
+          <div class="number">
+            {$count['anum']}<span>文章</span>
+          </div>
+          <div class="more">
+            <a href="{:U('Admin/Article/index')}">查看更多
+            <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </li>
+        <li class="album">
+          <div class="visual">
+            <i class="icon-picture"></i>
+          </div>
+          <div class="number">
+            {$count['albumnum']}<span>相册</span>
+          </div>
+          <div class="more">
+            <a href="#">查看更多
+            <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </li>
+        <li class="user">
+          <div class="visual">
+            <i class="icon-users"></i>
+          </div>
+          <div class="number">
+            {$count['unum']}<span>用户</span>
+          </div>
+          <div class="more">
+            <a href="{:U('Admin/Users/index')}">查看更多
+            <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </li>
+        <li class="music">
+          <div class="visual">
+            <i class="icon-bubble"></i>
+          </div>
+          <div class="number">
+            {$count['mnum']}<span>留言</span>
+          </div>
+          <div class="more">
+            <a href="{:U('Admin/Message/index')}">查看更多
+            <i class="icon-arrow-right"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="col-md-4">
-      <a class="btn btn-warning index-banner-nav">相册(5)</a>
+    <div class="summary">
+      <div class="summary-list">
+        <div class="box">
+          <div class="title"><i class=" icon-list"></i>&nbsp;&nbsp;程序信息</div>
+          <div class="list-group">
+                  <div>
+                    <a role="button" class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <i class="fa fa-cloud icon-muted fa-fw"></i>服务器
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body"><?php echo $_SERVER['SERVER_SOFTWARE'] ?></div>
+                    </div>
+                  </div>
+                  <div>
+                    <a role="button" class="list-group-item"  data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <i class="fa fa-puzzle-piece icon-muted fa-fw"></i>PHP版本
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body"><?php echo PHP_VERSION ?></div>
+                    </div>
+                  </div>
+                  <div>
+                    <a role="button" class="list-group-item"  data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <i class="fa fa-globe icon-muted fa-fw"></i>服务器IP
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body"><?php echo $_SERVER['SERVER_ADDR'] ?></div>
+                    </div>
+                  </div>
+                  <div>
+                    <a role="button" class="list-group-item"  data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <i class="fa fa-hdd-o icon-muted fa-fw"></i>数据库信息
+                    </a>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body"><?php echo mysql_get_client_info() ?></div>
+                    </div>
+                  </div>
+                    <a href="javascript:;" class="list-group-item">
+                      <span class="badge bg-warning">http://www.companion.com</span>
+                      <i class="fa fa-bookmark icon-muted fa-fw"></i>程序官网
+                    </a>
+                    <a href="javascript:;" class="list-group-item">
+                      <span class="badge bg-info">companion</span>
+                      <i class="icon-user icon-muted fa-fw"></i>&nbsp;作者
+                    </a>
+                  </div>
+        </div>
+        <div class="box" style="margin-left:10px">
+          <div class="title"><i class="fa fa-bars"></i>&nbsp;&nbsp;其他信息</div>
+          <div class="list-group">
+                    <a href="{:U('Admin/Link/index')}" class="list-group-item">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <span class="badge badge-empty">{$count['lnum']}个</span>
+                      <i class="icon  icon-link icon-muted fa-fw"></i>&nbsp;友链
+                    </a>
+                    <a href="{:U('Admin/Blog/index')}" class="list-group-item">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <span class="badge badge-empty">{$count['bnum']}篇</span>
+                      <i class="icon icon-note icon-muted fa-fw"></i>&nbsp;日志
+                    </a>
+                    <a class="list-group-item">
+                      <span class="badge bg-success">14次</span>
+                      <i class="fa fa-eye icon-muted fa-fw"></i>访问量
+                    </a>
+                    <a class="list-group-item">
+                      <i class="fa fa-chevron-right icon-muted"></i>
+                      <span class="badge bg-info">1次</span>
+                      <i class="icon icon-wrench icon-muted fa-fw"></i>&nbsp;版本更新
+                    </a>
+                  </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4">
-      <a class="btn btn-primary index-banner-nav">用户({$info['unum']})</a>
-    </div>
-  </div>
 </section>
