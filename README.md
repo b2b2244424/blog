@@ -64,4 +64,4 @@ AngularJS通过为开发者呈现一个更高层次的抽象来简化应用的�
 
 ## 截图
 
-![](file:///Users/tangchunlin/Downloads/ht.png)
+![](http://d.pcs.baidu.com/thumbnail/a52bce2ac2d9d1697b11ef3f82e89707?fid=874198438-250528-367220172848001&time=1454490000&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-VL80IE1oiWckbWU%2B6KvNLRyDcpw%3D&rt=sh&expires=2h&r=688471453&sharesign=unknown&size=c710_u500&quality=100)
